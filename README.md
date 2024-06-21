@@ -3,7 +3,6 @@
 
 ![Winos](银狐Winos/winos.png)
 
-  <img align='center'src="https://github.com/your-username/your-repository/raw/master/your-image-folder/your-image.png](https://github.com/Logkiss/Rat-winos4.0-gh0st/blob/master/%E9%93%B6%E7%8B%90Winos/winos.png"/> `
 
 
 
@@ -17,21 +16,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
 
 
 
