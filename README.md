@@ -3,9 +3,7 @@
 
 ![Winos](银狐Winos/winos.png)
 
-[终结者远控源码]([http://www.baidu.com/](https://github.com/Logkiss?tab=repositories))
-
-
+[终结者远控源码](https://github.com/Logkiss?tab=repositories)
 Winod4.0全套源码（附加插件全套源码）
 Ghost1.0Alpha源码
 萝莉控（C#）
