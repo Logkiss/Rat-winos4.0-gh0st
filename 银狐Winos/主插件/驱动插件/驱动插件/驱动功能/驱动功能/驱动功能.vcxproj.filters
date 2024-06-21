@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="隐藏">
+      <UniqueIdentifier>{35497c62-dd01-4765-8fa5-34b568137d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="注入">
+      <UniqueIdentifier>{2ad03f51-22c9-4e2a-8d21-915bb295a0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="辅助函数">
+      <UniqueIdentifier>{a71d451b-8460-4974-aa32-55c6af5bd688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="强删">
+      <UniqueIdentifier>{c2d8c6ae-133c-4f04-9c17-8d96d0a674bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Device.c" />
+    <ClCompile Include="Driver.c" />
+    <ClCompile Include="Configs.c" />
+    <ClCompile Include="FsFilter.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="PsMonitor.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="PsRules.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="PsTable.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="RegFilter.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="ExcludeList.c">
+      <Filter>隐藏</Filter>
+    </ClCompile>
+    <ClCompile Include="ApcHandler.cpp">
+      <Filter>注入</Filter>
+    </ClCompile>
+    <ClCompile Include="UMInjectionHandler.cpp">
+      <Filter>注入</Filter>
+    </ClCompile>
+    <ClCompile Include="help.cpp">
+      <Filter>辅助函数</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceDelete.c">
+      <Filter>强删</Filter>
+    </ClCompile>
+    <ClCompile Include="IrpFile.c">
+      <Filter>强删</Filter>
+    </ClCompile>
+    <ClCompile Include="kernelsocket.cpp">
+      <Filter>注入</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Device.h" />
+    <ClInclude Include="DeviceAPI.h" />
+    <ClInclude Include="Driver.h" />
+    <ClInclude Include="Configs.h" />
+    <ClInclude Include="ExcludeList.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="FsFilter.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="PsMonitor.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="PsRules.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="PsTable.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="RegFilter.h">
+      <Filter>隐藏</Filter>
+    </ClInclude>
+    <ClInclude Include="ApcHandler.h">
+      <Filter>注入</Filter>
+    </ClInclude>
+    <ClInclude Include="UMInjectionHandler.h">
+      <Filter>注入</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeStructs.h">
+      <Filter>注入</Filter>
+    </ClInclude>
+    <ClInclude Include="help.h">
+      <Filter>辅助函数</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceDelete.h">
+      <Filter>强删</Filter>
+    </ClInclude>
+    <ClInclude Include="IrpFile.h">
+      <Filter>强删</Filter>
+    </ClInclude>
+    <ClInclude Include="universal.h">
+      <Filter>注入</Filter>
+    </ClInclude>
+    <ClInclude Include="Veil.h">
+      <Filter>注入</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

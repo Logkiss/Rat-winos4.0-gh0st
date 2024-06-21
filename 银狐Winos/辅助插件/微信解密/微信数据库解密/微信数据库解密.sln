@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "微信数据库解密", "微信数据库解密\微信数据库解密.vcxproj", "{9F6FA6B8-C448-488D-9F81-CA9466677E80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Debug|x64.ActiveCfg = Debug|x64
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Debug|x64.Build.0 = Debug|x64
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Debug|x86.ActiveCfg = Debug|Win32
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Debug|x86.Build.0 = Debug|Win32
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Release|x64.ActiveCfg = Release|x64
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Release|x64.Build.0 = Release|x64
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Release|x86.ActiveCfg = Release|Win32
+		{9F6FA6B8-C448-488D-9F81-CA9466677E80}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98CC86B6-6230-47E5-80CA-54C80099EFEB}
+	EndGlobalSection
+EndGlobal

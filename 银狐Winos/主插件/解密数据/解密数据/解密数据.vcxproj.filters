@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DecryptManger.cpp" />
+    <ClCompile Include="解密数据.cpp" />
+    <ClCompile Include="UnCode.cpp">
+      <Filter>算法</Filter>
+    </ClCompile>
+    <ClCompile Include="Get360seInfo.cpp">
+      <Filter>浏览器解密</Filter>
+    </ClCompile>
+    <ClCompile Include="GetBrowserInfo.cpp">
+      <Filter>浏览器解密</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sqlite3\sqlite3.c">
+      <Filter>算法\第三方算法</Filter>
+    </ClCompile>
+    <ClCompile Include="include\base64\base64.c">
+      <Filter>算法\第三方算法</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cJSON\cJSON.c">
+      <Filter>算法\第三方算法</Filter>
+    </ClCompile>
+    <ClCompile Include="include\cJSON\cJSON_Utils.c">
+      <Filter>算法\第三方算法</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sqlite3\codecext.c">
+      <Filter>算法\第三方算法</Filter>
+    </ClCompile>
+    <ClCompile Include="include\sqlite3\rijndael.c">
+      <Filter>算法\第三方算法</Filter>
+    </ClCompile>
+    <ClCompile Include="include\openssl\applink.c">
+      <Filter>算法\openssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HPSocket\Buffer.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HPSocket\Manager.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HPSocket\TcpSocket.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HPSocket\UdpSocket.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HPSocket\stdafx.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DecryptManger.h" />
+    <ClInclude Include="UnCode.h">
+      <Filter>算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Get360seInfo.h">
+      <Filter>浏览器解密</Filter>
+    </ClInclude>
+    <ClInclude Include="GetBrowserInfo.h">
+      <Filter>浏览器解密</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sqlite3\sqlite3.h">
+      <Filter>算法\第三方算法</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sqlite3\sqlite3ext.h">
+      <Filter>算法\第三方算法</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base64\base64.h">
+      <Filter>算法\第三方算法</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cJSON\cJSON.h">
+      <Filter>算法\第三方算法</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cJSON\cJSON_Utils.h">
+      <Filter>算法\第三方算法</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sqlite3\rijndael.h">
+      <Filter>算法\第三方算法</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\storeerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\symhacks.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\tls1.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ts.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\tserr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\txt_db.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ui.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\uierr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\whrlpool.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509_vfy.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509err.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509v3.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\x509v3err.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\__DECC_INCLUDE_EPILOGUE.H">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\__DECC_INCLUDE_PROLOGUE.H">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\aes.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1_mac.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1err.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asn1t.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\async.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\asyncerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bio.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bioerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\blowfish.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bn.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\bnerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\buffer.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\buffererr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\camellia.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cast.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cmac.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cms.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cmserr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\comp.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\comperr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conf_api.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\conferr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\crypto.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cryptoerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ct.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\cterr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\des.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dh.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dherr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dsa.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dsaerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\dtls1.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\e_os2.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ebcdic.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ec.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdh.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecdsa.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ecerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\engine.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\engineerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\err.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\evp.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\evperr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\hmac.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\idea.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\kdf.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\kdferr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\lhash.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md2.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md4.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\md5.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\mdc2.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\modes.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\obj_mac.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\objects.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\objectserr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ocsp.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ocsperr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslconf.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\opensslv.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ossl_typ.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pem2.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pemerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs7.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs7err.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs12.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\pkcs12err.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rand.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rand_drbg.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\randerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc2.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc4.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rc5.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ripemd.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rsa.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\rsaerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\safestack.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\seed.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\sha.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\srp.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\srtp.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl2.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\ssl3.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\sslerr.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\stack.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openssl\store.h">
+      <Filter>算法\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\Buffer.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\HPSocket.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\HPTypeDef.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\ISocketBase.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\Manager.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\SocketInterface.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\TcpSocket.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\UdpSocket.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\zconf.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\zlib.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\stdafx.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HPSocket\targetver.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="算法">
+      <UniqueIdentifier>{21c50edf-54fe-49c7-a82d-e5cba32c4231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="浏览器解密">
+      <UniqueIdentifier>{b72f37c8-a011-48ae-90cd-4c4fcf25133e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法\openssl">
+      <UniqueIdentifier>{a55606f2-cc0a-4265-8ec4-b87325fed2b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法\第三方算法">
+      <UniqueIdentifier>{d1052ba2-c85d-4ec1-91b1-54d0f98773e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HPSocket">
+      <UniqueIdentifier>{660cc83a-1934-4fe7-b7d1-62e66473f4a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

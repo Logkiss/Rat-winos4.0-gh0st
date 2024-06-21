@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ExpandManger.cpp" />
+    <ClCompile Include="内网主机扫描.cpp" />
+    <ClCompile Include="..\..\..\主插件\HPSocket\Buffer.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\BufferPool.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\ikcp.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\Manager.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\RWLock.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\SocketHelper.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\stdafx.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\SysHelper.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\TcpSocket.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\UdpSocket.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\主插件\HPSocket\WaitFor.cpp">
+      <Filter>HPSocket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExpandManger.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="..\..\..\主插件\HPSocket\ArqHelper.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\Buffer.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\BufferPool.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\BufferPtr.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\CriticalSection.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\GeneralHelper.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\ikcp.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\ISocketBase.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\Manager.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\PrivateHeap.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\RingBuffer.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\RWLock.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\Semaphore.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\Singleton.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\SocketHelper.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\stdafx.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\STLHelper.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\SysHelper.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\targetver.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\TcpSocket.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\UdpSocket.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\WaitFor.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\Win32Helper.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\zconf.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\主插件\HPSocket\zlib.h">
+      <Filter>HPSocket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HPSocket">
+      <UniqueIdentifier>{660cc83a-1934-4fe7-b7d1-62e66473f4a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

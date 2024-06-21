@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "远程终端", "远程终端\远程终端.vcxproj", "{36F979A7-DB24-4AE7-AB6E-4862E734D499}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Debug|Win32.ActiveCfg = Debug|Win32
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Debug|Win32.Build.0 = Debug|Win32
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Debug|x64.ActiveCfg = Debug|x64
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Debug|x64.Build.0 = Debug|x64
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Release|Win32.ActiveCfg = Release|Win32
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Release|Win32.Build.0 = Release|Win32
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Release|x64.ActiveCfg = Release|x64
+		{36F979A7-DB24-4AE7-AB6E-4862E734D499}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF0C8B97-8C66-46EB-B0FC-5D1240BA272B}
+	EndGlobalSection
+EndGlobal

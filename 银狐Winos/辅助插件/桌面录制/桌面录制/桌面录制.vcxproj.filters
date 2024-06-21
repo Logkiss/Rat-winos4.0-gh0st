@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Capture.cpp" />
+    <ClCompile Include="CaptureCommon.cpp" />
+    <ClCompile Include="pkt_queue.cpp" />
+    <ClCompile Include="H264ScreenManager.cpp" />
+    <ClCompile Include="桌面录制.cpp" />
+    <ClCompile Include="MemoryModule.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Capture.h" />
+    <ClInclude Include="CaptureCommon.h" />
+    <ClInclude Include="C_libx264-148_32.h" />
+    <ClInclude Include="C_libx264-148_64.h" />
+    <ClInclude Include="libyuv.h" />
+    <ClInclude Include="MemoryModule.h" />
+    <ClInclude Include="pkt_queue.h" />
+    <ClInclude Include="x264.h" />
+    <ClInclude Include="x264_config.h" />
+    <ClInclude Include="H264ScreenManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="net_protocol.h" />
+  </ItemGroup>
+</Project>

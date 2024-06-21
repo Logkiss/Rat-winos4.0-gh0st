@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45A0F081-C6C9-4822-AFF4-413A2AC3930C}|\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{45A0F081-C6C9-4822-AFF4-413A2AC3930C}|\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.vcxproj|solutionrelative:\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F153806-7378-4131-AF82-28B40F837F78}|\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6F153806-7378-4131-AF82-28B40F837F78}|\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.vcxproj|solutionrelative:\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20331F4B-C451-4BB0-BBBE-D6651AC0AADB}|\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20331F4B-C451-4BB0-BBBE-D6651AC0AADB}|\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.vcxproj|solutionrelative:\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F38CFFA-6131-4649-A4BD-73430AF9F4AB}|\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0F38CFFA-6131-4649-A4BD-73430AF9F4AB}|\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.vcxproj|solutionrelative:\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB54F4C7-3909-4E06-BA3B-B5F8459FA5C6}|shellcode\\shellcode\\shellcode.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\shellcode\\shellcode\\ShellCode_main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DB54F4C7-3909-4E06-BA3B-B5F8459FA5C6}|shellcode\\shellcode\\shellcode.vcxproj|solutionrelative:shellcode\\shellcode\\ShellCode_main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDBB4A48-376E-4B24-81ED-8F6BEB36446F}|\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FDBB4A48-376E-4B24-81ED-8F6BEB36446F}|\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.vcxproj|solutionrelative:\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28455EED-DA16-4421-8EA8-9A84358C4F74}|\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28455EED-DA16-4421-8EA8-9A84358C4F74}|\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.vcxproj|solutionrelative:\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28878D4B-237B-4043-8DF9-CBD2C2DA75A1}|\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{28878D4B-237B-4043-8DF9-CBD2C2DA75A1}|\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.vcxproj|solutionrelative:\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA1EC8A-2C36-4173-B0BD-4D9DA31A6061}|\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EAA1EC8A-2C36-4173-B0BD-4D9DA31A6061}|\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.vcxproj|solutionrelative:\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|solutionrelative:\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\SpeakerManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|solutionrelative:\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\SpeakerManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioRender.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|solutionrelative:\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioRender.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioCapture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15B7EC55-992E-4B1A-A327-960715565EE2}|\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.vcxproj|solutionrelative:\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioCapture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "\u4EE3\u7406\u6620\u5C04.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.cpp",
+              "RelativeDocumentMoniker": "\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.cpp",
+              "RelativeToolTip": "\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04\\\u4EE3\u7406\u6620\u5C04.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:49.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u67E5\u6CE8\u518C\u8868.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.cpp",
+              "RelativeDocumentMoniker": "\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.cpp",
+              "RelativeToolTip": "\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868\\\u67E5\u6CE8\u518C\u8868.cpp",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:41.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "\u5DEE\u5F02\u5C4F\u5E55.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.cpp",
+              "RelativeDocumentMoniker": "\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.cpp",
+              "RelativeToolTip": "\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55\\\u5DEE\u5F02\u5C4F\u5E55.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:38.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "\u8FDC\u7A0B\u7EC8\u7AEF.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.cpp",
+              "RelativeDocumentMoniker": "\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.cpp",
+              "RelativeToolTip": "\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF\\\u8FDC\u7A0B\u7EC8\u7AEF.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:29.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShellCode_main.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\shellcode\\shellcode\\ShellCode_main.cpp",
+              "RelativeDocumentMoniker": "shellcode\\shellcode\\ShellCode_main.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\shellcode\\shellcode\\ShellCode_main.cpp",
+              "RelativeToolTip": "shellcode\\shellcode\\ShellCode_main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:27.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "\u8FDC\u7A0B\u4EA4\u8C08.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.cpp",
+              "RelativeDocumentMoniker": "\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.cpp",
+              "RelativeToolTip": "\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08\\\u8FDC\u7A0B\u4EA4\u8C08.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:22.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "\u7CFB\u7EDF\u7BA1\u7406.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.cpp",
+              "RelativeDocumentMoniker": "\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.cpp",
+              "RelativeToolTip": "\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406\\\u7CFB\u7EDF\u7BA1\u7406.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:19.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "\u9A71\u52A8\u63D2\u4EF6.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.cpp",
+              "RelativeDocumentMoniker": "\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.cpp",
+              "RelativeToolTip": "\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6\\\u9A71\u52A8\u63D2\u4EF6.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:07:14.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "\u9AD8\u901F\u5C4F\u5E55.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.cpp",
+              "RelativeDocumentMoniker": "\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.cpp",
+              "RelativeToolTip": "\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55\\\u9AD8\u901F\u5C4F\u5E55.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:05:54.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "\u64AD\u653E\u76D1\u542C.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.cpp",
+              "RelativeDocumentMoniker": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.cpp",
+              "RelativeToolTip": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:05:38.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SpeakerManager.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\SpeakerManager.cpp",
+              "RelativeDocumentMoniker": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\SpeakerManager.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\SpeakerManager.cpp",
+              "RelativeToolTip": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\SpeakerManager.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:05:36.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AudioRender.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioRender.cpp",
+              "RelativeDocumentMoniker": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioRender.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioRender.cpp",
+              "RelativeToolTip": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioRender.cpp",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:05:32.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AudioCapture.cpp",
+              "DocumentMoniker": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioCapture.cpp",
+              "RelativeDocumentMoniker": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioCapture.cpp",
+              "ToolTip": "D:\\System\\Visual Studio\\Quick\\\u4E3B\u63D2\u4EF6\\\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioCapture.cpp",
+              "RelativeToolTip": "\u64AD\u653E\u76D1\u542C\\\u64AD\u653E\u76D1\u542C\\AudioCapture.cpp",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T16:05:26.428Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

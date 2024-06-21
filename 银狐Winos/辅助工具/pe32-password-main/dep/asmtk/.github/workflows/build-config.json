@@ -1,0 +1,18 @@
+{
+  "valgrind_arguments": [
+    "--leak-check=full",
+    "--show-reachable=yes",
+    "--track-origins=yes"
+  ],
+
+  "tests": [
+    {
+      "cmd": ["asmtk_test_x86parser"],
+      "optional": true
+    },
+    {
+      "cmd": ["asmtk_test_x86handler"],
+      "optional": true
+    }
+  ]
+}
