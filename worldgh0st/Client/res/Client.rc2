@@ -1,0 +1,15 @@
+//
+// Client.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+//#include "C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro v18.5.0\Samples\Common\CodejockSample.rc"
+#include <XTToolkitPro.rc>
+#include "Styles\Office2007\Office2007.rc"
+/////////////////////////////////////////////////////////////////////////////

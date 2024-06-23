@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="gbk" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+    <title>Gaode Map</title>
+    <!--引入高德地图JSAPI-->
+    <script src="http://webapi.amap.com/maps?v=1.4.3&key=ee163a6fdd81ccb02394bea1de4f2e88"></script>
+    <!--引入UI组件库(1.0版本)-->
+    <script src="http://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <style type="text/css">
+        html, body, #container {width:100%;height:100%;overflow:hidden;margin:0;font-size:13px;}
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+    function getParam(paramName) {
+        paramValue = "", isFound = !1;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+            while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+        }
+        return paramValue == "" && (paramValue = null), paramValue
+    }
+    var lnglat = new AMap.LngLat(getParam("lng"),getParam("lat"));
+    var map = new AMap.Map('container', {
+        resizeEnable:true,
+        zoom:13,
+        center:lnglat
+    });
+    var mark = new AMap.Marker({
+        map:map,
+        position:lnglat
+    });
+    AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'], function(){
+        map.addControl(new AMap.ToolBar());
+        map.addControl(new AMap.Scale());
+        map.addControl(new AMap.OverView());
+    });
+    AMapUI.loadUI(['control/BasicControl'], function(BasicControl){
+        map.addControl(new BasicControl.LayerSwitcher());
+    });
+</script>

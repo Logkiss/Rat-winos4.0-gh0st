@@ -1,0 +1,1 @@
+upx.exe libcurl.dll -9

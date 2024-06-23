@@ -1,0 +1,153 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ZzhPass.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ZzhPass.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ZzhPass DIALOGEX 0, 0, 200, 177
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "公告验证器"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "监听端口",IDC_STATIC,16,10,32,8
+    EDITTEXT        IDC_EDIT1,59,8,47,12,ES_CENTER | ES_NUMBER
+    PUSHBUTTON      "开启服务",IDC_START,10,28,41,15
+    PUSHBUTTON      "退出程序",IDC_EXIT,71,28,42,14
+    CONTROL         "添加/用户",IDC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,30,50,10
+    EDITTEXT        IDC_USERNEMA,53,63,126,14,ES_AUTOHSCROLL
+    LTEXT           "用 户 名",IDC_STATIC,17,67,33,8
+    LTEXT           "登录密码",IDC_STATIC,17,83,33,8
+    LTEXT           "上线域名",IDC_STATIC,17,99,33,8
+    LTEXT           "远控端口",IDC_STATIC,2,2,8,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "生成次数",IDC_STATIC,17,133,33,8
+    EDITTEXT        IDC_PASSWORD,53,79,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DNS,53,97,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLIENPORT,3,0,6,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_BUILD,53,131,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加用户",IDC_BUTTON1,100,131,50,14
+    GROUPBOX        "端口监听",IDC_STATIC,2,0,179,46
+    LTEXT           "到期时间",IDC_STATIC,17,115,33,8
+    EDITTEXT        IDC_DATA,53,113,70,14,ES_AUTOHSCROLL
+    LTEXT           "格式：20120101",IDC_STATIC,125,115,57,8,WS_DISABLED
+    GROUPBOX        "用户信息",IDC_STATIC,3,53,182,116
+    LTEXT           "更新日期",IDC_STATIC,16,152,33,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_GENGX,53,149,106,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\xp.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ZzhPass.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

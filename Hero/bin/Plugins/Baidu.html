@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Baidu Map</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jRz6LX5MLZNeVbghVFWKn0kZiHnUrlCq"></script>
+    <style type="text/css">
+        html, body, #container {width:100%;height:100%;overflow:hidden;margin:0;font-size:13px;}
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+    function getParam(paramName) {
+        paramValue = "", isFound = !1;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+            while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+        }
+        return paramValue == "" && (paramValue = null), paramValue
+    }
+    var map = new BMap.Map("container");                         // 创建地图实例
+    var point = new BMap.Point(getParam("lng"),getParam("lat")); // 创建点坐标
+    map.centerAndZoom(point, 14);                                // 初始化地图，设置中心点坐标和地图级别
+    var mark = new BMap.Marker(point);                           // 创建标注
+    map.addOverlay(mark);                                        // 将标注添加到地图中
+    map.enableInertialDragging();                                // 启用地图惯性拖拽，默认禁用
+    map.enableContinuousZoom();                                  // 启用连续缩放效果，默认禁用
+    map.enableScrollWheelZoom();                                 // 启用滚轮放大缩小，默认禁用
+    map.enableKeyboard();                                        // 启用键盘操作，默认禁用
+    map.addControl(new BMap.NavigationControl({enableGeolocation:true}));     // 添加平移缩放控件
+    map.addControl(new BMap.MapTypeControl());                                // 添加地图类型控件
+    map.addControl(new BMap.PanoramaControl({offset:new BMap.Size(20, 40)})); // 添加全景控件
+    map.addControl(new BMap.ScaleControl({offset:new BMap.Size(0, 40)}));     // 添加带偏移量的比例尺
+    map.addControl(new BMap.OverviewMapControl());                            // 添加缩略地图控件
+</script>

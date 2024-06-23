@@ -1,0 +1,38 @@
+<!doctype html>  
+<html>  
+<head>  
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />  
+<title>Baidu Map</title>  
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eqI5HOpUOa8ZEo9F0ipAkGQa">  
+<!-- add baidu map api -->  
+</script>  
+</head>  
+<body>  
+<div id="container"   style="position: absolute;margin-top:0px; width: 629px; height: 387px; top: 0; border: 0px solid gray;                overflow:hidden;">	 
+</div>
+</body>  
+</html>  
+<script type="text/javascript">  
+var map = new BMap.Map("container");                    // new Map
+var point = new BMap.Point( ,); 
+map.centerAndZoom(point, 2);                           // show Map
+map.setZoom(14);   
+var mark = new BMap.Marker(point);
+map.addOverlay(mark);
+map.addEventListener("dbclick", function (e) 
+{
+alert(e.point.lng + + e.point.lat);
+}
+);
+map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+map.addControl(new BMap.MapTypeControl());
+map.enableScrollWheelZoom();
+map.enableKeyboard();
+map.addControl(new BMap.OverviewMapControl()); //为地图添加鹰眼控件
+map.addControl(new BMap.NavigationControl()); //为地图添加鱼骨（默认）
+map.addControl(new BMap.ScaleControl({ offset: new BMap.Size(5, 40) })); //添加一个带上偏移量的比例尺
+map.addControl(new BMap.PanoramaControl({offset:new BMap.Size(20, 40)})); //为地图添加全景
+map.addControl(new BMap.MapTypeControl());
+</script> 
+<html>

@@ -1,0 +1,7 @@
+; jpg.def : Declares the module parameters for the DLL.
+
+LIBRARY      "jpg"
+DESCRIPTION  'jpg Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

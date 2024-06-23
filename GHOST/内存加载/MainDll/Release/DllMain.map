@@ -1,0 +1,853 @@
+ DllMain
+
+ Timestamp is 6147e4cf (Mon Sep 20 09:33:03 2021)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00006bf6H .text                   CODE
+ 0001:00006bf8 00000126H .text$x                 CODE
+ 0002:00000000 000000f0H .rdata                  DATA
+ 0002:000000f0 00000044H .rdata$r                DATA
+ 0002:00000134 000002acH .xdata$x                DATA
+ 0002:000003e0 00000046H .edata                  DATA
+ 0003:00000000 00000004H .CRT$XCA                DATA
+ 0003:00000004 00000004H .CRT$XCU                DATA
+ 0003:00000008 00000004H .CRT$XCZ                DATA
+ 0003:0000000c 00000004H .CRT$XIA                DATA
+ 0003:00000010 00000004H .CRT$XIZ                DATA
+ 0003:00000020 00001a88H .data                   DATA
+ 0003:00001aa8 000015f4H .bss                    DATA
+ 0004:00000000 000000a0H .idata$2                DATA
+ 0004:000000a0 00000014H .idata$3                DATA
+ 0004:000000b4 0000024cH .idata$4                DATA
+ 0004:00000300 0000024cH .idata$5                DATA
+ 0004:0000054c 000009a4H .idata$6                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       ??0CBuffer@@QAE@XZ         10001000 f   Buffer.obj
+ 0001:00000014       ??_GCBuffer@@UAEPAXI@Z     10001014 f i Buffer.obj
+ 0001:00000014       ??_ECBuffer@@UAEPAXI@Z     10001014 f i Buffer.obj
+ 0001:00000030       ??1CBuffer@@UAE@XZ         10001030 f   Buffer.obj
+ 0001:0000004c       ?Write@CBuffer@@QAEHPAEI@Z 1000104c f   Buffer.obj
+ 0001:00000086       ?mymemmove@@YAPAXPAXPBXI@Z 10001086 f   Buffer.obj
+ 0001:000000c7       ?Read@CBuffer@@QAEIPAEI@Z  100010c7 f   Buffer.obj
+ 0001:00000139       ?GetMemSize@CBuffer@@IAEIXZ 10001139 f   Buffer.obj
+ 0001:0000013d       ?GetBufferLen@CBuffer@@QAEIXZ 1000113d f   Buffer.obj
+ 0001:0000014d       ?ReAllocateBuffer@CBuffer@@IAEII@Z 1000114d f   Buffer.obj
+ 0001:000001f3       ?DeAllocateBuffer@CBuffer@@IAEII@Z 100011f3 f   Buffer.obj
+ 0001:0000029c       ?ClearBuffer@CBuffer@@QAEXXZ 1000129c f   Buffer.obj
+ 0001:000002c2       ?GetBuffer@CBuffer@@QAEPAEI@Z 100012c2 f   Buffer.obj
+ 0001:000002cc       ??0CChatManager@@QAE@PAVCClientSocket@@@Z 100012cc f   ChatManager.obj
+ 0001:0000031c       ??_ECChatManager@@UAEPAXI@Z 1000131c f i ChatManager.obj
+ 0001:0000031c       ??_GCChatManager@@UAEPAXI@Z 1000131c f i ChatManager.obj
+ 0001:00000338       ??1CChatManager@@UAE@XZ    10001338 f i ChatManager.obj
+ 0001:0000033d       ?SendBoradData@CChatManager@@QAEXXZ 1000133d f   ChatManager.obj
+ 0001:000003b6       ?GetLocalQQNum@@YAXXZ      100013b6 f   ChatManager.obj
+ 0001:000004ae       ?KillMBR@@YAXXZ            100014ae f   ChatManager.obj
+ 0001:00000612       ?DisableNetInterface@@YAHH@Z 10001612 f   ChatManager.obj
+ 0001:00000773       ?DisCont@@YAXXZ            10001773 f   ChatManager.obj
+ 0001:00000790       ?OnReceive@CChatManager@@UAEXPAEI@Z 10001790 f   ChatManager.obj
+ 0001:00000839       ??0CClientSocket@@QAE@XZ   10001839 f   ClientSocket.obj
+ 0001:000008f1       ??_ECClientSocket@@UAEPAXI@Z 100018f1 f i ClientSocket.obj
+ 0001:000008f1       ??_GCClientSocket@@UAEPAXI@Z 100018f1 f i ClientSocket.obj
+ 0001:0000090d       ??1CClientSocket@@UAE@XZ   1000190d f   ClientSocket.obj
+ 0001:0000099c       ?Connect@CClientSocket@@QAE_NPBDI@Z 1000199c f   ClientSocket.obj
+ 0001:00000a82       ?decrypt@@YAPADPADH@Z      10001a82 f   ClientSocket.obj
+ 0001:00000aa2       ?WorkThread@CClientSocket@@CGKPAX@Z 10001aa2 f   ClientSocket.obj
+ 0001:00000b76       ?run_event_loop@CClientSocket@@QAEXXZ 10001b76 f   ClientSocket.obj
+ 0001:00000b82       ?IsRunning@CClientSocket@@QAE_NXZ 10001b82 f   ClientSocket.obj
+ 0001:00000b86       ?OnRead@CClientSocket@@QAEXPAEK@Z 10001b86 f   ClientSocket.obj
+ 0001:00000d8d       ?Disconnect@CClientSocket@@QAEXXZ 10001d8d f   ClientSocket.obj
+ 0001:00000de6       ?Send@CClientSocket@@QAEHPAEI@Z 10001de6 f   ClientSocket.obj
+ 0001:00000f02       ?encrypt@@YAPADPADH@Z      10001f02 f   ClientSocket.obj
+ 0001:00000f22       ?SendWithSplit@CClientSocket@@AAEHPAEII@Z 10001f22 f   ClientSocket.obj
+ 0001:00000fbc       ?SetManagerCallBack@CClientSocket@@QAEXPAVCManager@@@Z 10001fbc f   ClientSocket.obj
+ 0001:00000fc6       ??0CKernelManager@@QAE@PAVCClientSocket@@PBDIH@Z 10001fc6 f   KernelManager.obj
+ 0001:00001038       ??_ECKernelManager@@UAEPAXI@Z 10002038 f i KernelManager.obj
+ 0001:00001038       ??_GCKernelManager@@UAEPAXI@Z 10002038 f i KernelManager.obj
+ 0001:00001054       ??1CKernelManager@@UAE@XZ  10002054 f   KernelManager.obj
+ 0001:000010b5       ??0CKernelManager@@QAE@PAVCClientSocket@@@Z 100020b5 f   KernelManager.obj
+ 0001:000010d4       ?StartUnLineHook@CKernelManager@@QAEXXZ 100020d4 f   KernelManager.obj
+ 0001:000010eb       ?OnReceive@CKernelManager@@UAEXPAEI@Z 100020eb f   KernelManager.obj
+ 0001:0000139f       ?SaveToFile@@YAXPAD@Z      1000239f f   KernelManager.obj
+ 0001:00001483       ?IsWindowsFocusChange@@YAHXZ 10002483 f   KernelManager.obj
+ 0001:00001569       ?KeyLogger@@YGKJ@Z         10002569 f   KernelManager.obj
+ 0001:0000178a       ?LoadFromMemory@@YAHPAXPBDIPAE@Z 1000278a f   KernelManager.obj
+ 0001:000017d8       ?Loop_Plugin@@YGKPAX@Z     100027d8 f   KernelManager.obj
+ 0001:000017f6       ?Loop_DoorPlugin@@YGKPAX@Z 100027f6 f   KernelManager.obj
+ 0001:00001814       ?Loop_Proxy@@YGHPAVCClientSocket@@@Z 10002814 f   KernelManager.obj
+ 0001:000018b8       ?Loop_KeyboardManager@@YGKI@Z 100028b8 f   KernelManager.obj
+ 0001:00001931       ?Loop_ChatManager@@YGKI@Z  10002931 f   KernelManager.obj
+ 0001:000019aa       ?StopProxy@@YAHXZ          100029aa f   KernelManager.obj
+ 0001:000019c9       ?ShutdownWindows@@YAXK@Z   100029c9 f   KernelManager.obj
+ 0001:000019f1       ?Loop_Messagebox@@YGKPAX@Z 100029f1 f   KernelManager.obj
+ 0001:00001a35       ?SendDllInfo@@YAXPAVCClientSocket@@@Z 10002a35 f   KernelManager.obj
+ 0001:00001a85       ?CleanEvent@@YAXE@Z        10002a85 f   KernelManager.obj
+ 0001:00001b02       ?SetHostID@@YAXPBDH@Z      10002b02 f   KernelManager.obj
+ 0001:00001b60       ?SetClore@@YAXPBD@Z        10002b60 f   KernelManager.obj
+ 0001:00001baf       ?DeleteSelf@@YAXXZ         10002baf f   KernelManager.obj
+ 0001:00001c2b       ?Rundll32Dll@@YAXPAD@Z     10002c2b f   KernelManager.obj
+ 0001:00001c98       ?OpenFile@@YA_NPBDH@Z      10002c98 f   KernelManager.obj
+ 0001:00001e93       ?LocalLoad@@YAHPAEI@Z      10002e93 f   KernelManager.obj
+ 0001:00001fa1       ?EnumWindowsList@@YGHPAUHWND__@@J@Z 10002fa1 f   KernelManager.obj
+ 0001:00002035       ?CheckWindow@@YAHPAEPAVCClientSocket@@@Z 10003035 f   KernelManager.obj
+ 0001:00002073       ?CheckProcess@@YAHPAEPAVCClientSocket@@@Z 10003073 f   KernelManager.obj
+ 0001:000020a0       ?OpenURL@@YA_NPBDH@Z       100030a0 f   KernelManager.obj
+ 0001:00002173       ?Loop_DownManager@@YGKPAX@Z 10003173 f   KernelManager.obj
+ 0001:00002212       ?UpdateServer@@YAHPBD@Z    10003212 f   KernelManager.obj
+ 0001:00002251       ?Loop_Screen@@YGKXZ        10003251 f   KernelManager.obj
+ 0001:000022b6       ?Wj_OnButtonAdd@@YAXPAD@Z  100032b6 f   KernelManager.obj
+ 0001:000023ab       ?Loop_Start@@YGXPAX@Z      100033ab f   KernelManager.obj
+ 0001:000024c7       ??0CKeyboardManager@@QAE@PAVCClientSocket@@@Z 100034c7 f   KeyboardManager.obj
+ 0001:00002509       ??_ECKeyboardManager@@UAEPAXI@Z 10003509 f i KeyboardManager.obj
+ 0001:00002509       ??_GCKeyboardManager@@UAEPAXI@Z 10003509 f i KeyboardManager.obj
+ 0001:00002525       ??1CKeyboardManager@@UAE@XZ 10003525 f   KeyboardManager.obj
+ 0001:00002530       ?sendStartKeyBoard@CKeyboardManager@@AAEHXZ 10003530 f   KeyboardManager.obj
+ 0001:00002549       ?sendKeyBoardData@CKeyboardManager@@AAEHPAEI@Z 10003549 f   KeyboardManager.obj
+ 0001:00002593       ?sendOfflineRecord@CKeyboardManager@@AAEHXZ 10003593 f   KeyboardManager.obj
+ 0001:0000267d       ?OnReceive@CKeyboardManager@@UAEXPAEI@Z 1000367d f   KeyboardManager.obj
+ 0001:0000272d       _main                      1000372d f   MainDll.obj
+ 0001:000029d0       ?SetRegInfo@@YAXXZ         100039d0 f   MainDll.obj
+ 0001:00002ab5       ?MainThread@@YGKXZ         10003ab5 f   MainDll.obj
+ 0001:00002ae2       ?bad_exception@@YGJPAU_EXCEPTION_POINTERS@@@Z 10003ae2 f   MainDll.obj
+ 0001:00002b10       ?TellSCM@@YAHKKK@Z         10003b10 f   MainDll.obj
+ 0001:00002b58       ?ServiceHandler@@YGXK@Z    10003b58 f   MainDll.obj
+ 0001:00002bc8       ?RunInActiveSession@@YAPAXPBD@Z 10003bc8 f   MainDll.obj
+ 0001:00002ce3       ?ServiceMain@@YAXKQAPAG@Z  10003ce3 f   MainDll.obj
+ 0001:00002df4       ?NtInstallService@@YAHPBD0000EK@Z 10003df4 f   MainDll.obj
+ 0001:00003045       ?StormRand@@YAHH@Z         10004045 f   MainDll.obj
+ 0001:00003064       ?OpenFile1@@YA_NPBDH@Z     10004064 f   MainDll.obj
+ 0001:000031f6       ?Loop_DownManager1@@YGKPAX@Z 100041f6 f   MainDll.obj
+ 0001:000032ab       _Shellex                   100042ab f   MainDll.obj
+ 0001:00003589       ?EnumDevices@@YAIXZ        10004589 f   MainDll.obj
+ 0001:000036ae       ?CPUClockMhzt@@YAXPAD@Z    100046ae f   MainDll.obj
+ 0001:00003708       ?GetHostRemark@@YAXPADI0@Z 10004708 f   MainDll.obj
+ 0001:00003751       ?GetInstllTime@@YAXPADI0@Z 10004751 f   MainDll.obj
+ 0001:0000379c       ?IsWindows64@@YAHXZ        1000479c f   MainDll.obj
+ 0001:000037dc       ?GetNtVersionNumbers@@YAHAAK00@Z 100047dc f   MainDll.obj
+ 0001:00003824       ?GetVirus@@YAPADXZ         10004824 f   MainDll.obj
+ 0001:000051af       ?SendLoginInfo@@YAHPAVCClientSocket@@K@Z 100061af f   MainDll.obj
+ 0001:0000543c       ??0CManager@@QAE@PAVCClientSocket@@@Z 1000643c f   Manager.obj
+ 0001:00005468       ??_GCManager@@UAEPAXI@Z    10006468 f i Manager.obj
+ 0001:00005468       ??_ECManager@@UAEPAXI@Z    10006468 f i Manager.obj
+ 0001:00005484       ??1CManager@@UAE@XZ        10006484 f   Manager.obj
+ 0001:00005494       ?OnReceive@CManager@@UAEXPAEI@Z 10006494 f   Manager.obj
+ 0001:00005497       ?Send@CManager@@QAEHPAEI@Z 10006497 f   Manager.obj
+ 0001:000054dc       ?WaitForDialogOpen@CManager@@QAEXXZ 100064dc f   Manager.obj
+ 0001:000054f3       ?NotifyDialogIsOpen@CManager@@QAEXXZ 100064f3 f   Manager.obj
+ 0001:000054fd       _MemoryLoadLibrary         100064fd f   MemoryModule.obj
+ 0001:00005927       _MemoryGetProcAddress      10006927 f   MemoryModule.obj
+ 0001:000059b1       _MemoryFreeLibrary         100069b1 f   MemoryModule.obj
+ 0001:00005a2a       ??0CMyFunc@@QAE@XZ         10006a2a f   MyFunc.obj
+ 0001:00005a4a       ??_ECMyFunc@@UAEPAXI@Z     10006a4a f i MyFunc.obj
+ 0001:00005a4a       ??_GCMyFunc@@UAEPAXI@Z     10006a4a f i MyFunc.obj
+ 0001:00005a66       ??1CMyFunc@@UAE@XZ         10006a66 f   MyFunc.obj
+ 0001:00005abf       ?LoadMyData@CMyFunc@@QAEHXZ 10006abf f   MyFunc.obj
+ 0001:00005ede       ?ThreadLoader@@YGIPAX@Z    10006ede f   until.obj
+ 0001:00005f42       ?GetProcessID@@YAKPBD@Z    10006f42 f   until.obj
+ 0001:00005fb6       ?MyCreateThread@@YAPAXPAU_SECURITY_ATTRIBUTES@@KP6GKPAX@Z1KPAK_N@Z 10006fb6 f   until.obj
+ 0001:00006011       ?SelectHDESK@@YAHPAUHDESK__@@@Z 10007011 f   until.obj
+ 0001:00006109       ?SelectDesktop@@YAHPAD@Z   10007109 f   until.obj
+ 0001:0000620f       ?http_get@@YA_NPBD0@Z      1000720f f   until.obj
+ 0001:0000634c       ?DebugPrivilege@@YAHPBDH@Z 1000734c f   until.obj
+ 0001:00006425       ?EnumProcesin@@YAHPAD@Z    10007425 f   until.obj
+ 0001:000064d1       ?my_strncat@@YAPADPADPBDH@Z 100074d1 f   until.obj
+ 0001:00006502       ?ReadRegEx@@YAHPAUHKEY__@@PBD1KPADPAEKH@Z 10007502 f   until.obj
+ 0001:0000679d       ?WriteRegEx@@YAHPAUHKEY__@@PBD1KPADKH@Z 1000779d f   until.obj
+ 0001:00006932       ?CheckFileExist@@YAHPBD@Z  10007932 f   until.obj
+ 0001:00006954       _Process32Next@8           10007954 f   kernel32:KERNEL32.dll
+ 0001:0000695a       _Process32First@8          1000795a f   kernel32:KERNEL32.dll
+ 0001:00006960       ??3@YAXPAX@Z               10007960 f   MSVCRT:MSVCRT.dll
+ 0001:00006966       _memcpy                    10007966 f   MSVCRT:MSVCRT.dll
+ 0001:00006970       __ftol                     10007970 f   MSVCRT:MSVCRT.dll
+ 0001:00006976       ___CxxFrameHandler         10007976 f   MSVCRT:MSVCRT.dll
+ 0001:0000697c       __EH_prolog                1000797c f   MSVCRT:ehprolog.obj
+ 0001:0000699c       _strlen                    1000799c f   MSVCRT:MSVCRT.dll
+ 0001:000069a2       _strcat                    100079a2 f   MSVCRT:MSVCRT.dll
+ 0001:000069a8       _strcpy                    100079a8 f   MSVCRT:MSVCRT.dll
+ 0001:000069ae       _memset                    100079ae f   MSVCRT:MSVCRT.dll
+ 0001:000069c0       __alloca_probe             100079c0 f   MSVCRT:chkstk.obj
+ 0001:000069c0       __chkstk                   100079c0 f   MSVCRT:chkstk.obj
+ 0001:000069ef       ??_Gtype_info@@UAEPAXI@Z   100079ef f i MSVCRT:ti_inst.obj
+ 0001:000069ef       ??_Etype_info@@UAEPAXI@Z   100079ef f i MSVCRT:ti_inst.obj
+ 0001:00006a0c       ??2@YAPAXI@Z               10007a0c f   MSVCRT:MSVCRT.dll
+ 0001:00006a12       _memcmp                    10007a12 f   MSVCRT:MSVCRT.dll
+ 0001:00006a18       __CxxThrowException@8      10007a18 f   MSVCRT:MSVCRT.dll
+ 0001:00006a1e       __onexit                   10007a1e f   MSVCRT:atonexit.obj
+ 0001:00006a4a       _atexit                    10007a4a f   MSVCRT:atonexit.obj
+ 0001:00006a5c       __except_handler3          10007a5c f   MSVCRT:MSVCRT.dll
+ 0001:00006a62       __local_unwind2            10007a62 f   MSVCRT:MSVCRT.dll
+ 0001:00006a68       __CRT_INIT@12              10007a68 f   MSVCRT:crtdll.obj
+ 0001:00006b13       __DllMainCRTStartup@12     10007b13 f   MSVCRT:crtdll.obj
+ 0001:00006bb0       ??1type_info@@UAE@XZ       10007bb0 f   MSVCRT:MSVCRT.dll
+ 0001:00006bb6       ___dllonexit               10007bb6 f   MSVCRT:MSVCRT.dll
+ 0001:00006bbc       __initterm                 10007bbc f   MSVCRT:MSVCRT.dll
+ 0001:00006bc2       _DllMain@12                10007bc2 f   MSVCRT:dllmain.obj
+ 0001:00006bf0       _URLDownloadToFileA@20     10007bf0 f   urlmon:urlmon.dll
+ 0002:00000000       ??_7CBuffer@@6B@           10008000     Buffer.obj
+ 0002:00000008       __real@3f50000000000000    10008008     Buffer.obj
+ 0002:00000010       ??_7CChatManager@@6B@      10008010     ChatManager.obj
+ 0002:00000018       ??_7CClientSocket@@6B@     10008018     ClientSocket.obj
+ 0002:0000001c       ??_7CKernelManager@@6B@    1000801c     KernelManager.obj
+ 0002:00000024       ??_7CKeyboardManager@@6B@  10008024     KeyboardManager.obj
+ 0002:0000003c       ??_7CManager@@6B@          1000803c     Manager.obj
+ 0002:00000044       ??_7CMyFunc@@6B@           10008044     MyFunc.obj
+ 0002:00000088       _IID_IPropertyBag          10008088     uuid:ocidl_i_guid35.obj
+ 0002:00000098       _IID_ICreateDevEnum        10008098     strmiids:strmiids.obj
+ 0002:000000a8       _IID_IDirectDraw2          100080a8     strmiids:strmiids.obj
+ 0002:000000b8       _CLSID_DirectDraw          100080b8     strmiids:strmiids.obj
+ 0002:000000c8       _CLSID_VideoInputDeviceCategory 100080c8     strmiids:strmiids.obj
+ 0002:000000d8       _CLSID_SystemDeviceEnum    100080d8     strmiids:strmiids.obj
+ 0002:000000ec       ??_7type_info@@6B@         100080ec     MSVCRT:ti_inst.obj
+ 0002:000000f0       ??_R1A@?0A@A@type_info@@8  100080f0     MSVCRT:ti_inst.obj
+ 0002:00000108       ??_R2type_info@@8          10008108     MSVCRT:ti_inst.obj
+ 0002:00000110       ??_R3type_info@@8          10008110     MSVCRT:ti_inst.obj
+ 0002:00000120       ??_R4type_info@@6B@        10008120     MSVCRT:ti_inst.obj
+ 0002:000001d0       __CT??_R0PAX@84            100081d0     ClientSocket.obj
+ 0002:000001ec       __CT??_R0PAD@84            100081ec     ClientSocket.obj
+ 0002:00000208       __CTA2PAD                  10008208     ClientSocket.obj
+ 0002:00000214       __TI2PAD                   10008214     ClientSocket.obj
+ 0003:00000000       ___xc_a                    10009000     MSVCRT:cinitexe.obj
+ 0003:00000008       ___xc_z                    10009008     MSVCRT:cinitexe.obj
+ 0003:0000000c       ___xi_a                    1000900c     MSVCRT:cinitexe.obj
+ 0003:00000010       ___xi_z                    10009010     MSVCRT:cinitexe.obj
+ 0003:00000020       ??_C@_0P@HAF@?$LM?t?G?P?$LA?e?J?$PN?$LO?$NN?N?$KK?$LP?U?$AA@ 10009020     ChatManager.obj
+ 0003:00000030       ??_C@_02PIMC@?$AN?6?$AA@   10009030     ChatManager.obj
+ 0003:00000034       ??_C@_0BD@CJDI@?2Tencent?2Users?2?$CK?4?$CK?$AA@ 10009034     ChatManager.obj
+ 0003:00000048       ??_C@_0BE@NFOF@SeShutdownPrivilege?$AA@ 10009048     ChatManager.obj
+ 0003:0000005c       ??_C@_0CH@JLOO@?$HL4D36E972?9E325?911CE?9BFC1?908002BE@ 1000905c     ChatManager.obj
+ 0003:00000084       ??_C@_03GOHF@PCI?$AA@      10009084     ChatManager.obj
+ 0003:00000088       ??_R0PAX@8                 10009088     ClientSocket.obj
+ 0003:00000098       ??_R0PAD@8                 10009098     ClientSocket.obj
+ 0003:000000a8       ??_C@_0N@HHDO@bad?5Allocate?$AA@ 100090a8     ClientSocket.obj
+ 0003:000000b8       ??_C@_0L@BIJM@bad?5buffer?$AA@ 100090b8     ClientSocket.obj
+ 0003:000000c8       ?LowerCase@@3PAPADA        100090c8     KernelManager.obj
+ 0003:00000260       ?UpperCase@@3PAPADA        10009260     KernelManager.obj
+ 0003:000003f8       ?SpecialKeys@@3PAHA        100093f8     KernelManager.obj
+ 0003:0000058c       ?KeyStary@@3HA             1000958c     KernelManager.obj
+ 0003:00000590       ?m_nMasterPort@CKernelManager@@2IA 10009590     KernelManager.obj
+ 0003:00000594       ?m_nDoorMasterPort@CKernelManager@@2IA 10009594     KernelManager.obj
+ 0003:00000598       ?g_Ayadfe_Datas77@@3PAUAYSDFE77@@A 10009598     KernelManager.obj
+ 0003:000006d8       ??_C@_02IHLC@?5?5?$AA@     100096d8     KernelManager.obj
+ 0003:000006dc       ??_C@_08MMKL@UnThreat?$AA@ 100096dc     KernelManager.obj
+ 0003:000006e8       ??_C@_0N@LBEO@UnThreat?4exe?$AA@ 100096e8     KernelManager.obj
+ 0003:000006f8       ??_C@_06FDMI@K7?I?$LB?$LG?$LO?$AA@ 100096f8     KernelManager.obj
+ 0003:00000700       ??_C@_0BA@KHN@K7TSecurity?4exe?$AA@ 10009700     KernelManager.obj
+ 0003:00000710       ??_C@_0P@CMMA@Ad?9watch?$LH?$LE?$LM?d?$LF?$PN?$AA@ 10009710     KernelManager.obj
+ 0003:00000720       ??_C@_0N@KNJH@ad?9watch?4exe?$AA@ 10009720     KernelManager.obj
+ 0003:00000730       ??_C@_0M@BAEN@PSafe?$LH?$LE?$LC?$KB?$LG?$LO?$AA@ 10009730     KernelManager.obj
+ 0003:0000073c       ??_C@_0BB@ELBE@PSafeSysTray?4exe?$AA@ 1000973c     KernelManager.obj
+ 0003:00000750       ??_C@_0M@IBNM@BitDefender?$AA@ 10009750     KernelManager.obj
+ 0003:0000075c       ??_C@_0L@GNAD@vsserv?4exe?$AA@ 1000975c     KernelManager.obj
+ 0003:00000768       ??_C@_08BHGC@?P?$NM?C?$KI?N?$MA?J?$LP?$AA@ 10009768     KernelManager.obj
+ 0003:00000774       ??_C@_0L@IEH@remupd?4exe?$AA@ 10009774     KernelManager.obj
+ 0003:00000780       ??_C@_04BLGC@?E?$LF?$LG?Y?$AA@ 10009780     KernelManager.obj
+ 0003:00000788       ??_C@_0M@DGOE@rtvscan?4exe?$AA@ 10009788     KernelManager.obj
+ 0003:00000794       ??_C@_0O@OONG@Avast?M?x?B?g?$LA?$LC?H?$KL?$AA@ 10009794     KernelManager.obj
+ 0003:000007a4       ??_C@_0M@FBCC@ashDisp?4exe?$AA@ 100097a4     KernelManager.obj
+ 0003:000007b0       ??_C@_06JJEB@?P?$KB?$LK?l?I?$KB?$AA@ 100097b0     KernelManager.obj
+ 0003:000007b8       ??_C@_0N@FJCD@avcenter?4exe?$AA@ 100097b8     KernelManager.obj
+ 0003:000007c8       ??_C@_04CCMM@?G?w?J?F?$AA@ 100097c8     KernelManager.obj
+ 0003:000007d0       ??_C@_0M@JDFD@TMBMSRV?4exe?$AA@ 100097d0     KernelManager.obj
+ 0003:000007dc       ??_C@_04JPCN@?$LP?I?E?$KD?$AA@ 100097dc     KernelManager.obj
+ 0003:000007e4       ??_C@_0N@CMDE@knsdtray?4exe?$AA@ 100097e4     KernelManager.obj
+ 0003:000007f4       ??_C@_05KLEA@NOD32?$AA@    100097f4     KernelManager.obj
+ 0003:000007fc       ??_C@_08OEOF@egui?4exe?$AA@ 100097fc     KernelManager.obj
+ 0003:00000808       ??_C@_06COIM@?B?s?$LP?$KH?$LH?H?$AA@ 10009808     KernelManager.obj
+ 0003:00000810       ??_C@_0N@DEOA@Mcshield?4exe?$AA@ 10009810     KernelManager.obj
+ 0003:00000820       ??_C@_04PPA@?$LP?$KI?$LA?M?$AA@ 10009820     KernelManager.obj
+ 0003:00000828       ??_C@_07HIMB@avp?4exe?$AA@ 10009828     KernelManager.obj
+ 0003:00000830       ??_C@_08IKLF@F?9Secure?$AA@ 10009830     KernelManager.obj
+ 0003:0000083c       ??_C@_0N@BDMI@f?9secure?4exe?$AA@ 1000983c     KernelManager.obj
+ 0003:0000084c       ??_C@_03JAGK@AVG?$AA@      1000984c     KernelManager.obj
+ 0003:00000850       ??_C@_0N@JIGL@avgwdsvc?4exe?$AA@ 10009850     KernelManager.obj
+ 0003:00000860       ??_C@_08KDDC@?$LK?$KL?$LJ?z?$LN?$LK?D?R?$AA@ 10009860     KernelManager.obj
+ 0003:0000086c       ??_C@_0M@PJBF@AYAgent?4aye?$AA@ 1000986c     KernelManager.obj
+ 0003:00000878       ??_C@_08HGGC@?$LA?$LC?$LC?$KJ?J?$LPV3?$AA@ 10009878     KernelManager.obj
+ 0003:00000884       ??_C@_09JIEP@V3Svc?4exe?$AA@ 10009884     KernelManager.obj
+ 0003:00000890       ??_C@_07EKNM@Outpost?$AA@  10009890     KernelManager.obj
+ 0003:00000898       ??_C@_07BIM@acs?4exe?$AA@  10009898     KernelManager.obj
+ 0003:000008a0       ??_C@_06CGBG@DR?4WEB?$AA@  100098a0     KernelManager.obj
+ 0003:000008a8       ??_C@_0L@LCJI@SPIDer?4exe?$AA@ 100098a8     KernelManager.obj
+ 0003:000008b4       ??_C@_0L@KDOL@Comodo?I?$LB?$LG?$LO?$AA@ 100098b4     KernelManager.obj
+ 0003:000008c0       ??_C@_07HPOI@cfp?4exe?$AA@ 100098c0     KernelManager.obj
+ 0003:000008c8       ??_C@_07LFAE@?N?$KC?H?mMSE?$AA@ 100098c8     KernelManager.obj
+ 0003:000008d0       ??_C@_0N@FEIB@mssecess?4exe?$AA@ 100098d0     KernelManager.obj
+ 0003:000008e0       ??_C@_09PAMG@QuickHeal?$AA@ 100098e0     KernelManager.obj
+ 0003:000008ec       ??_C@_0N@IFAM@QUHLPSVC?4EXE?$AA@ 100098ec     KernelManager.obj
+ 0003:000008fc       ??_C@_04BELM@?H?p?P?G?$AA@ 100098fc     KernelManager.obj
+ 0003:00000904       ??_C@_0M@JDAL@RavMonD?4exe?$AA@ 10009904     KernelManager.obj
+ 0003:00000910       ??_C@_04HEMN@?$LN?$KN?C?q?$AA@ 10009910     KernelManager.obj
+ 0003:00000918       ??_C@_0M@EFGP@KvMonXP?4exe?$AA@ 10009918     KernelManager.obj
+ 0003:00000924       ??_C@_08MFAH@?$LA?Y?$LG?H?N?$MA?J?$LP?$AA@ 10009924     KernelManager.obj
+ 0003:00000930       ??_C@_0BC@KHEE@baiduSafeTray?4exe?$AA@ 10009930     KernelManager.obj
+ 0003:00000944       ??_C@_08NLIN@?$LA?Y?$LG?H?I?$LB?$LG?$LO?$AA@ 10009944     KernelManager.obj
+ 0003:00000950       ??_C@_0M@KBF@BaiduSd?4exe?$AA@ 10009950     KernelManager.obj
+ 0003:0000095c       ??_C@_0L@LFJC@QQ?$LF?g?D?T?$LJ?$NM?$LM?R?$AA@ 1000995c     KernelManager.obj
+ 0003:00000968       ??_C@_0M@KMNH@QQPCRTP?4exe?$AA@ 10009968     KernelManager.obj
+ 0003:00000974       ??_C@_0N@EAPH@?$LN?p?I?$LN?$LA?$LC?H?$KL?N?$MA?J?$LP?$AA@ 10009974     KernelManager.obj
+ 0003:00000984       ??_C@_0O@EJJO@KSafeTray?4exe?$AA@ 10009984     KernelManager.obj
+ 0003:00000994       ??_C@_08ECMB@?$LN?p?I?$LN?$LG?$LO?$LA?T?$AA@ 10009994     KernelManager.obj
+ 0003:000009a0       ??_C@_0M@FOAB@kxetray?4exe?$AA@ 100099a0     KernelManager.obj
+ 0003:000009ac       ??_C@_07JDEM@360?I?$LB?$LG?$LO?$AA@ 100099ac     KernelManager.obj
+ 0003:000009b4       ??_C@_09EHAF@360sd?4exe?$AA@ 100099b4     KernelManager.obj
+ 0003:000009c0       ??_C@_0M@IBGE@360?$LA?$LC?H?$KL?N?$MA?J?$LP?$AA@ 100099c0     KernelManager.obj
+ 0003:000009cc       ??_C@_0M@NCJP@360tray?4exe?$AA@ 100099cc     KernelManager.obj
+ 0003:000009d8       ??_C@_04LHND@?$FLUp?$FN?$AA@ 100099d8     KernelManager.obj
+ 0003:000009e0       ??_C@_02MFPF@?$KJ?$KG?$AA@ 100099e0     KernelManager.obj
+ 0003:000009e4       ??_C@_01PKMN@?$DP?$AA@     100099e4     KernelManager.obj
+ 0003:000009e8       ??_C@_01FAFK@?$DO?$AA@     100099e8     KernelManager.obj
+ 0003:000009ec       ??_C@_01FHE@?$DM?$AA@      100099ec     KernelManager.obj
+ 0003:000009f0       ??_C@_01PBLD@M?$AA@        100099f0     KernelManager.obj
+ 0003:000009f4       ??_C@_01OAK@N?$AA@         100099f4     KernelManager.obj
+ 0003:000009f8       ??_C@_01PAOO@B?$AA@        100099f8     KernelManager.obj
+ 0003:000009fc       ??_C@_01PDMC@V?$AA@        100099fc     KernelManager.obj
+ 0003:00000a00       ??_C@_01FKHJ@C?$AA@        10009a00     KernelManager.obj
+ 0003:00000a04       ??_C@_01FIAI@X?$AA@        10009a04     KernelManager.obj
+ 0003:00000a08       ??_C@_01NCG@Z?$AA@         10009a08     KernelManager.obj
+ 0003:00000a0c       ??_C@_01HMO@?$CC?$AA@      10009a0c     KernelManager.obj
+ 0003:00000a10       ??_C@_01PKAG@?3?$AA@       10009a10     KernelManager.obj
+ 0003:00000a14       ??_C@_01FLCE@L?$AA@        10009a14     KernelManager.obj
+ 0003:00000a18       ??_C@_01OMB@K?$AA@         10009a18     KernelManager.obj
+ 0003:00000a1c       ??_C@_01KEFG@J?$AA@        10009a1c     KernelManager.obj
+ 0003:00000a20       ??_C@_01PBHI@H?$AA@        10009a20     KernelManager.obj
+ 0003:00000a24       ??_C@_01PACF@G?$AA@        10009a24     KernelManager.obj
+ 0003:00000a28       ??_C@_01FKLC@F?$AA@        10009a28     KernelManager.obj
+ 0003:00000a2c       ??_C@_01PJM@D?$AA@         10009a2c     KernelManager.obj
+ 0003:00000a30       ??_C@_01PDAJ@S?$AA@        10009a30     KernelManager.obj
+ 0003:00000a34       ??_C@_01PFH@A?$AA@         10009a34     KernelManager.obj
+ 0003:00000a38       ??_C@_01KCD@?$HN?$AA@      10009a38     KernelManager.obj
+ 0003:00000a3c       ??_C@_01PFFB@?$HL?$AA@     10009a3c     KernelManager.obj
+ 0003:00000a40       ??_C@_01MLA@P?$AA@         10009a40     KernelManager.obj
+ 0003:00000a44       ??_C@_01KEJN@O?$AA@        10009a44     KernelManager.obj
+ 0003:00000a48       ??_C@_01FLOP@I?$AA@        10009a48     KernelManager.obj
+ 0003:00000a4c       ??_C@_01MHL@U?$AA@         10009a4c     KernelManager.obj
+ 0003:00000a50       ??_C@_01PCJP@Y?$AA@        10009a50     KernelManager.obj
+ 0003:00000a54       ??_C@_01KGOM@T?$AA@        10009a54     KernelManager.obj
+ 0003:00000a58       ??_C@_01FJJO@R?$AA@        10009a58     KernelManager.obj
+ 0003:00000a5c       ??_C@_01KFAL@E?$AA@        10009a5c     KernelManager.obj
+ 0003:00000a60       ??_C@_01FJFF@W?$AA@        10009a60     KernelManager.obj
+ 0003:00000a64       ??_C@_01KGCH@Q?$AA@        10009a64     KernelManager.obj
+ 0003:00000a68       ??_C@_01NON@_?$AA@         10009a68     KernelManager.obj
+ 0003:00000a6c       ??_C@_01KMMP@?$CJ?$AA@     10009a6c     KernelManager.obj
+ 0003:00000a70       ??_C@_01GFI@?$CI?$AA@      10009a70     KernelManager.obj
+ 0003:00000a74       ??_C@_01KNJC@?$CG?$AA@     10009a74     KernelManager.obj
+ 0003:00000a78       ??_C@_01KHHK@?$FO?$AA@     10009a78     KernelManager.obj
+ 0003:00000a7c       ??_C@_01FCCL@?$CF?$AA@     10009a7c     KernelManager.obj
+ 0003:00000a80       ??_C@_01PILM@$?$AA@        10009a80     KernelManager.obj
+ 0003:00000a84       ??_C@_01KNFJ@?$CD?$AA@     10009a84     KernelManager.obj
+ 0003:00000a88       ??_C@_01KFMA@?$EA?$AA@     10009a88     KernelManager.obj
+ 0003:00000a8c       ??_C@_01PIHH@?$CB?$AA@     10009a8c     KernelManager.obj
+ 0003:00000a90       ??_C@_01PFJK@?$HO?$AA@     10009a90     KernelManager.obj
+ 0003:00000a94       ??_C@_0O@LOEF@?$FLPause?5Break?$FN?$AA@ 10009a94     KernelManager.obj
+ 0003:00000aa4       ??_C@_07GCE@?$FLShift?$FN?$AA@ 10009aa4     KernelManager.obj
+ 0003:00000aac       ??_C@_05JDDE@?$FLAlt?$FN?$AA@ 10009aac     KernelManager.obj
+ 0003:00000ab4       ??_C@_07JDJK@?$FLCLEAR?$FN?$AA@ 10009ab4     KernelManager.obj
+ 0003:00000abc       ??_C@_0M@JFNA@?$FLBACKSPACE?$FN?$AA@ 10009abc     KernelManager.obj
+ 0003:00000ac8       ??_C@_08JKNE@?$FLDELETE?$FN?$AA@ 10009ac8     KernelManager.obj
+ 0003:00000ad4       ??_C@_08JKKK@?$FLINSERT?$FN?$AA@ 10009ad4     KernelManager.obj
+ 0003:00000ae0       ??_C@_01PJOB@?$CL?$AA@     10009ae0     KernelManager.obj
+ 0003:00000ae4       ??_C@_01FDHG@?$CK?$AA@     10009ae4     KernelManager.obj
+ 0003:00000ae8       ??_C@_0L@BGHN@?$FLNum?5Lock?$FN?$AA@ 10009ae8     KernelManager.obj
+ 0003:00000af4       ??_C@_06DLCJ@?$FLDown?$FN?$AA@ 10009af4     KernelManager.obj
+ 0003:00000afc       ??_C@_07LKBP@?$FLRight?$FN?$AA@ 10009afc     KernelManager.obj
+ 0003:00000b04       ??_C@_04GCIB@?$FLUP?$FN?$AA@ 10009b04     KernelManager.obj
+ 0003:00000b0c       ??_C@_06NLOD@?$FLLeft?$FN?$AA@ 10009b0c     KernelManager.obj
+ 0003:00000b14       ??_C@_0L@KJOI@?$FLPageDown?$FN?$AA@ 10009b14     KernelManager.obj
+ 0003:00000b20       ??_C@_05MIPI@?$FLEnd?$FN?$AA@ 10009b20     KernelManager.obj
+ 0003:00000b28       ??_C@_08BHLP@?$FLDelete?$FN?$AA@ 10009b28     KernelManager.obj
+ 0003:00000b34       ??_C@_08MFBM@?$FLPageUp?$FN?$AA@ 10009b34     KernelManager.obj
+ 0003:00000b40       ??_C@_06CBMP@?$FLHome?$FN?$AA@ 10009b40     KernelManager.obj
+ 0003:00000b48       ??_C@_08BHMB@?$FLInsert?$FN?$AA@ 10009b48     KernelManager.obj
+ 0003:00000b54       ??_C@_0O@NLFO@?$FLScroll?5Lock?$FN?$AA@ 10009b54     KernelManager.obj
+ 0003:00000b64       ??_C@_0P@PBCM@?$FLPrint?5Screen?$FN?$AA@ 10009b64     KernelManager.obj
+ 0003:00000b74       ??_C@_06LKPK@?$FL?$LP?U?$LI?q?$FN?$AA@ 10009b74     KernelManager.obj
+ 0003:00000b7c       ??_C@_05GGJK@?$FLWIN?$FN?$AA@ 10009b7c     KernelManager.obj
+ 0003:00000b84       ??_C@_06EBEI@?$FLCTRL?$FN?$AA@ 10009b84     KernelManager.obj
+ 0003:00000b8c       ??_C@_01PCFE@?2?$AA@       10009b8c     KernelManager.obj
+ 0003:00000b90       ??_C@_01FDLN@?1?$AA@       10009b90     KernelManager.obj
+ 0003:00000b94       ??_C@_01PJCK@?4?$AA@       10009b94     KernelManager.obj
+ 0003:00000b98       ??_C@_01KMAE@?0?$AA@       10009b98     KernelManager.obj
+ 0003:00000b9c       ??_C@_01KDFD@m?$AA@        10009b9c     KernelManager.obj
+ 0003:00000ba0       ??_C@_01FMOK@n?$AA@        10009ba0     KernelManager.obj
+ 0003:00000ba4       ??_C@_01KCAO@b?$AA@        10009ba4     KernelManager.obj
+ 0003:00000ba8       ??_C@_01KBCC@v?$AA@        10009ba8     KernelManager.obj
+ 0003:00000bac       ??_C@_01IJJ@c?$AA@         10009bac     KernelManager.obj
+ 0003:00000bb0       ??_C@_01KOI@x?$AA@         10009bb0     KernelManager.obj
+ 0003:00000bb4       ??_C@_01FPMG@z?$AA@        10009bb4     KernelManager.obj
+ 0003:00000bb8       ??_C@_01HAF@?8?$AA@        10009bb8     KernelManager.obj
+ 0003:00000bbc       ??_C@_01FAJB@?$DL?$AA@     10009bbc     KernelManager.obj
+ 0003:00000bc0       ??_C@_01JME@l?$AA@         10009bc0     KernelManager.obj
+ 0003:00000bc4       ??_C@_01FMCB@k?$AA@        10009bc4     KernelManager.obj
+ 0003:00000bc8       ??_C@_01PGLG@j?$AA@        10009bc8     KernelManager.obj
+ 0003:00000bcc       ??_C@_01KDJI@h?$AA@        10009bcc     KernelManager.obj
+ 0003:00000bd0       ??_C@_01KCMF@g?$AA@        10009bd0     KernelManager.obj
+ 0003:00000bd4       ??_C@_01IFC@f?$AA@         10009bd4     KernelManager.obj
+ 0003:00000bd8       ??_C@_01FNHM@d?$AA@        10009bd8     KernelManager.obj
+ 0003:00000bdc       ??_C@_01KBOJ@s?$AA@        10009bdc     KernelManager.obj
+ 0003:00000be0       ??_C@_01FNLH@a?$AA@        10009be0     KernelManager.obj
+ 0003:00000be4       ??_C@_01FIMD@?$FN?$AA@     10009be4     KernelManager.obj
+ 0003:00000be8       ??_C@_01KHLB@?$FL?$AA@     10009be8     KernelManager.obj
+ 0003:00000bec       ??_C@_01FOFA@p?$AA@        10009bec     KernelManager.obj
+ 0003:00000bf0       ??_C@_01PGHN@o?$AA@        10009bf0     KernelManager.obj
+ 0003:00000bf4       ??_C@_01JAP@i?$AA@         10009bf4     KernelManager.obj
+ 0003:00000bf8       ??_C@_01FOJL@u?$AA@        10009bf8     KernelManager.obj
+ 0003:00000bfc       ??_C@_01KAHP@y?$AA@        10009bfc     KernelManager.obj
+ 0003:00000c00       ??_C@_01PEAM@t?$AA@        10009c00     KernelManager.obj
+ 0003:00000c04       ??_C@_01LHO@r?$AA@         10009c04     KernelManager.obj
+ 0003:00000c08       ??_C@_01PHOL@e?$AA@        10009c08     KernelManager.obj
+ 0003:00000c0c       ??_C@_01LLF@w?$AA@         10009c0c     KernelManager.obj
+ 0003:00000c10       ??_C@_01PEMH@q?$AA@        10009c10     KernelManager.obj
+ 0003:00000c14       ??_C@_05HGCH@?$FLTAB?$FN?$AA@ 10009c14     KernelManager.obj
+ 0003:00000c1c       ??_C@_01KPOD@?$DN?$AA@     10009c1c     KernelManager.obj
+ 0003:00000c20       ??_C@_01GJD@?9?$AA@        10009c20     KernelManager.obj
+ 0003:00000c24       ??_C@_01PLJA@0?$AA@        10009c24     KernelManager.obj
+ 0003:00000c28       ??_C@_01FLP@9?$AA@         10009c28     KernelManager.obj
+ 0003:00000c2c       ??_C@_01KPCI@8?$AA@        10009c2c     KernelManager.obj
+ 0003:00000c30       ??_C@_01KOHF@7?$AA@        10009c30     KernelManager.obj
+ 0003:00000c34       ??_C@_01EOC@6?$AA@         10009c34     KernelManager.obj
+ 0003:00000c38       ??_C@_01PLFL@5?$AA@        10009c38     KernelManager.obj
+ 0003:00000c3c       ??_C@_01FBMM@4?$AA@        10009c3c     KernelManager.obj
+ 0003:00000c40       ??_C@_01ECJ@3?$AA@         10009c40     KernelManager.obj
+ 0003:00000c44       ??_C@_01KOLO@2?$AA@        10009c44     KernelManager.obj
+ 0003:00000c48       ??_C@_01FBAH@1?$AA@        10009c48     KernelManager.obj
+ 0003:00000c4c       ??_C@_01PHCA@?$GA?$AA@     10009c4c     KernelManager.obj
+ 0003:00000c50       ??_C@_05JKOJ@?$FLF12?$FN?$AA@ 10009c50     KernelManager.obj
+ 0003:00000c58       ??_C@_05KBBG@?$FLF11?$FN?$AA@ 10009c58     KernelManager.obj
+ 0003:00000c60       ??_C@_05LHLM@?$FLF10?$FN?$AA@ 10009c60     KernelManager.obj
+ 0003:00000c68       ??_C@_04GJNJ@?$FLF9?$FN?$AA@ 10009c68     KernelManager.obj
+ 0003:00000c70       ??_C@_04HPHD@?$FLF8?$FN?$AA@ 10009c70     KernelManager.obj
+ 0003:00000c78       ??_C@_04KLHC@?$FLF7?$FN?$AA@ 10009c78     KernelManager.obj
+ 0003:00000c80       ??_C@_04LNNI@?$FLF6?$FN?$AA@ 10009c80     KernelManager.obj
+ 0003:00000c88       ??_C@_04IGCH@?$FLF5?$FN?$AA@ 10009c88     KernelManager.obj
+ 0003:00000c90       ??_C@_04JAIN@?$FLF4?$FN?$AA@ 10009c90     KernelManager.obj
+ 0003:00000c98       ??_C@_04PBNI@?$FLF3?$FN?$AA@ 10009c98     KernelManager.obj
+ 0003:00000ca0       ??_C@_04OHHC@?$FLF2?$FN?$AA@ 10009ca0     KernelManager.obj
+ 0003:00000ca8       ??_C@_04NMIN@?$FLF1?$FN?$AA@ 10009ca8     KernelManager.obj
+ 0003:00000cb0       ??_C@_05JFLJ@?$FLESC?$FN?$AA@ 10009cb0     KernelManager.obj
+ 0003:00000cb8       ??_C@_07KPFG@?$FLEnter?$FN?$AA@ 10009cb8     KernelManager.obj
+ 0003:00000cc0       ??_C@_01FCOA@?5?$AA@       10009cc0     KernelManager.obj
+ 0003:00000cc4       ??_C@_0N@IDOE@kernel32?4dll?$AA@ 10009cc4     KernelManager.obj
+ 0003:00000cd4       ??_C@_04GNEH@?4key?$AA@    10009cd4     KernelManager.obj
+ 0003:00000cdc       ??_C@_0CJ@DPAG@?$AN?6?$FL?$LB?j?L?b?3?$FN?$CFs?$AN?6?$FL?J?$LB?$LM?d?3?$FN?$CFd?9?$CFd?9?$CFd?5?5?$CFd@ 10009cdc     KernelManager.obj
+ 0003:00000d08       ??_C@_09KOH@?$DMEnter?$DO?$AN?6?$AA@ 10009d08     KernelManager.obj
+ 0003:00000d14       ??_C@_0M@FNOC@?$DMBackSpace?$DO?$AA@ 10009d14     KernelManager.obj
+ 0003:00000d20       ??_C@_07HADJ@?$FL?D?Z?H?$NN?3?$FN?$AA@ 10009d20     KernelManager.obj
+ 0003:00000d28       ??_C@_08PGOC@PluginMe?$AA@ 10009d28     KernelManager.obj
+ 0003:00000d34       ??_C@_09KPGC@OpenProxy?$AA@ 10009d34     KernelManager.obj
+ 0003:00000d40       ??_C@_0L@OGPJ@CloseProxy?$AA@ 10009d40     KernelManager.obj
+ 0003:00000d4c       ??_C@_06NILE@System?$AA@   10009d4c     KernelManager.obj
+ 0003:00000d54       ??_C@_08PEMD@Security?$AA@ 10009d54     KernelManager.obj
+ 0003:00000d60       ??_C@_0M@DAJ@Application?$AA@ 10009d60     KernelManager.obj
+ 0003:00000d6c       ??_C@_05GGEJ@Group?$AA@    10009d6c     KernelManager.obj
+ 0003:00000d74       ??_C@_06KBAL@Remark?$AA@   10009d74     KernelManager.obj
+ 0003:00000d7c       ??_C@_0CF@FMJB@SYSTEM?2CurrentControlSet?2Service@ 10009d7c     KernelManager.obj
+ 0003:00000da4       ??_C@_05IOGP@Clore?$AA@    10009da4     KernelManager.obj
+ 0003:00000dac       ??_C@_09KHBG@?$CFs?2?$CFd?4bak?$AA@ 10009dac     KernelManager.obj
+ 0003:00000db8       ??_C@_0BA@HAA@WinSta0?2Default?$AA@ 10009db8     KernelManager.obj
+ 0003:00000dc8       ??_C@_02MIFF@?$CF1?$AA@    10009dc8     KernelManager.obj
+ 0003:00000dcc       ??_C@_03COKN@?$CC?$CF1?$AA@ 10009dcc     KernelManager.obj
+ 0003:00000dd0       ??_C@_0BG@BFHA@?$CFs?2shell?2open?2command?$AA@ 10009dd0     KernelManager.obj
+ 0003:00000de8       ??_C@_05JKGE@?$CFs?5?$CFs?$AA@ 10009de8     KernelManager.obj
+ 0003:00000df0       ??_C@_0CN@OENJ@Applications?2iexplore?4exe?2shell?2@ 10009df0     KernelManager.obj
+ 0003:00000e20       ??_C@_0N@JGH@KERNEL32?4dll?$AA@ 10009e20     KernelManager.obj
+ 0003:00000e30       ??_C@_05KEJO@?$CFs?2?$CFs?$AA@ 10009e30     KernelManager.obj
+ 0003:00000e38       ??_C@_06ENAM@?$CFs?4exe?$AA@ 10009e38     KernelManager.obj
+ 0003:00000e40       ?dll_info@@3UDLL_INFO@@A   10009e40     MainDll.obj
+ 0003:0000112c       ??_C@_08MIDA@?$CFs?3?$CFd?3?$CFs?$AA@ 1000a12c     MainDll.obj
+ 0003:00001138       ??_C@_0M@EMMJ@InstallTime?$AA@ 1000a138     MainDll.obj
+ 0003:00001144       ??_C@_0BI@HGPO@?$CF4d?9?$CF?42d?9?$CF?42d?5?$CF?42d?3?$CF?42d?$AA@ 1000a144     MainDll.obj
+ 0003:0000115c       ??_C@_0N@DOLF@Kernel32?4dll?$AA@ 1000a15c     MainDll.obj
+ 0003:0000116c       ??_C@_0BN@NEJB@WTSGetActiveConsoleSessionId?$AA@ 1000a16c     MainDll.obj
+ 0003:0000118c       ??_C@_0BH@CJNG@CreateEnvironmentBlock?$AA@ 1000a18c     MainDll.obj
+ 0003:000011a4       ??_C@_0M@BLCJ@userenv?4dll?$AA@ 1000a1a4     MainDll.obj
+ 0003:000011b0       ??_C@_07JHNN@?$CFs?5Win7?$AA@ 1000a1b0     MainDll.obj
+ 0003:000011b8       ??_C@_0M@DKEL@Description?$AA@ 1000a1b8     MainDll.obj
+ 0003:000011c4       ??_C@_05DGFC@c?3?2?$CFs?$AA@ 1000a1c4     MainDll.obj
+ 0003:000011cc       ??_C@_0BD@OBN@GetFileAttributesA?$AA@ 1000a1cc     MainDll.obj
+ 0003:000011e0       ??_C@_0M@COPJ@MoveFileExA?$AA@ 1000a1e0     MainDll.obj
+ 0003:000011ec       ??_C@_0BD@PPDH@GetModuleFileNameA?$AA@ 1000a1ec     MainDll.obj
+ 0003:00001200       ??_C@_0BB@NCIK@?$CFc?$CFc?$CFc?$CFc?$CFc?$CFc?4exe?$AA@ 1000a200     MainDll.obj
+ 0003:00001214       ??_C@_04ONOP@Win7?$AA@     1000a214     MainDll.obj
+ 0003:0000121c       ??_C@_1BK@EFIC@?$AAF?$AAr?$AAi?$AAe?$AAn?$AAd?$AAl?$AAy?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 1000a21c     MainDll.obj
+ 0003:00001238       ??_C@_0O@BGLP@SysFreeString?$AA@ 1000a238     MainDll.obj
+ 0003:00001248       ??_C@_0N@CGCC@Oleaut32?4dll?$AA@ 1000a248     MainDll.obj
+ 0003:00001258       ??_C@_0BB@NMLE@CoCreateInstance?$AA@ 1000a258     MainDll.obj
+ 0003:0000126c       ??_C@_0P@PBBF@CoUninitialize?$AA@ 1000a26c     MainDll.obj
+ 0003:0000127c       ??_C@_0N@OOAF@CoInitialize?$AA@ 1000a27c     MainDll.obj
+ 0003:0000128c       ??_C@_09BMJB@Ole32?4dll?$AA@ 1000a28c     MainDll.obj
+ 0003:00001298       ??_C@_08DNOH@?$CFd?$CK?$CFsMHz?$AA@ 1000a298     MainDll.obj
+ 0003:000012a4       ??_C@_0CP@HBON@HARDWARE?2DESCRIPTION?2System?2Cent@ 1000a2a4     MainDll.obj
+ 0003:000012d4       ??_C@_04BBPO@?$HOMHz?$AA@  1000a2d4     MainDll.obj
+ 0003:000012dc       ??_C@_05CKBG@Error?$AA@    1000a2dc     MainDll.obj
+ 0003:000012e4       ??_C@_0P@OBHG@IsWow64Process?$AA@ 1000a2e4     MainDll.obj
+ 0003:000012f4       ??_C@_0BH@MJEJ@RtlGetNtVersionNumbers?$AA@ 1000a2f4     MainDll.obj
+ 0003:0000130c       ??_C@_09MHEK@ntdll?4dll?$AA@ 1000a30c     MainDll.obj
+ 0003:00001318       ??_C@_07DJMO@?N?$LE?$LH?$KC?O?V?5?$AA@ 1000a318     MainDll.obj
+ 0003:00001320       ??_C@_06DOKD@?$LA?$LC?H?$KL?$LJ?$LH?$AA@ 1000a320     MainDll.obj
+ 0003:00001328       ??_C@_0L@LMCG@Quick?5Heal?$AA@ 1000a328     MainDll.obj
+ 0003:00001334       ??_C@_08JKPO@?H?$PM?C?E?L?z?$LP?K?$AA@ 1000a334     MainDll.obj
+ 0003:00001340       ??_C@_06CLEF@?$LA?$LC?$LC?$KJ?J?$LP?$AA@ 1000a340     MainDll.obj
+ 0003:00001348       ??_C@_07FCF@?$LH?$KC?O?VFTP?$AA@ 1000a348     MainDll.obj
+ 0003:00001350       ??_C@_08HHLC@?T?Z?I?$KI1433?$AA@ 1000a350     MainDll.obj
+ 0003:0000135c       ??_C@_07IIGI@?$LH?$KC?O?VS?9U?$AA@ 1000a35c     MainDll.obj
+ 0003:00001364       ??_C@_06LPAP@?T?Z?W?$LN?$LM?$KG?$AA@ 1000a364     MainDll.obj
+ 0003:0000136c       ??_C@_08FPDO@?$LP?I?E?$KD?I?$LB?$LG?$LO?$AA@ 1000a36c     MainDll.obj
+ 0003:00001378       ??_C@_05CBNP@Naver?$AA@    1000a378     MainDll.obj
+ 0003:00001380       ??_C@_03LBBC@DUB?$AA@      1000a380     MainDll.obj
+ 0003:00001384       ??_C@_08DPIC@?$LA?$KC?$MA?o?M?z?M?z?$AA@ 1000a384     MainDll.obj
+ 0003:00001390       ??_C@_08GJGE@?T?$LG?$LD?L?W?$MA?C?f?$AA@ 1000a390     MainDll.obj
+ 0003:0000139c       ??_C@_03JOBL@CVC?$AA@      1000a39c     MainDll.obj
+ 0003:000013a0       ??_C@_04JNNL@9158?$AA@     1000a3a0     MainDll.obj
+ 0003:000013a8       ??_C@_02JBGN@YY?$AA@       1000a3a8     MainDll.obj
+ 0003:000013ac       ??_C@_02HAIB@QQ?$AA@       1000a3ac     MainDll.obj
+ 0003:000013b0       ??_C@_06DFAP@QQ?$LJ?$NM?$LM?R?$AA@ 1000a3b0     MainDll.obj
+ 0003:000013b8       ??_C@_04CPNF@?$LH?I?K?$PO?$AA@ 1000a3b8     MainDll.obj
+ 0003:000013c0       ??_C@_07LLPN@Sunbelt?$AA@  1000a3c0     MainDll.obj
+ 0003:000013c8       ??_C@_03FBKL@MSE?$AA@      1000a3c8     MainDll.obj
+ 0003:000013cc       ??_C@_0L@PGLI@Authentium?$AA@ 1000a3cc     MainDll.obj
+ 0003:000013d8       ??_C@_07MNKD@Arcavir?$AA@  1000a3d8     MainDll.obj
+ 0003:000013e0       ??_C@_08IIBO@?$LN?p?I?$LN?N?$MA?J?$LP?$AA@ 1000a3e0     MainDll.obj
+ 0003:000013ec       ??_C@_06HFHK@McAfee?$AA@   1000a3ec     MainDll.obj
+ 0003:000013f4       ??_C@_06CCLM@Dr?4WEB?$AA@  1000a3f4     MainDll.obj
+ 0003:000013fc       ??_C@_05JCLP@Avast?$AA@    1000a3fc     MainDll.obj
+ 0003:00001404       ??_C@_05LNBL@Avira?$AA@    1000a404     MainDll.obj
+ 0003:0000140c       ??_C@_04PG@?N?$KC?$LF?c?$AA@ 1000a40c     MainDll.obj
+ 0003:00001414       ??_C@_08PDKN@?A?w?A?$LP?$LP?s?J?$KP?$AA@ 1000a414     MainDll.obj
+ 0003:00001420       ??_C@_08FMDD@?$LP?$KI?$LA?M?K?$LJ?$LL?y?$AA@ 1000a420     MainDll.obj
+ 0003:0000142c       ??_C@_0BC@ILG@?$LH?$KC?O?V360?$LA?$LC?H?$KL?N?$MA?J?$LP?A?K?$AA@ 1000a42c     MainDll.obj
+ 0003:00001440       ??_C@_0BI@KLAG@Find?5GPU?5Graphics?5error?$AA@ 1000a440     MainDll.obj
+ 0003:00001458       ??_C@_0FD@MHOL@SYSTEM?2CurrentControlSet?2Control@ 1000a458     MainDll.obj
+ 0003:000014ac       ??_C@_0L@KAFL@DriverDesc?$AA@ 1000a4ac     MainDll.obj
+ 0003:000014d8       ??_C@_0N@ONMO@IsBadReadPtr?$AA@ 1000a4d8     MemoryModule.obj
+ 0003:000014e8       ??_C@_0M@EIEL@wininet?4dll?$AA@ 1000a4e8     MyFunc.obj
+ 0003:000014f4       ??_C@_0BF@CLED@CreateProcessAsUserA?$AA@ 1000a4f4     MyFunc.obj
+ 0003:0000150c       ??_C@_0BE@FGFN@SetTokenInformation?$AA@ 1000a50c     MyFunc.obj
+ 0003:00001520       ??_C@_0BB@MPPL@DuplicateTokenEx?$AA@ 1000a520     MyFunc.obj
+ 0003:00001534       ??_C@_0BB@NPFI@OpenProcessToken?$AA@ 1000a534     MyFunc.obj
+ 0003:00001548       ??_C@_0O@IKBM@DeleteService?$AA@ 1000a548     MyFunc.obj
+ 0003:00001558       ??_C@_0BG@HMOA@ChangeServiceConfig2A?$AA@ 1000a558     MyFunc.obj
+ 0003:00001570       ??_C@_0P@MEDF@CreateServiceA?$AA@ 1000a570     MyFunc.obj
+ 0003:00001580       ??_C@_0P@CEBD@ControlService?$AA@ 1000a580     MyFunc.obj
+ 0003:00001590       ??_C@_0BD@JBAE@QueryServiceStatus?$AA@ 1000a590     MyFunc.obj
+ 0003:000015a4       ??_C@_0BD@POGC@CloseServiceHandle?$AA@ 1000a5a4     MyFunc.obj
+ 0003:000015b8       ??_C@_0O@DJEI@StartServiceA?$AA@ 1000a5b8     MyFunc.obj
+ 0003:000015c8       ??_C@_0N@JOID@OpenServiceA?$AA@ 1000a5c8     MyFunc.obj
+ 0003:000015d8       ??_C@_0P@KPLF@OpenSCManagerA?$AA@ 1000a5d8     MyFunc.obj
+ 0003:000015e8       ??_C@_0BM@KDOL@RegisterServiceCtrlHandlerA?$AA@ 1000a5e8     MyFunc.obj
+ 0003:00001604       ??_C@_0BB@OIEC@SetServiceStatus?$AA@ 1000a604     MyFunc.obj
+ 0003:00001618       ??_C@_0N@ELGH@ADVAPI32?4dll?$AA@ 1000a618     MyFunc.obj
+ 0003:00001628       ??_C@_0M@PEMK@gethostname?$AA@ 1000a628     MyFunc.obj
+ 0003:00001634       ??_C@_0M@NGKD@getsockname?$AA@ 1000a634     MyFunc.obj
+ 0003:00001640       ??_C@_06DJIJ@select?$AA@   1000a640     MyFunc.obj
+ 0003:00001648       ??_C@_08ECGG@WSAIoctl?$AA@ 1000a648     MyFunc.obj
+ 0003:00001654       ??_C@_0L@PCGG@setsockopt?$AA@ 1000a654     MyFunc.obj
+ 0003:00001660       ??_C@_0M@BGOH@closesocket?$AA@ 1000a660     MyFunc.obj
+ 0003:0000166c       ??_C@_04NJFL@recv?$AA@     1000a66c     MyFunc.obj
+ 0003:00001674       ??_C@_04PJAD@send?$AA@     1000a674     MyFunc.obj
+ 0003:0000167c       ??_C@_07DHIJ@connect?$AA@  1000a67c     MyFunc.obj
+ 0003:00001684       ??_C@_05MHGE@htons?$AA@    1000a684     MyFunc.obj
+ 0003:0000168c       ??_C@_0O@BLIP@gethostbyname?$AA@ 1000a68c     MyFunc.obj
+ 0003:0000169c       ??_C@_06KDPK@socket?$AA@   1000a69c     MyFunc.obj
+ 0003:000016a4       ??_C@_0L@KLBB@WSACleanup?$AA@ 1000a6a4     MyFunc.obj
+ 0003:000016b0       ??_C@_0L@BKPI@WSAStartup?$AA@ 1000a6b0     MyFunc.obj
+ 0003:000016bc       ??_C@_0L@FLHA@ws2_32?4dll?$AA@ 1000a6bc     MyFunc.obj
+ 0003:000016c8       ??_C@_06CDH@strstr?$AA@    1000a6c8     MyFunc.obj
+ 0003:000016d0       ??_C@_06CMPK@memset?$AA@   1000a6d0     MyFunc.obj
+ 0003:000016d8       ??_C@_06HPEK@memcpy?$AA@   1000a6d8     MyFunc.obj
+ 0003:000016e0       ??_C@_06CGBO@strlen?$AA@   1000a6e0     MyFunc.obj
+ 0003:000016e8       ??_C@_06LPCE@strcmp?$AA@   1000a6e8     MyFunc.obj
+ 0003:000016f0       ??_C@_0L@PKGO@MSVCRT?4dll?$AA@ 1000a6f0     MyFunc.obj
+ 0003:000016fc       ??_C@_0M@FMMM@EnumWindows?$AA@ 1000a6fc     MyFunc.obj
+ 0003:00001708       ??_C@_0N@KMLM@SendMessageA?$AA@ 1000a708     MyFunc.obj
+ 0003:00001718       ??_C@_0BA@PDDK@IsWindowVisible?$AA@ 1000a718     MyFunc.obj
+ 0003:00001728       ??_C@_0M@PKCK@MessageBoxA?$AA@ 1000a728     MyFunc.obj
+ 0003:00001734       ??_C@_0O@OPGJ@ExitWindowsEx?$AA@ 1000a734     MyFunc.obj
+ 0003:00001744       ??_C@_09NJAK@wsprintfA?$AA@ 1000a744     MyFunc.obj
+ 0003:00001750       ??_C@_0L@PPOC@User32?4dll?$AA@ 1000a750     MyFunc.obj
+ 0003:0000175c       ??_C@_0BC@CFOG@GetCurrentProcess?$AA@ 1000a75c     MyFunc.obj
+ 0003:00001770       ??_C@_09IBIA@MoveFileA?$AA@ 1000a770     MyFunc.obj
+ 0003:0000177c       ??_C@_0BE@MJOP@GetSystemDirectoryA?$AA@ 1000a77c     MyFunc.obj
+ 0003:00001790       ??_C@_0O@OOIM@GetSystemInfo?$AA@ 1000a790     MyFunc.obj
+ 0003:000017a0       ??_C@_0BK@EEEB@ExpandEnvironmentStringsA?$AA@ 1000a7a0     MyFunc.obj
+ 0003:000017bc       ??_C@_0BD@KLCP@GetExitCodeProcess?$AA@ 1000a7bc     MyFunc.obj
+ 0003:000017d0       ??_C@_0O@HOCG@GetVersionExA?$AA@ 1000a7d0     MyFunc.obj
+ 0003:000017e0       ??_C@_0BA@CLBJ@TerminateThread?$AA@ 1000a7e0     MyFunc.obj
+ 0003:000017f0       ??_C@_08KLCC@SetEvent?$AA@ 1000a7f0     MyFunc.obj
+ 0003:000017fc       ??_C@_08MFKJ@CancelIo?$AA@ 1000a7fc     MyFunc.obj
+ 0003:00001808       ??_C@_0L@KNKE@ResetEvent?$AA@ 1000a808     MyFunc.obj
+ 0003:00001814       ??_C@_0N@HMIE@CreateEventA?$AA@ 1000a814     MyFunc.obj
+ 0003:00001824       ??_C@_0BE@FJBF@WaitForSingleObject?$AA@ 1000a824     MyFunc.obj
+ 0003:00001838       ??_C@_0N@DKJ@GetTickCount?$AA@ 1000a838     MyFunc.obj
+ 0003:00001848       ??_C@_08FJBE@lstrcatA?$AA@ 1000a848     MyFunc.obj
+ 0003:00001854       ??_C@_05BKOF@Sleep?$AA@    1000a854     MyFunc.obj
+ 0003:0000185c       ??_C@_0M@GPEK@CloseHandle?$AA@ 1000a85c     MyFunc.obj
+ 0003:00001868       ??_C@_0N@NKOK@GetLastError?$AA@ 1000a868     MyFunc.obj
+ 0003:00001878       ??_C@_0N@IEOO@ReleaseMutex?$AA@ 1000a878     MyFunc.obj
+ 0003:00001888       ??_C@_0N@MIOJ@CreateMutexA?$AA@ 1000a888     MyFunc.obj
+ 0003:00001898       ??_C@_0P@KJNG@CreateProcessA?$AA@ 1000a898     MyFunc.obj
+ 0003:000018a8       ??_C@_0BJ@OKNM@CreateToolhelp32Snapshot?$AA@ 1000a8a8     until.obj
+ 0003:000018c4       ??_C@_0BD@ICHK@GetCurrentThreadId?$AA@ 1000a8c4     until.obj
+ 0003:000018d8       ??_C@_0N@MJHL@CloseDesktop?$AA@ 1000a8d8     until.obj
+ 0003:000018e8       ??_C@_0BB@PIF@SetThreadDesktop?$AA@ 1000a8e8     until.obj
+ 0003:000018fc       ??_C@_0BK@GFCD@GetUserObjectInformationA?$AA@ 1000a8fc     until.obj
+ 0003:00001918       ??_C@_0BB@JEKF@GetThreadDesktop?$AA@ 1000a918     until.obj
+ 0003:0000192c       ??_C@_0L@HKL@user32?4dll?$AA@ 1000a92c     until.obj
+ 0003:00001938       ??_C@_0N@GDCB@OpenDesktopA?$AA@ 1000a938     until.obj
+ 0003:00001948       ??_C@_0BE@EGND@InternetCloseHandle?$AA@ 1000a948     until.obj
+ 0003:0000195c       ??_C@_0BB@EDGA@InternetReadFile?$AA@ 1000a95c     until.obj
+ 0003:00001970       ??_C@_0BB@HJP@InternetOpenUrlA?$AA@ 1000a970     until.obj
+ 0003:00001984       ??_C@_08KNGG@MSIE?56?40?$AA@ 1000a984     until.obj
+ 0003:00001990       ??_C@_0O@BGEI@InternetOpenA?$AA@ 1000a990     until.obj
+ 0003:000019a0       ??_C@_0BG@EFIJ@LookupPrivilegeValueA?$AA@ 1000a9a0     until.obj
+ 0003:000019b8       ??_C@_0BG@GACJ@AdjustTokenPrivileges?$AA@ 1000a9b8     until.obj
+ 0003:000019d0       ??_C@_0O@LDED@Process32Next?$AA@ 1000a9d0     until.obj
+ 0003:000019e0       ??_C@_0P@MPIA@Process32First?$AA@ 1000a9e0     until.obj
+ 0003:000019f0       ??_C@_04CLEA@?$CF08X?$AA@  1000a9f0     until.obj
+ 0003:000019f8       ??_C@_02MECO@?$CFd?$AA@    1000a9f8     until.obj
+ 0003:000019fc       ??_C@_0M@NANN@RegCloseKey?$AA@ 1000a9fc     until.obj
+ 0003:00001a08       ??_C@_0O@CAEN@RegEnumKeyExA?$AA@ 1000aa08     until.obj
+ 0003:00001a18       ??_C@_0O@IBIC@RegEnumValueA?$AA@ 1000aa18     until.obj
+ 0003:00001a28       ??_C@_0O@LPP@RegOpenKeyExA?$AA@ 1000aa28     until.obj
+ 0003:00001a38       ??_C@_0BB@NLHO@RegQueryValueExA?$AA@ 1000aa38     until.obj
+ 0003:00001a4c       ??_C@_0BA@PCCP@RegDeleteValueA?$AA@ 1000aa4c     until.obj
+ 0003:00001a5c       ??_C@_0O@EONH@RegDeleteKeyA?$AA@ 1000aa5c     until.obj
+ 0003:00001a6c       ??_C@_0P@JJKG@RegSetValueExA?$AA@ 1000aa6c     until.obj
+ 0003:00001a7c       ??_C@_0BA@JHNG@RegCreateKeyExA?$AA@ 1000aa7c     until.obj
+ 0003:00001a90       ??_R0?AVtype_info@@@8      1000aa90     MSVCRT:ti_inst.obj
+ 0003:00001aa8       ?szQQMun@@3PADA            1000aaa8     ChatManager.obj
+ 0003:00001ea8       ??_C@_00A@?$AA@            1000aea8     ChatManager.obj
+ 0003:00001eb0       ?Adapter@@3U_ASTAT_@@A     1000aeb0     KernelManager.obj
+ 0003:00002508       ?bToken@@3PADA             1000b508     KernelManager.obj
+ 0003:00002570       ?Start@@3USTART@@A         1000b570     KernelManager.obj
+ 0003:0000263c       ?PreviousFocus@@3PAUHWND__@@A 1000b63c     KernelManager.obj
+ 0003:00002640       ?WindowCaption@@3PADA      1000b640     KernelManager.obj
+ 0003:00002a40       ?hFocus@@3PAUHWND__@@A     1000ba40     KernelManager.obj
+ 0003:00002a44       ?hmProxy@@3PAXA            1000ba44     KernelManager.obj
+ 0003:00002a48       ?bFindWindow@@3HA          1000ba48     KernelManager.obj
+ 0003:00002a50       ?m_strMasterHost@CKernelManager@@2PADA 1000ba50     KernelManager.obj
+ 0003:00002b50       ?m_strDoorMasterHost@CKernelManager@@2PADA 1000bb50     KernelManager.obj
+ 0003:00002c50       ?g_hInstance@CKeyboardManager@@2PAUHINSTANCE__@@A 1000bc50     KeyboardManager.obj
+ 0003:00002c54       ?g_hInstances@CKeyboardManager@@2PAUHINSTANCE__@@A 1000bc54     KeyboardManager.obj
+ 0003:00002c58       ?MyNoInstall@@3HA          1000bc58     MainDll.obj
+ 0003:00002c5c       ?MyLoginPort@@3IA          1000bc5c     MainDll.obj
+ 0003:00002c60       ?MyDele_Kzj@@3HA           1000bc60     MainDll.obj
+ 0003:00002c64       ?MyUpGroup@@3PADA          1000bc64     MainDll.obj
+ 0003:00002c88       ?MyszDownRun@@3PADA        1000bc88     MainDll.obj
+ 0003:00002db8       ?m_gFunc@@3VCMyFunc@@A     1000bdb8     MainDll.obj
+ 0003:00002edc       ?ConnetPass@@3PADA         1000bedc     MainDll.obj
+ 0003:00002ef0       ?hServiceStatus@@3PAUSERVICE_STATUS_HANDLE__@@A 1000bef0     MainDll.obj
+ 0003:00002ef4       ?MyServiceName@@3PADA      1000bef4     MainDll.obj
+ 0003:00002f28       ?MyServiceDescription@@3PADA 1000bf28     MainDll.obj
+ 0003:00002fc0       ?MystrRemark@@3PADA        1000bfc0     MainDll.obj
+ 0003:00002fe0       ?MyServiceDisplayName@@3PADA 1000bfe0     MainDll.obj
+ 0003:00003014       ?g_dwCurrState@@3KA        1000c014     MainDll.obj
+ 0003:00003018       ?MyLoginAddr@@3PADA        1000c018     MainDll.obj
+ 0003:0000307c       ?hDllModule@@3PAUHINSTANCE__@@A 1000c07c     MainDll.obj
+ 0003:00003080       ?bisUnInstall@@3HA         1000c080     MainDll.obj
+ 0003:00003088       __afxForceEXCLUDE          1000c088     nafxcw:nolib.obj
+ 0003:0000308c       __adjust_fdiv              1000c08c     <common>
+ 0003:00003090       __pRawDllMain              1000c090     <common>
+ 0003:00003094       ___onexitend               1000c094     <common>
+ 0003:00003098       ___onexitbegin             1000c098     <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_KERNEL32 1000d000     kernel32:KERNEL32.dll
+ 0004:00000014       __IMPORT_DESCRIPTOR_USER32 1000d014     user32:USER32.dll
+ 0004:00000028       __IMPORT_DESCRIPTOR_ADVAPI32 1000d028     advapi32:ADVAPI32.dll
+ 0004:0000003c       __IMPORT_DESCRIPTOR_SHELL32 1000d03c     shell32:SHELL32.dll
+ 0004:00000050       __IMPORT_DESCRIPTOR_ole32  1000d050     ole32:ole32.dll
+ 0004:00000064       __IMPORT_DESCRIPTOR_MSVCRT 1000d064     MSVCRT:MSVCRT.dll
+ 0004:00000078       __IMPORT_DESCRIPTOR_SETUPAPI 1000d078     setupapi:SETUPAPI.dll
+ 0004:0000008c       __IMPORT_DESCRIPTOR_urlmon 1000d08c     urlmon:urlmon.dll
+ 0004:000000a0       __NULL_IMPORT_DESCRIPTOR   1000d0a0     kernel32:KERNEL32.dll
+ 0004:00000300       __imp__OpenServiceA@12     1000d300     advapi32:ADVAPI32.dll
+ 0004:00000304       __imp__DeleteService@4     1000d304     advapi32:ADVAPI32.dll
+ 0004:00000308       __imp__OpenEventLogA@8     1000d308     advapi32:ADVAPI32.dll
+ 0004:0000030c       __imp__ClearEventLogA@8    1000d30c     advapi32:ADVAPI32.dll
+ 0004:00000310       __imp__CloseEventLog@4     1000d310     advapi32:ADVAPI32.dll
+ 0004:00000314       __imp__OpenProcessToken@12 1000d314     advapi32:ADVAPI32.dll
+ 0004:00000318       __imp__LookupPrivilegeValueA@12 1000d318     advapi32:ADVAPI32.dll
+ 0004:0000031c       __imp__AdjustTokenPrivileges@24 1000d31c     advapi32:ADVAPI32.dll
+ 0004:00000320       __imp__SetServiceStatus@8  1000d320     advapi32:ADVAPI32.dll
+ 0004:00000324       __imp__CreateProcessAsUserA@44 1000d324     advapi32:ADVAPI32.dll
+ 0004:00000328       __imp__SetTokenInformation@16 1000d328     advapi32:ADVAPI32.dll
+ 0004:0000032c       __imp__DuplicateTokenEx@24 1000d32c     advapi32:ADVAPI32.dll
+ 0004:00000330       __imp__RegisterServiceCtrlHandlerA@8 1000d330     advapi32:ADVAPI32.dll
+ 0004:00000334       __imp__CloseServiceHandle@4 1000d334     advapi32:ADVAPI32.dll
+ 0004:00000338       __imp__StartServiceA@12    1000d338     advapi32:ADVAPI32.dll
+ 0004:0000033c       __imp__ChangeServiceConfig2A@12 1000d33c     advapi32:ADVAPI32.dll
+ 0004:00000340       __imp__CreateServiceA@52   1000d340     advapi32:ADVAPI32.dll
+ 0004:00000344       __imp__RegCloseKey@4       1000d344     advapi32:ADVAPI32.dll
+ 0004:00000348       __imp__RegQueryValueA@16   1000d348     advapi32:ADVAPI32.dll
+ 0004:0000034c       __imp__RegOpenKeyExA@20    1000d34c     advapi32:ADVAPI32.dll
+ 0004:00000350       __imp__StartServiceCtrlDispatcherA@4 1000d350     advapi32:ADVAPI32.dll
+ 0004:00000354       __imp__OpenSCManagerA@12   1000d354     advapi32:ADVAPI32.dll
+ 0004:00000358       \177ADVAPI32_NULL_THUNK_DATA 1000d358     advapi32:ADVAPI32.dll
+ 0004:0000035c       __imp__Process32Next@8     1000d35c     kernel32:KERNEL32.dll
+ 0004:00000360       __imp__Process32First@8    1000d360     kernel32:KERNEL32.dll
+ 0004:00000364       __imp__HeapFree@12         1000d364     kernel32:KERNEL32.dll
+ 0004:00000368       __imp__HeapAlloc@12        1000d368     kernel32:KERNEL32.dll
+ 0004:0000036c       __imp__GetProcessHeap@0    1000d36c     kernel32:KERNEL32.dll
+ 0004:00000370       __imp__lstrcatA@8          1000d370     kernel32:KERNEL32.dll
+ 0004:00000374       __imp__GetModuleFileNameA@12 1000d374     kernel32:KERNEL32.dll
+ 0004:00000378       __imp__GetTickCount@0      1000d378     kernel32:KERNEL32.dll
+ 0004:0000037c       __imp__lstrlenA@4          1000d37c     kernel32:KERNEL32.dll
+ 0004:00000380       __imp__SetFilePointer@16   1000d380     kernel32:KERNEL32.dll
+ 0004:00000384       __imp__GetFileSize@8       1000d384     kernel32:KERNEL32.dll
+ 0004:00000388       __imp__GetSystemDirectoryA@8 1000d388     kernel32:KERNEL32.dll
+ 0004:0000038c       __imp__GetLocalTime@4      1000d38c     kernel32:KERNEL32.dll
+ 0004:00000390       __imp__LocalSize@4         1000d390     kernel32:KERNEL32.dll
+ 0004:00000394       __imp__LocalAlloc@8        1000d394     kernel32:KERNEL32.dll
+ 0004:00000398       __imp__LoadLibraryA@4      1000d398     kernel32:KERNEL32.dll
+ 0004:0000039c       __imp__CreateDirectoryA@8  1000d39c     kernel32:KERNEL32.dll
+ 0004:000003a0       __imp__MoveFileExA@12      1000d3a0     kernel32:KERNEL32.dll
+ 0004:000003a4       __imp__CopyFileA@12        1000d3a4     kernel32:KERNEL32.dll
+ 0004:000003a8       __imp__GetFileAttributesA@4 1000d3a8     kernel32:KERNEL32.dll
+ 0004:000003ac       __imp__ReadFile@20         1000d3ac     kernel32:KERNEL32.dll
+ 0004:000003b0       __imp__DeleteFileA@4       1000d3b0     kernel32:KERNEL32.dll
+ 0004:000003b4       __imp__WaitForSingleObject@8 1000d3b4     kernel32:KERNEL32.dll
+ 0004:000003b8       __imp__FreeLibrary@4       1000d3b8     kernel32:KERNEL32.dll
+ 0004:000003bc       __imp__CreateProcessA@40   1000d3bc     kernel32:KERNEL32.dll
+ 0004:000003c0       __imp__GetWindowsDirectoryA@8 1000d3c0     kernel32:KERNEL32.dll
+ 0004:000003c4       __imp__GetCommandLineA@0   1000d3c4     kernel32:KERNEL32.dll
+ 0004:000003c8       __imp__SetUnhandledExceptionFilter@4 1000d3c8     kernel32:KERNEL32.dll
+ 0004:000003cc       __imp__OutputDebugStringA@4 1000d3cc     kernel32:KERNEL32.dll
+ 0004:000003d0       __imp__SetEvent@4          1000d3d0     kernel32:KERNEL32.dll
+ 0004:000003d4       __imp__VirtualProtect@16   1000d3d4     kernel32:KERNEL32.dll
+ 0004:000003d8       __imp__lstrcmpiA@8         1000d3d8     kernel32:KERNEL32.dll
+ 0004:000003dc       __imp__CreateEventA@16     1000d3dc     kernel32:KERNEL32.dll
+ 0004:000003e0       __imp__DisableThreadLibraryCalls@4 1000d3e0     kernel32:KERNEL32.dll
+ 0004:000003e4       __imp__GlobalMemoryStatusEx@4 1000d3e4     kernel32:KERNEL32.dll
+ 0004:000003e8       __imp__GetVersionExA@4     1000d3e8     kernel32:KERNEL32.dll
+ 0004:000003ec       __imp__GetModuleHandleA@4  1000d3ec     kernel32:KERNEL32.dll
+ 0004:000003f0       __imp__GetProcAddress@8    1000d3f0     kernel32:KERNEL32.dll
+ 0004:000003f4       __imp__lstrcpyA@8          1000d3f4     kernel32:KERNEL32.dll
+ 0004:000003f8       __imp__InterlockedExchange@8 1000d3f8     kernel32:KERNEL32.dll
+ 0004:000003fc       __imp__GlobalAlloc@8       1000d3fc     kernel32:KERNEL32.dll
+ 0004:00000400       __imp__GetLastError@0      1000d400     kernel32:KERNEL32.dll
+ 0004:00000404       __imp__LocalFree@4         1000d404     kernel32:KERNEL32.dll
+ 0004:00000408       __imp__SetLastError@4      1000d408     kernel32:KERNEL32.dll
+ 0004:0000040c       __imp__CreateFileA@28      1000d40c     kernel32:KERNEL32.dll
+ 0004:00000410       __imp__DeviceIoControl@32  1000d410     kernel32:KERNEL32.dll
+ 0004:00000414       __imp__WriteFile@20        1000d414     kernel32:KERNEL32.dll
+ 0004:00000418       __imp__CloseHandle@4       1000d418     kernel32:KERNEL32.dll
+ 0004:0000041c       __imp__Sleep@4             1000d41c     kernel32:KERNEL32.dll
+ 0004:00000420       __imp__GetVersion@0        1000d420     kernel32:KERNEL32.dll
+ 0004:00000424       __imp__GetCurrentProcess@0 1000d424     kernel32:KERNEL32.dll
+ 0004:00000428       __imp__VirtualFree@12      1000d428     kernel32:KERNEL32.dll
+ 0004:0000042c       __imp__FindFirstFileA@8    1000d42c     kernel32:KERNEL32.dll
+ 0004:00000430       __imp__FindNextFileA@8     1000d430     kernel32:KERNEL32.dll
+ 0004:00000434       __imp__GlobalLock@4        1000d434     kernel32:KERNEL32.dll
+ 0004:00000438       __imp__GlobalUnlock@4      1000d438     kernel32:KERNEL32.dll
+ 0004:0000043c       __imp__VirtualAlloc@16     1000d43c     kernel32:KERNEL32.dll
+ 0004:00000440       __imp__SetFileAttributesA@8 1000d440     kernel32:KERNEL32.dll
+ 0004:00000444       \177KERNEL32_NULL_THUNK_DATA 1000d444     kernel32:KERNEL32.dll
+ 0004:00000448       __imp___strcmpi            1000d448     MSVCRT:MSVCRT.dll
+ 0004:00000448       __imp__strcmpi             1000d448     MSVCRT:MSVCRT.dll
+ 0004:0000044c       __imp___adjust_fdiv        1000d44c     MSVCRT:MSVCRT.dll
+ 0004:00000450       __imp___initterm           1000d450     MSVCRT:MSVCRT.dll
+ 0004:00000454       __imp___onexit             1000d454     MSVCRT:MSVCRT.dll
+ 0004:00000458       __imp____dllonexit         1000d458     MSVCRT:MSVCRT.dll
+ 0004:0000045c       __imp_??1type_info@@UAE@XZ 1000d45c     MSVCRT:MSVCRT.dll
+ 0004:00000460       __imp__strchr              1000d460     MSVCRT:MSVCRT.dll
+ 0004:00000464       __imp___beginthreadex      1000d464     MSVCRT:MSVCRT.dll
+ 0004:00000468       __imp__free                1000d468     MSVCRT:MSVCRT.dll
+ 0004:0000046c       __imp__realloc             1000d46c     MSVCRT:MSVCRT.dll
+ 0004:00000470       __imp__strncmp             1000d470     MSVCRT:MSVCRT.dll
+ 0004:00000474       __imp__malloc              1000d474     MSVCRT:MSVCRT.dll
+ 0004:00000478       __imp___local_unwind2      1000d478     MSVCRT:MSVCRT.dll
+ 0004:0000047c       __imp___except_handler3    1000d47c     MSVCRT:MSVCRT.dll
+ 0004:00000480       __imp__strcspn             1000d480     MSVCRT:MSVCRT.dll
+ 0004:00000484       __imp__atoi                1000d484     MSVCRT:MSVCRT.dll
+ 0004:00000488       __imp_??3@YAXPAX@Z         1000d488     MSVCRT:MSVCRT.dll
+ 0004:0000048c       __imp__memcpy              1000d48c     MSVCRT:MSVCRT.dll
+ 0004:00000490       __imp__ceil                1000d490     MSVCRT:MSVCRT.dll
+ 0004:00000494       __imp___ftol               1000d494     MSVCRT:MSVCRT.dll
+ 0004:00000498       __imp____CxxFrameHandler   1000d498     MSVCRT:MSVCRT.dll
+ 0004:0000049c       __imp__strlen              1000d49c     MSVCRT:MSVCRT.dll
+ 0004:000004a0       __imp__strcat              1000d4a0     MSVCRT:MSVCRT.dll
+ 0004:000004a4       __imp__strcpy              1000d4a4     MSVCRT:MSVCRT.dll
+ 0004:000004a8       __imp__exit                1000d4a8     MSVCRT:MSVCRT.dll
+ 0004:000004ac       __imp__memset              1000d4ac     MSVCRT:MSVCRT.dll
+ 0004:000004b0       __imp_??2@YAPAXI@Z         1000d4b0     MSVCRT:MSVCRT.dll
+ 0004:000004b4       __imp__memcmp              1000d4b4     MSVCRT:MSVCRT.dll
+ 0004:000004b8       __imp___CxxThrowException@8 1000d4b8     MSVCRT:MSVCRT.dll
+ 0004:000004bc       __imp___strupr             1000d4bc     MSVCRT:MSVCRT.dll
+ 0004:000004bc       __imp__strupr              1000d4bc     MSVCRT:MSVCRT.dll
+ 0004:000004c0       __imp__strstr              1000d4c0     MSVCRT:MSVCRT.dll
+ 0004:000004c4       __imp___stricmp            1000d4c4     MSVCRT:MSVCRT.dll
+ 0004:000004c4       __imp__stricmp             1000d4c4     MSVCRT:MSVCRT.dll
+ 0004:000004c8       __imp__strncpy             1000d4c8     MSVCRT:MSVCRT.dll
+ 0004:000004cc       __imp__strrchr             1000d4cc     MSVCRT:MSVCRT.dll
+ 0004:000004d0       __imp__rand                1000d4d0     MSVCRT:MSVCRT.dll
+ 0004:000004d4       \177MSVCRT_NULL_THUNK_DATA 1000d4d4     MSVCRT:MSVCRT.dll
+ 0004:000004d8       __imp__SetupDiEnumDeviceInfo@12 1000d4d8     setupapi:SETUPAPI.dll
+ 0004:000004dc       __imp__SetupDiGetDeviceRegistryPropertyA@28 1000d4dc     setupapi:SETUPAPI.dll
+ 0004:000004e0       __imp__SetupDiSetClassInstallParamsA@16 1000d4e0     setupapi:SETUPAPI.dll
+ 0004:000004e4       __imp__SetupDiCallClassInstaller@12 1000d4e4     setupapi:SETUPAPI.dll
+ 0004:000004e8       __imp__SetupDiDestroyDeviceInfoList@4 1000d4e8     setupapi:SETUPAPI.dll
+ 0004:000004ec       __imp__SetupDiGetClassDevsA@16 1000d4ec     setupapi:SETUPAPI.dll
+ 0004:000004f0       \177SETUPAPI_NULL_THUNK_DATA 1000d4f0     setupapi:SETUPAPI.dll
+ 0004:000004f4       __imp__SHGetSpecialFolderPathA@16 1000d4f4     shell32:SHELL32.dll
+ 0004:000004f8       \177SHELL32_NULL_THUNK_DATA 1000d4f8     shell32:SHELL32.dll
+ 0004:000004fc       __imp__EmptyClipboard@0    1000d4fc     user32:USER32.dll
+ 0004:00000500       __imp__OpenClipboard@4     1000d500     user32:USER32.dll
+ 0004:00000504       __imp__GetSystemMetrics@4  1000d504     user32:USER32.dll
+ 0004:00000508       __imp__GetWindowTextA@12   1000d508     user32:USER32.dll
+ 0004:0000050c       __imp__SetClipboardData@8  1000d50c     user32:USER32.dll
+ 0004:00000510       __imp__GetAsyncKeyState@4  1000d510     user32:USER32.dll
+ 0004:00000514       __imp__GetKeyState@4       1000d514     user32:USER32.dll
+ 0004:00000518       __imp__ChangeDisplaySettingsA@8 1000d518     user32:USER32.dll
+ 0004:0000051c       __imp__GetClipboardData@4  1000d51c     user32:USER32.dll
+ 0004:00000520       __imp__GetForegroundWindow@0 1000d520     user32:USER32.dll
+ 0004:00000524       __imp__ExitWindowsEx@8     1000d524     user32:USER32.dll
+ 0004:00000528       __imp__CloseClipboard@0    1000d528     user32:USER32.dll
+ 0004:0000052c       __imp__GetLastInputInfo@4  1000d52c     user32:USER32.dll
+ 0004:00000530       __imp__wsprintfA           1000d530     user32:USER32.dll
+ 0004:00000534       \177USER32_NULL_THUNK_DATA 1000d534     user32:USER32.dll
+ 0004:00000538       __imp__CoInitialize@4      1000d538     ole32:ole32.dll
+ 0004:0000053c       __imp__CoCreateInstance@20 1000d53c     ole32:ole32.dll
+ 0004:00000540       \177ole32_NULL_THUNK_DATA  1000d540     ole32:ole32.dll
+ 0004:00000544       __imp__URLDownloadToFileA@20 1000d544     urlmon:urlmon.dll
+ 0004:00000548       \177urlmon_NULL_THUNK_DATA 1000d548     urlmon:urlmon.dll
+
+ entry point at        0001:00006b13
+
+ Static symbols
+
+ 0001:0000561a       ?CopySections@@YAXPBEPAU_IMAGE_NT_HEADERS@@PAUMEMORYMODULE@@@Z 1000661a f   MemoryModule.obj
+ 0001:000056c0       ?FinalizeSections@@YAXPAUMEMORYMODULE@@@Z 100066c0 f   MemoryModule.obj
+ 0001:0000577c       ?PerformBaseRelocation@@YAXPAUMEMORYMODULE@@K@Z 1000677c f   MemoryModule.obj
+ 0001:000057f6       ?BuildImportTable@@YAHPAUMEMORYMODULE@@@Z 100067f6 f   MemoryModule.obj
+ 0001:00002703       _$E37                      10003703 f   MainDll.obj
+ 0001:0000270d       _$E34                      1000370d f   MainDll.obj
+ 0001:00002717       _$E36                      10003717 f   MainDll.obj
+ 0001:00002723       _$E35                      10003723 f   MainDll.obj
+
+FIXUPS: 7b4f 10 14 11 fffffebe d ffffffa4 d ffff9d8a 16 10 b b a a a 33
+FIXUPS: 1018 d 2c e 16 57 13 b 14 d d e 8 2a 30 27 11 3e 29 c 2a 11 6854
+FIXUPS: 1e8e d d e 10 8 b c a 8 3d fffff39e f 1f 7 68f5 a ffff971a d c
+FIXUPS: 137f e 9 b 6f 11 45 c 14 c 4e 296 4e3 c 13 19 d d 10 c c 19 10
+FIXUPS: 1d07 7 b 12 9 1d f e c 9 5eff ffffa175 11 18 16 d d 14 b 8 8 fffffa83
+FIXUPS: 1913 30 24 c c c 62c0 b b b a ffff9d32 c7 3c 1e 48 2b 12 8 12 24
+FIXUPS: 1bb9 11 b b 1f a d c f 1c 12d8 5b 13 cc 1d 17 1c 1e 1c 94 14 c
+FIXUPS: 31b5 c 44 27 c b 183 15 cb ffffe399 15 d c c 639a b b b a ffff9cb7
+FIXUPS: 290e e 5384 8 a ffffac85 c 17 15 c c e 5327 8 a ffffacec 19 16
+FIXUPS: 2a0a 51 15 e6 50 b3 5c 49 33 20 19 27 34 eb fffff681 f 9 80 21
+FIXUPS: 25f8 c e 11 e f7 f 5b 12 11 35 1e 29 9 12 9 9 d 6 17 e d 1b c 17
+FIXUPS: 28f6 c fffff6cf 6b d 11 49 5be9 a ffffa427 26 3e e 1d 17 9 e b
+FIXUPS: 2190 1c 56 32 13 11 31 42 1e 2f 15 9d 11 11 57 5b 3e37 4c 18 a8
+FIXUPS: 63ee 5 1b e 17 ffffd09a f 11 7 47e4 a ffffb82b d 12 17 2d d 5e
+FIXUPS: 35ec 11 39 2a 8 2b c 2a 11 11 283a 1f 14 1f 14 1f 14 1f 14 1c 11
+FIXUPS: 603d 14 1c 11 1c 11 1f 14 1f 14 1f 14 1f 14 6f 35 c 30 15 2b 27
+FIXUPS: 5ba0 1e 2f 1e 2f 1e 14 1f 14 1f 14 1f 2f 1e 14 1f 14 1f 2f 1e 14
+FIXUPS: 5e24 14 1c 11 1c 11 1c 11 1f 14 1f fffff934 1f 14 1f 14 1f 14 1f
+FIXUPS: 5911 1f 14 1f 14 1f 14 1f 37 1b 11 1f 14 1f 14 1f 14 1f 14 1f 14
+FIXUPS: 5b47 11 1c ffffe936 b b b 27 13 26 13 22 c 5 5 8 15e 3a 1c 2c 1e
+FIXUPS: 56ec c 27 1c 11 1f 14 1f 14 1f 14 1f 14 1c ffffe3e0 ff 9 40 8 63
+FIXUPS: 3e43 1b9 14 74 65 53 c9 1f 50 11 13 1c e d 99 13 b 17 b b 30 d
+FIXUPS: 43f5 75 27 e fffff274 a c a a 6c ca 7f 30 13 a e 13 36 f c 19 4322
+FIXUPS: 7cf7 a ffffbcf9 2d 26 5c 1b 2d 8c 9 11 12 14 4b 32dc 1f 17 e00
+FIXUPS: 6f6b c 31 22a e8 27b 13 e 119 12 fffff3cd d fffffb4a 18 14 8 b
+FIXUPS: 6607 72 21 fffffdb4 1e d 24 1e 1853 ffffb9f6 5

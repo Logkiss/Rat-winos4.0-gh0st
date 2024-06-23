@@ -1,0 +1,18 @@
+//
+// GH0ST.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+#define _XTP_RESOURCE_LANGUAGE zh_CN
+#include <XTToolkitPro.rc>
+
+//#include <Styles\Windows7\Windows7.rc>
+#include <Styles\Office2007\Office2007.rc>
+//#include <Styles\Office2010\Office2010.rc>
+/////////////////////////////////////////////////////////////////////////////

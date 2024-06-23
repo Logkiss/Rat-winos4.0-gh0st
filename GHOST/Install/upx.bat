@@ -1,0 +1,1 @@
+upx.exe DllMain.dll -9

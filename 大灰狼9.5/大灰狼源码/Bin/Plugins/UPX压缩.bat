@@ -1,0 +1,1 @@
+upx.exe 1.exe -9

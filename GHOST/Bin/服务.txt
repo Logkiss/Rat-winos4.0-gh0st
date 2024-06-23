@@ -1,0 +1,3 @@
+SVCNAME=WiFi
+DISNAME=WiFi万能钥匙安全注册服务
+SVCDES=禁止后，可能会影响某些软件的正常使用。

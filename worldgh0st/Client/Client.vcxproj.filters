@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Include\BmpToAvi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Buffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManagerDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTransferModeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\IniFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\InputDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\IOCPServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBoardDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgBoxDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneColorSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RegeditDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RegeditTextDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenSpyDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceInfoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UrlDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\BmpToAvi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManagerDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTransferModeDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IniFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\InputDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\IOCPServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBoardDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Mapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgBoxDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneColorSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Public.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RegeditDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RegeditTextDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenSpyDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceInfoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UrlDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\1.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Client.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\dot.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Reg\201.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Reg\202.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Reg\203.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Reg\204.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Reg\205.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Reg\206.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\工具栏\about.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Bitmap_1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Bitmap_2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\build.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Client.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\File.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\kehu.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\keyboard.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\login_bg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\工具栏\menu.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\recv.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\regedit.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ScreenSpy.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\SearchToolBar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\send.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Service.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\工具栏\Splash.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\System.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\TextChat.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\tree_images.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\关机.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\发送消息.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\工具栏\工具栏.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\文件.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\查看屏幕.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\登录界面\登录.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Cmdshell.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

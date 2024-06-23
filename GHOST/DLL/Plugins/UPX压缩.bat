@@ -1,0 +1,13 @@
+upx.exe CHAT.dll -9
+upx.exe FILE.dll -9
+upx.exe KEYLOG.dll -9
+upx.exe LISTEN.dll -9
+upx.exe PRANK.dll -9
+upx.exe PROXY.dll -9
+upx.exe PROXYMAP.dll -9
+upx.exe REGEDIT.dll -9
+upx.exe SCREEN.dll -9
+upx.exe SERVICE.dll -9
+upx.exe SHELL.dll -9
+upx.exe SYSTEM.dll -9
+upx.exe VIDEO.dll -9

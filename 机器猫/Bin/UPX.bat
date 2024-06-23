@@ -1,0 +1,1 @@
+upx.exe Client.exe -9

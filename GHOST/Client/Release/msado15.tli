@@ -1,0 +1,4537 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (24583fbf).
+//
+// c:\users\administrator\desktop\12ghost\client\release\msado15.tli
+//
+// Wrapper implementations for type library C:\Program Files\Common Files\System\ado\msado15.dll
+// compiler-generated file created 07/27/20 at 23:31:35 - DO NOT EDIT!
+
+
+//
+// interface _Collection wrapper method implementations
+//
+
+#pragma implementation_key(1)
+inline long _Collection::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(2)
+inline IUnknownPtr _Collection::_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = raw__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(3)
+inline HRESULT _Collection::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _DynaCollection wrapper method implementations
+//
+
+#pragma implementation_key(4)
+inline HRESULT _DynaCollection::Append ( IDispatch * Object ) {
+    HRESULT _hr = raw_Append(Object);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(5)
+inline HRESULT _DynaCollection::Delete ( const _variant_t & Index ) {
+    HRESULT _hr = raw_Delete(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _ADO wrapper method implementations
+//
+
+#pragma implementation_key(6)
+inline PropertiesPtr _ADO::GetProperties ( ) {
+    struct Properties * _result;
+    HRESULT _hr = get_Properties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertiesPtr(_result, false);
+}
+
+//
+// interface Properties wrapper method implementations
+//
+
+#pragma implementation_key(7)
+inline PropertyPtr Properties::GetItem ( const _variant_t & Index ) {
+    struct Property * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertyPtr(_result, false);
+}
+
+//
+// interface Property wrapper method implementations
+//
+
+#pragma implementation_key(8)
+inline _variant_t Property::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(9)
+inline void Property::PutValue ( const _variant_t & pval ) {
+    HRESULT _hr = put_Value(pval);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(10)
+inline _bstr_t Property::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(11)
+inline enum DataTypeEnum Property::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(12)
+inline long Property::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(13)
+inline void Property::PutAttributes ( long plAttributes ) {
+    HRESULT _hr = put_Attributes(plAttributes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Error wrapper method implementations
+//
+
+#pragma implementation_key(14)
+inline long Error::GetNumber ( ) {
+    long _result;
+    HRESULT _hr = get_Number(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(15)
+inline _bstr_t Error::GetSource ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(16)
+inline _bstr_t Error::GetDescription ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Description(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(17)
+inline _bstr_t Error::GetHelpFile ( ) {
+    BSTR _result;
+    HRESULT _hr = get_HelpFile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(18)
+inline long Error::GetHelpContext ( ) {
+    long _result;
+    HRESULT _hr = get_HelpContext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(19)
+inline _bstr_t Error::GetSQLState ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SQLState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(20)
+inline long Error::GetNativeError ( ) {
+    long _result;
+    HRESULT _hr = get_NativeError(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface Errors wrapper method implementations
+//
+
+#pragma implementation_key(21)
+inline ErrorPtr Errors::GetItem ( const _variant_t & Index ) {
+    struct Error * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ErrorPtr(_result, false);
+}
+
+#pragma implementation_key(22)
+inline HRESULT Errors::Clear ( ) {
+    HRESULT _hr = raw_Clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Command15 wrapper method implementations
+//
+
+#pragma implementation_key(23)
+inline _ConnectionPtr Command15::GetActiveConnection ( ) {
+    struct _Connection * _result;
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _ConnectionPtr(_result, false);
+}
+
+#pragma implementation_key(24)
+inline void Command15::PutRefActiveConnection ( struct _Connection * ppvObject ) {
+    HRESULT _hr = putref_ActiveConnection(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(25)
+inline void Command15::PutActiveConnection ( const _variant_t & ppvObject ) {
+    HRESULT _hr = put_ActiveConnection(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(26)
+inline _bstr_t Command15::GetCommandText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_CommandText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(27)
+inline void Command15::PutCommandText ( _bstr_t pbstr ) {
+    HRESULT _hr = put_CommandText(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(28)
+inline long Command15::GetCommandTimeout ( ) {
+    long _result;
+    HRESULT _hr = get_CommandTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(29)
+inline void Command15::PutCommandTimeout ( long pl ) {
+    HRESULT _hr = put_CommandTimeout(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(30)
+inline VARIANT_BOOL Command15::GetPrepared ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Prepared(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(31)
+inline void Command15::PutPrepared ( VARIANT_BOOL pfPrepared ) {
+    HRESULT _hr = put_Prepared(pfPrepared);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(32)
+inline _RecordsetPtr Command15::Execute ( VARIANT * RecordsAffected, VARIANT * Parameters, long Options ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw_Execute(RecordsAffected, Parameters, Options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+#pragma implementation_key(33)
+inline _ParameterPtr Command15::CreateParameter ( _bstr_t Name, enum DataTypeEnum Type, enum ParameterDirectionEnum Direction, long Size, const _variant_t & Value ) {
+    struct _Parameter * _result;
+    HRESULT _hr = raw_CreateParameter(Name, Type, Direction, Size, Value, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _ParameterPtr(_result, false);
+}
+
+#pragma implementation_key(34)
+inline ParametersPtr Command15::GetParameters ( ) {
+    struct Parameters * _result;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ParametersPtr(_result, false);
+}
+
+#pragma implementation_key(35)
+inline void Command15::PutCommandType ( enum CommandTypeEnum plCmdType ) {
+    HRESULT _hr = put_CommandType(plCmdType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(36)
+inline enum CommandTypeEnum Command15::GetCommandType ( ) {
+    enum CommandTypeEnum _result;
+    HRESULT _hr = get_CommandType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(37)
+inline _bstr_t Command15::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(38)
+inline void Command15::PutName ( _bstr_t pbstrName ) {
+    HRESULT _hr = put_Name(pbstrName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Connection15 wrapper method implementations
+//
+
+#pragma implementation_key(39)
+inline _bstr_t Connection15::GetConnectionString ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ConnectionString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(40)
+inline void Connection15::PutConnectionString ( _bstr_t pbstr ) {
+    HRESULT _hr = put_ConnectionString(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(41)
+inline long Connection15::GetCommandTimeout ( ) {
+    long _result;
+    HRESULT _hr = get_CommandTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(42)
+inline void Connection15::PutCommandTimeout ( long plTimeout ) {
+    HRESULT _hr = put_CommandTimeout(plTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(43)
+inline long Connection15::GetConnectionTimeout ( ) {
+    long _result;
+    HRESULT _hr = get_ConnectionTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(44)
+inline void Connection15::PutConnectionTimeout ( long plTimeout ) {
+    HRESULT _hr = put_ConnectionTimeout(plTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(45)
+inline _bstr_t Connection15::GetVersion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(46)
+inline HRESULT Connection15::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(47)
+inline _RecordsetPtr Connection15::Execute ( _bstr_t CommandText, VARIANT * RecordsAffected, long Options ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw_Execute(CommandText, RecordsAffected, Options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+#pragma implementation_key(48)
+inline long Connection15::BeginTrans ( ) {
+    long _result;
+    HRESULT _hr = raw_BeginTrans(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(49)
+inline HRESULT Connection15::CommitTrans ( ) {
+    HRESULT _hr = raw_CommitTrans();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(50)
+inline HRESULT Connection15::RollbackTrans ( ) {
+    HRESULT _hr = raw_RollbackTrans();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(51)
+inline HRESULT Connection15::Open ( _bstr_t ConnectionString, _bstr_t UserID, _bstr_t Password, long Options ) {
+    HRESULT _hr = raw_Open(ConnectionString, UserID, Password, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(52)
+inline ErrorsPtr Connection15::GetErrors ( ) {
+    struct Errors * _result;
+    HRESULT _hr = get_Errors(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ErrorsPtr(_result, false);
+}
+
+#pragma implementation_key(53)
+inline _bstr_t Connection15::GetDefaultDatabase ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DefaultDatabase(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(54)
+inline void Connection15::PutDefaultDatabase ( _bstr_t pbstr ) {
+    HRESULT _hr = put_DefaultDatabase(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(55)
+inline enum IsolationLevelEnum Connection15::GetIsolationLevel ( ) {
+    enum IsolationLevelEnum _result;
+    HRESULT _hr = get_IsolationLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(56)
+inline void Connection15::PutIsolationLevel ( enum IsolationLevelEnum Level ) {
+    HRESULT _hr = put_IsolationLevel(Level);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(57)
+inline long Connection15::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(58)
+inline void Connection15::PutAttributes ( long plAttr ) {
+    HRESULT _hr = put_Attributes(plAttr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(59)
+inline enum CursorLocationEnum Connection15::GetCursorLocation ( ) {
+    enum CursorLocationEnum _result;
+    HRESULT _hr = get_CursorLocation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(60)
+inline void Connection15::PutCursorLocation ( enum CursorLocationEnum plCursorLoc ) {
+    HRESULT _hr = put_CursorLocation(plCursorLoc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(61)
+inline enum ConnectModeEnum Connection15::GetMode ( ) {
+    enum ConnectModeEnum _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(62)
+inline void Connection15::PutMode ( enum ConnectModeEnum plMode ) {
+    HRESULT _hr = put_Mode(plMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(63)
+inline _bstr_t Connection15::GetProvider ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Provider(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(64)
+inline void Connection15::PutProvider ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Provider(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(65)
+inline long Connection15::GetState ( ) {
+    long _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(66)
+inline _RecordsetPtr Connection15::OpenSchema ( enum SchemaEnum Schema, const _variant_t & Restrictions, const _variant_t & SchemaID ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw_OpenSchema(Schema, Restrictions, SchemaID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+//
+// interface _Connection wrapper method implementations
+//
+
+#pragma implementation_key(67)
+inline HRESULT _Connection::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Recordset15 wrapper method implementations
+//
+
+#pragma implementation_key(68)
+inline enum PositionEnum Recordset15::GetAbsolutePosition ( ) {
+    enum PositionEnum _result;
+    HRESULT _hr = get_AbsolutePosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(69)
+inline void Recordset15::PutAbsolutePosition ( enum PositionEnum pl ) {
+    HRESULT _hr = put_AbsolutePosition(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(70)
+inline void Recordset15::PutRefActiveConnection ( IDispatch * pvar ) {
+    HRESULT _hr = putref_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(71)
+inline void Recordset15::PutActiveConnection ( const _variant_t & pvar ) {
+    HRESULT _hr = put_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(72)
+inline _variant_t Recordset15::GetActiveConnection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(73)
+inline VARIANT_BOOL Recordset15::GetadoBOF ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_adoBOF(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(74)
+inline _variant_t Recordset15::GetBookmark ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Bookmark(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(75)
+inline void Recordset15::PutBookmark ( const _variant_t & pvBookmark ) {
+    HRESULT _hr = put_Bookmark(pvBookmark);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(76)
+inline long Recordset15::GetCacheSize ( ) {
+    long _result;
+    HRESULT _hr = get_CacheSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(77)
+inline void Recordset15::PutCacheSize ( long pl ) {
+    HRESULT _hr = put_CacheSize(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(78)
+inline enum CursorTypeEnum Recordset15::GetCursorType ( ) {
+    enum CursorTypeEnum _result;
+    HRESULT _hr = get_CursorType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(79)
+inline void Recordset15::PutCursorType ( enum CursorTypeEnum plCursorType ) {
+    HRESULT _hr = put_CursorType(plCursorType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(80)
+inline VARIANT_BOOL Recordset15::GetadoEOF ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_adoEOF(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(81)
+inline FieldsPtr Recordset15::GetFields ( ) {
+    struct Fields * _result;
+    HRESULT _hr = get_Fields(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FieldsPtr(_result, false);
+}
+
+#pragma implementation_key(82)
+inline enum LockTypeEnum Recordset15::GetLockType ( ) {
+    enum LockTypeEnum _result;
+    HRESULT _hr = get_LockType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(83)
+inline void Recordset15::PutLockType ( enum LockTypeEnum plLockType ) {
+    HRESULT _hr = put_LockType(plLockType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(84)
+inline long Recordset15::GetMaxRecords ( ) {
+    long _result;
+    HRESULT _hr = get_MaxRecords(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(85)
+inline void Recordset15::PutMaxRecords ( long plMaxRecords ) {
+    HRESULT _hr = put_MaxRecords(plMaxRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(86)
+inline long Recordset15::GetRecordCount ( ) {
+    long _result;
+    HRESULT _hr = get_RecordCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(87)
+inline void Recordset15::PutRefSource ( IDispatch * pvSource ) {
+    HRESULT _hr = putref_Source(pvSource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(88)
+inline void Recordset15::PutSource ( _bstr_t pvSource ) {
+    HRESULT _hr = put_Source(pvSource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(89)
+inline _variant_t Recordset15::GetSource ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(90)
+inline HRESULT Recordset15::AddNew ( const _variant_t & FieldList, const _variant_t & Values ) {
+    HRESULT _hr = raw_AddNew(FieldList, Values);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(91)
+inline HRESULT Recordset15::CancelUpdate ( ) {
+    HRESULT _hr = raw_CancelUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(92)
+inline HRESULT Recordset15::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(93)
+inline HRESULT Recordset15::Delete ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw_Delete(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(94)
+inline _variant_t Recordset15::GetRows ( long Rows, const _variant_t & Start, const _variant_t & Fields ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetRows(Rows, Start, Fields, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(95)
+inline HRESULT Recordset15::Move ( long NumRecords, const _variant_t & Start ) {
+    HRESULT _hr = raw_Move(NumRecords, Start);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(96)
+inline HRESULT Recordset15::MoveNext ( ) {
+    HRESULT _hr = raw_MoveNext();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(97)
+inline HRESULT Recordset15::MovePrevious ( ) {
+    HRESULT _hr = raw_MovePrevious();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(98)
+inline HRESULT Recordset15::MoveFirst ( ) {
+    HRESULT _hr = raw_MoveFirst();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(99)
+inline HRESULT Recordset15::MoveLast ( ) {
+    HRESULT _hr = raw_MoveLast();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(100)
+inline HRESULT Recordset15::Open ( const _variant_t & Source, const _variant_t & ActiveConnection, enum CursorTypeEnum CursorType, enum LockTypeEnum LockType, long Options ) {
+    HRESULT _hr = raw_Open(Source, ActiveConnection, CursorType, LockType, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(101)
+inline HRESULT Recordset15::Requery ( long Options ) {
+    HRESULT _hr = raw_Requery(Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(102)
+inline HRESULT Recordset15::_xResync ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw__xResync(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(103)
+inline HRESULT Recordset15::Update ( const _variant_t & Fields, const _variant_t & Values ) {
+    HRESULT _hr = raw_Update(Fields, Values);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(104)
+inline enum PositionEnum Recordset15::GetAbsolutePage ( ) {
+    enum PositionEnum _result;
+    HRESULT _hr = get_AbsolutePage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(105)
+inline void Recordset15::PutAbsolutePage ( enum PositionEnum pl ) {
+    HRESULT _hr = put_AbsolutePage(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(106)
+inline enum EditModeEnum Recordset15::GetEditMode ( ) {
+    enum EditModeEnum _result;
+    HRESULT _hr = get_EditMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(107)
+inline _variant_t Recordset15::GetFilter ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Filter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(108)
+inline void Recordset15::PutFilter ( const _variant_t & Criteria ) {
+    HRESULT _hr = put_Filter(Criteria);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(109)
+inline long Recordset15::GetPageCount ( ) {
+    long _result;
+    HRESULT _hr = get_PageCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(110)
+inline long Recordset15::GetPageSize ( ) {
+    long _result;
+    HRESULT _hr = get_PageSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(111)
+inline void Recordset15::PutPageSize ( long pl ) {
+    HRESULT _hr = put_PageSize(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(112)
+inline _bstr_t Recordset15::GetSort ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Sort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(113)
+inline void Recordset15::PutSort ( _bstr_t Criteria ) {
+    HRESULT _hr = put_Sort(Criteria);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(114)
+inline long Recordset15::GetStatus ( ) {
+    long _result;
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(115)
+inline long Recordset15::GetState ( ) {
+    long _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(116)
+inline _RecordsetPtr Recordset15::_xClone ( ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw__xClone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+#pragma implementation_key(117)
+inline HRESULT Recordset15::UpdateBatch ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw_UpdateBatch(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(118)
+inline HRESULT Recordset15::CancelBatch ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw_CancelBatch(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(119)
+inline enum CursorLocationEnum Recordset15::GetCursorLocation ( ) {
+    enum CursorLocationEnum _result;
+    HRESULT _hr = get_CursorLocation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(120)
+inline void Recordset15::PutCursorLocation ( enum CursorLocationEnum plCursorLoc ) {
+    HRESULT _hr = put_CursorLocation(plCursorLoc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(121)
+inline _RecordsetPtr Recordset15::NextRecordset ( VARIANT * RecordsAffected ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw_NextRecordset(RecordsAffected, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+#pragma implementation_key(122)
+inline VARIANT_BOOL Recordset15::Supports ( enum CursorOptionEnum CursorOptions ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_Supports(CursorOptions, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(123)
+inline _variant_t Recordset15::GetCollect ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Collect(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(124)
+inline void Recordset15::PutCollect ( const _variant_t & Index, const _variant_t & pvar ) {
+    HRESULT _hr = put_Collect(Index, pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(125)
+inline enum MarshalOptionsEnum Recordset15::GetMarshalOptions ( ) {
+    enum MarshalOptionsEnum _result;
+    HRESULT _hr = get_MarshalOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(126)
+inline void Recordset15::PutMarshalOptions ( enum MarshalOptionsEnum peMarshal ) {
+    HRESULT _hr = put_MarshalOptions(peMarshal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(127)
+inline HRESULT Recordset15::Find ( _bstr_t Criteria, long SkipRecords, enum SearchDirectionEnum SearchDirection, const _variant_t & Start ) {
+    HRESULT _hr = raw_Find(Criteria, SkipRecords, SearchDirection, Start);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Recordset20 wrapper method implementations
+//
+
+#pragma implementation_key(128)
+inline HRESULT Recordset20::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(129)
+inline IUnknownPtr Recordset20::GetDataSource ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_DataSource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(130)
+inline void Recordset20::PutRefDataSource ( IUnknown * ppunkDataSource ) {
+    HRESULT _hr = putref_DataSource(ppunkDataSource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(131)
+inline HRESULT Recordset20::_xSave ( _bstr_t FileName, enum PersistFormatEnum PersistFormat ) {
+    HRESULT _hr = raw__xSave(FileName, PersistFormat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(132)
+inline IDispatchPtr Recordset20::GetActiveCommand ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_ActiveCommand(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+#pragma implementation_key(133)
+inline void Recordset20::PutStayInSync ( VARIANT_BOOL pbStayInSync ) {
+    HRESULT _hr = put_StayInSync(pbStayInSync);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(134)
+inline VARIANT_BOOL Recordset20::GetStayInSync ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_StayInSync(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(135)
+inline _bstr_t Recordset20::GetString ( enum StringFormatEnum StringFormat, long NumRows, _bstr_t ColumnDelimeter, _bstr_t RowDelimeter, _bstr_t NullExpr ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetString(StringFormat, NumRows, ColumnDelimeter, RowDelimeter, NullExpr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(136)
+inline _bstr_t Recordset20::GetDataMember ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DataMember(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(137)
+inline void Recordset20::PutDataMember ( _bstr_t pbstrDataMember ) {
+    HRESULT _hr = put_DataMember(pbstrDataMember);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(138)
+inline enum CompareEnum Recordset20::CompareBookmarks ( const _variant_t & Bookmark1, const _variant_t & Bookmark2 ) {
+    enum CompareEnum _result;
+    HRESULT _hr = raw_CompareBookmarks(Bookmark1, Bookmark2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(139)
+inline _RecordsetPtr Recordset20::Clone ( enum LockTypeEnum LockType ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw_Clone(LockType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+#pragma implementation_key(140)
+inline HRESULT Recordset20::Resync ( enum AffectEnum AffectRecords, enum ResyncEnum ResyncValues ) {
+    HRESULT _hr = raw_Resync(AffectRecords, ResyncValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Recordset21 wrapper method implementations
+//
+
+#pragma implementation_key(141)
+inline HRESULT Recordset21::Seek ( const _variant_t & KeyValues, enum SeekEnum SeekOption ) {
+    HRESULT _hr = raw_Seek(KeyValues, SeekOption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(142)
+inline void Recordset21::PutIndex ( _bstr_t pbstrIndex ) {
+    HRESULT _hr = put_Index(pbstrIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(143)
+inline _bstr_t Recordset21::GetIndex ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface _Recordset wrapper method implementations
+//
+
+#pragma implementation_key(144)
+inline HRESULT _Recordset::Save ( const _variant_t & Destination, enum PersistFormatEnum PersistFormat ) {
+    HRESULT _hr = raw_Save(Destination, PersistFormat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Fields15 wrapper method implementations
+//
+
+#pragma implementation_key(145)
+inline FieldPtr Fields15::GetItem ( const _variant_t & Index ) {
+    struct Field * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FieldPtr(_result, false);
+}
+
+//
+// interface Fields20 wrapper method implementations
+//
+
+#pragma implementation_key(146)
+inline HRESULT Fields20::_Append ( _bstr_t Name, enum DataTypeEnum Type, long DefinedSize, enum FieldAttributeEnum Attrib ) {
+    HRESULT _hr = raw__Append(Name, Type, DefinedSize, Attrib);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(147)
+inline HRESULT Fields20::Delete ( const _variant_t & Index ) {
+    HRESULT _hr = raw_Delete(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Fields wrapper method implementations
+//
+
+#pragma implementation_key(148)
+inline HRESULT Fields::Append ( _bstr_t Name, enum DataTypeEnum Type, long DefinedSize, enum FieldAttributeEnum Attrib, const _variant_t & FieldValue ) {
+    HRESULT _hr = raw_Append(Name, Type, DefinedSize, Attrib, FieldValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(149)
+inline HRESULT Fields::Update ( ) {
+    HRESULT _hr = raw_Update();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(150)
+inline HRESULT Fields::Resync ( enum ResyncEnum ResyncValues ) {
+    HRESULT _hr = raw_Resync(ResyncValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(151)
+inline HRESULT Fields::CancelUpdate ( ) {
+    HRESULT _hr = raw_CancelUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Field20 wrapper method implementations
+//
+
+#pragma implementation_key(152)
+inline long Field20::GetActualSize ( ) {
+    long _result;
+    HRESULT _hr = get_ActualSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(153)
+inline long Field20::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(154)
+inline long Field20::GetDefinedSize ( ) {
+    long _result;
+    HRESULT _hr = get_DefinedSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(155)
+inline _bstr_t Field20::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(156)
+inline enum DataTypeEnum Field20::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(157)
+inline _variant_t Field20::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(158)
+inline void Field20::PutValue ( const _variant_t & pvar ) {
+    HRESULT _hr = put_Value(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(159)
+inline unsigned char Field20::GetPrecision ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(160)
+inline unsigned char Field20::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(161)
+inline HRESULT Field20::AppendChunk ( const _variant_t & Data ) {
+    HRESULT _hr = raw_AppendChunk(Data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(162)
+inline _variant_t Field20::GetChunk ( long Length ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetChunk(Length, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(163)
+inline _variant_t Field20::GetOriginalValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_OriginalValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(164)
+inline _variant_t Field20::GetUnderlyingValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_UnderlyingValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(165)
+inline IUnknownPtr Field20::GetDataFormat ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_DataFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(166)
+inline void Field20::PutRefDataFormat ( IUnknown * ppiDF ) {
+    HRESULT _hr = putref_DataFormat(ppiDF);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(167)
+inline void Field20::PutPrecision ( unsigned char pbPrecision ) {
+    HRESULT _hr = put_Precision(pbPrecision);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(168)
+inline void Field20::PutNumericScale ( unsigned char pbNumericScale ) {
+    HRESULT _hr = put_NumericScale(pbNumericScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(169)
+inline void Field20::PutType ( enum DataTypeEnum pDataType ) {
+    HRESULT _hr = put_Type(pDataType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(170)
+inline void Field20::PutDefinedSize ( long pl ) {
+    HRESULT _hr = put_DefinedSize(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(171)
+inline void Field20::PutAttributes ( long pl ) {
+    HRESULT _hr = put_Attributes(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Field wrapper method implementations
+//
+
+#pragma implementation_key(172)
+inline long Field::GetStatus ( ) {
+    long _result;
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface _Parameter wrapper method implementations
+//
+
+#pragma implementation_key(173)
+inline _bstr_t _Parameter::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(174)
+inline void _Parameter::PutName ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Name(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(175)
+inline _variant_t _Parameter::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(176)
+inline void _Parameter::PutValue ( const _variant_t & pvar ) {
+    HRESULT _hr = put_Value(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(177)
+inline enum DataTypeEnum _Parameter::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(178)
+inline void _Parameter::PutType ( enum DataTypeEnum psDataType ) {
+    HRESULT _hr = put_Type(psDataType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(179)
+inline void _Parameter::PutDirection ( enum ParameterDirectionEnum plParmDirection ) {
+    HRESULT _hr = put_Direction(plParmDirection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(180)
+inline enum ParameterDirectionEnum _Parameter::GetDirection ( ) {
+    enum ParameterDirectionEnum _result;
+    HRESULT _hr = get_Direction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(181)
+inline void _Parameter::PutPrecision ( unsigned char pbPrecision ) {
+    HRESULT _hr = put_Precision(pbPrecision);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(182)
+inline unsigned char _Parameter::GetPrecision ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(183)
+inline void _Parameter::PutNumericScale ( unsigned char pbScale ) {
+    HRESULT _hr = put_NumericScale(pbScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(184)
+inline unsigned char _Parameter::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(185)
+inline void _Parameter::PutSize ( long pl ) {
+    HRESULT _hr = put_Size(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(186)
+inline long _Parameter::GetSize ( ) {
+    long _result;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(187)
+inline HRESULT _Parameter::AppendChunk ( const _variant_t & Val ) {
+    HRESULT _hr = raw_AppendChunk(Val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(188)
+inline long _Parameter::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(189)
+inline void _Parameter::PutAttributes ( long plParmAttribs ) {
+    HRESULT _hr = put_Attributes(plParmAttribs);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Parameters wrapper method implementations
+//
+
+#pragma implementation_key(190)
+inline _ParameterPtr Parameters::GetItem ( const _variant_t & Index ) {
+    struct _Parameter * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _ParameterPtr(_result, false);
+}
+
+//
+// interface Command25 wrapper method implementations
+//
+
+#pragma implementation_key(191)
+inline long Command25::GetState ( ) {
+    long _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(192)
+inline HRESULT Command25::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Command wrapper method implementations
+//
+
+#pragma implementation_key(193)
+inline void _Command::PutRefCommandStream ( IUnknown * pvStream ) {
+    HRESULT _hr = putref_CommandStream(pvStream);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(194)
+inline _variant_t _Command::GetCommandStream ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CommandStream(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(195)
+inline void _Command::PutDialect ( _bstr_t pbstrDialect ) {
+    HRESULT _hr = put_Dialect(pbstrDialect);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(196)
+inline _bstr_t _Command::GetDialect ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Dialect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(197)
+inline void _Command::PutNamedParameters ( VARIANT_BOOL pfNamedParameters ) {
+    HRESULT _hr = put_NamedParameters(pfNamedParameters);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(198)
+inline VARIANT_BOOL _Command::GetNamedParameters ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_NamedParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ConnectionEventsVt wrapper method implementations
+//
+
+#pragma implementation_key(199)
+inline HRESULT ConnectionEventsVt::InfoMessage ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_InfoMessage(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(200)
+inline HRESULT ConnectionEventsVt::BeginTransComplete ( long TransactionLevel, struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_BeginTransComplete(TransactionLevel, pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(201)
+inline HRESULT ConnectionEventsVt::CommitTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_CommitTransComplete(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(202)
+inline HRESULT ConnectionEventsVt::RollbackTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_RollbackTransComplete(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(203)
+inline HRESULT ConnectionEventsVt::WillExecute ( BSTR * Source, enum CursorTypeEnum * CursorType, enum LockTypeEnum * LockType, long * Options, enum EventStatusEnum * adStatus, struct _Command * pCommand, struct _Recordset * pRecordset, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_WillExecute(Source, CursorType, LockType, Options, adStatus, pCommand, pRecordset, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(204)
+inline HRESULT ConnectionEventsVt::ExecuteComplete ( long RecordsAffected, struct Error * pError, enum EventStatusEnum * adStatus, struct _Command * pCommand, struct _Recordset * pRecordset, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_ExecuteComplete(RecordsAffected, pError, adStatus, pCommand, pRecordset, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(205)
+inline HRESULT ConnectionEventsVt::WillConnect ( BSTR * ConnectionString, BSTR * UserID, BSTR * Password, long * Options, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_WillConnect(ConnectionString, UserID, Password, Options, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(206)
+inline HRESULT ConnectionEventsVt::ConnectComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_ConnectComplete(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(207)
+inline HRESULT ConnectionEventsVt::Disconnect ( enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _hr = raw_Disconnect(adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface RecordsetEventsVt wrapper method implementations
+//
+
+#pragma implementation_key(208)
+inline HRESULT RecordsetEventsVt::WillChangeField ( long cFields, const _variant_t & Fields, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_WillChangeField(cFields, Fields, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(209)
+inline HRESULT RecordsetEventsVt::FieldChangeComplete ( long cFields, const _variant_t & Fields, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_FieldChangeComplete(cFields, Fields, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(210)
+inline HRESULT RecordsetEventsVt::WillChangeRecord ( enum EventReasonEnum adReason, long cRecords, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_WillChangeRecord(adReason, cRecords, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(211)
+inline HRESULT RecordsetEventsVt::RecordChangeComplete ( enum EventReasonEnum adReason, long cRecords, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_RecordChangeComplete(adReason, cRecords, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(212)
+inline HRESULT RecordsetEventsVt::WillChangeRecordset ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_WillChangeRecordset(adReason, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(213)
+inline HRESULT RecordsetEventsVt::RecordsetChangeComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_RecordsetChangeComplete(adReason, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(214)
+inline HRESULT RecordsetEventsVt::WillMove ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_WillMove(adReason, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(215)
+inline HRESULT RecordsetEventsVt::MoveComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_MoveComplete(adReason, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(216)
+inline HRESULT RecordsetEventsVt::EndOfRecordset ( VARIANT_BOOL * fMoreData, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_EndOfRecordset(fMoreData, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(217)
+inline HRESULT RecordsetEventsVt::FetchProgress ( long Progress, long MaxProgress, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_FetchProgress(Progress, MaxProgress, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(218)
+inline HRESULT RecordsetEventsVt::FetchComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _hr = raw_FetchComplete(pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface ConnectionEvents wrapper method implementations
+//
+
+#pragma implementation_key(219)
+inline HRESULT ConnectionEvents::InfoMessage ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x0, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(220)
+inline HRESULT ConnectionEvents::BeginTransComplete ( long TransactionLevel, struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009", TransactionLevel, pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(221)
+inline HRESULT ConnectionEvents::CommitTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(222)
+inline HRESULT ConnectionEvents::RollbackTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(223)
+inline HRESULT ConnectionEvents::WillExecute ( BSTR * Source, enum CursorTypeEnum * CursorType, enum LockTypeEnum * LockType, long * Options, enum EventStatusEnum * adStatus, struct _Command * pCommand, struct _Recordset * pRecordset, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008\x4003\x4003\x4003\x4003\x0009\x0009\x0009", Source, CursorType, LockType, Options, adStatus, pCommand, pRecordset, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(224)
+inline HRESULT ConnectionEvents::ExecuteComplete ( long RecordsAffected, struct Error * pError, enum EventStatusEnum * adStatus, struct _Command * pCommand, struct _Recordset * pRecordset, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009\x0009\x0009", RecordsAffected, pError, adStatus, pCommand, pRecordset, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(225)
+inline HRESULT ConnectionEvents::WillConnect ( BSTR * ConnectionString, BSTR * UserID, BSTR * Password, long * Options, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008\x4008\x4008\x4003\x4003\x0009", ConnectionString, UserID, Password, Options, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(226)
+inline HRESULT ConnectionEvents::ConnectComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(227)
+inline HRESULT ConnectionEvents::Disconnect ( enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4003\x0009", adStatus, pConnection);
+    return _result;
+}
+
+//
+// dispinterface RecordsetEvents wrapper method implementations
+//
+
+#pragma implementation_key(228)
+inline HRESULT RecordsetEvents::WillChangeField ( long cFields, const _variant_t & Fields, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x000c\x4003\x0009", cFields, &Fields, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(229)
+inline HRESULT RecordsetEvents::FieldChangeComplete ( long cFields, const _variant_t & Fields, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x000c\x0009\x4003\x0009", cFields, &Fields, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(230)
+inline HRESULT RecordsetEvents::WillChangeRecord ( enum EventReasonEnum adReason, long cRecords, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0003\x4003\x0009", adReason, cRecords, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(231)
+inline HRESULT RecordsetEvents::RecordChangeComplete ( enum EventReasonEnum adReason, long cRecords, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0003\x0009\x4003\x0009", adReason, cRecords, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(232)
+inline HRESULT RecordsetEvents::WillChangeRecordset ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x4003\x0009", adReason, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(233)
+inline HRESULT RecordsetEvents::RecordsetChangeComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009", adReason, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(234)
+inline HRESULT RecordsetEvents::WillMove ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x4003\x0009", adReason, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(235)
+inline HRESULT RecordsetEvents::MoveComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009", adReason, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(236)
+inline HRESULT RecordsetEvents::EndOfRecordset ( VARIANT_BOOL * fMoreData, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x11, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x400b\x4003\x0009", fMoreData, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(237)
+inline HRESULT RecordsetEvents::FetchProgress ( long Progress, long MaxProgress, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x12, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0003\x4003\x0009", Progress, MaxProgress, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(238)
+inline HRESULT RecordsetEvents::FetchComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x13, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pRecordset);
+    return _result;
+}
+
+//
+// interface ADOConnectionConstruction15 wrapper method implementations
+//
+
+#pragma implementation_key(239)
+inline IUnknownPtr ADOConnectionConstruction15::GetDSO ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_DSO(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(240)
+inline IUnknownPtr ADOConnectionConstruction15::GetSession ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_Session(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(241)
+inline HRESULT ADOConnectionConstruction15::WrapDSOandSession ( IUnknown * pDSO, IUnknown * pSession ) {
+    HRESULT _hr = raw_WrapDSOandSession(pDSO, pSession);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Record wrapper method implementations
+//
+
+#pragma implementation_key(242)
+inline _variant_t _Record::GetActiveConnection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(243)
+inline void _Record::PutActiveConnection ( _bstr_t pvar ) {
+    HRESULT _hr = put_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(244)
+inline void _Record::PutRefActiveConnection ( struct _Connection * pvar ) {
+    HRESULT _hr = putref_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(245)
+inline enum ObjectStateEnum _Record::GetState ( ) {
+    enum ObjectStateEnum _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(246)
+inline _variant_t _Record::GetSource ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(247)
+inline void _Record::PutSource ( _bstr_t pvar ) {
+    HRESULT _hr = put_Source(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(248)
+inline void _Record::PutRefSource ( IDispatch * pvar ) {
+    HRESULT _hr = putref_Source(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(249)
+inline enum ConnectModeEnum _Record::GetMode ( ) {
+    enum ConnectModeEnum _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(250)
+inline void _Record::PutMode ( enum ConnectModeEnum pMode ) {
+    HRESULT _hr = put_Mode(pMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(251)
+inline _bstr_t _Record::GetParentURL ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ParentURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(252)
+inline _bstr_t _Record::MoveRecord ( _bstr_t Source, _bstr_t Destination, _bstr_t UserName, _bstr_t Password, enum MoveRecordOptionsEnum Options, VARIANT_BOOL Async ) {
+    BSTR _result;
+    HRESULT _hr = raw_MoveRecord(Source, Destination, UserName, Password, Options, Async, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(253)
+inline _bstr_t _Record::CopyRecord ( _bstr_t Source, _bstr_t Destination, _bstr_t UserName, _bstr_t Password, enum CopyRecordOptionsEnum Options, VARIANT_BOOL Async ) {
+    BSTR _result;
+    HRESULT _hr = raw_CopyRecord(Source, Destination, UserName, Password, Options, Async, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(254)
+inline HRESULT _Record::DeleteRecord ( _bstr_t Source, VARIANT_BOOL Async ) {
+    HRESULT _hr = raw_DeleteRecord(Source, Async);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(255)
+inline HRESULT _Record::Open ( const _variant_t & Source, const _variant_t & ActiveConnection, enum ConnectModeEnum Mode, enum RecordCreateOptionsEnum CreateOptions, enum RecordOpenOptionsEnum Options, _bstr_t UserName, _bstr_t Password ) {
+    HRESULT _hr = raw_Open(Source, ActiveConnection, Mode, CreateOptions, Options, UserName, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(256)
+inline HRESULT _Record::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(257)
+inline FieldsPtr _Record::GetFields ( ) {
+    struct Fields * _result;
+    HRESULT _hr = get_Fields(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return FieldsPtr(_result, false);
+}
+
+#pragma implementation_key(258)
+inline enum RecordTypeEnum _Record::GetRecordType ( ) {
+    enum RecordTypeEnum _result;
+    HRESULT _hr = get_RecordType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(259)
+inline _RecordsetPtr _Record::GetChildren ( ) {
+    struct _Recordset * _result;
+    HRESULT _hr = raw_GetChildren(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _RecordsetPtr(_result, false);
+}
+
+#pragma implementation_key(260)
+inline HRESULT _Record::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Stream wrapper method implementations
+//
+
+#pragma implementation_key(261)
+inline long _Stream::GetSize ( ) {
+    long _result;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(262)
+inline VARIANT_BOOL _Stream::GetEOS ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_EOS(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(263)
+inline long _Stream::GetPosition ( ) {
+    long _result;
+    HRESULT _hr = get_Position(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(264)
+inline void _Stream::PutPosition ( long pPos ) {
+    HRESULT _hr = put_Position(pPos);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(265)
+inline enum StreamTypeEnum _Stream::GetType ( ) {
+    enum StreamTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(266)
+inline void _Stream::PutType ( enum StreamTypeEnum ptype ) {
+    HRESULT _hr = put_Type(ptype);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(267)
+inline enum LineSeparatorEnum _Stream::GetLineSeparator ( ) {
+    enum LineSeparatorEnum _result;
+    HRESULT _hr = get_LineSeparator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(268)
+inline void _Stream::PutLineSeparator ( enum LineSeparatorEnum pLS ) {
+    HRESULT _hr = put_LineSeparator(pLS);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(269)
+inline enum ObjectStateEnum _Stream::GetState ( ) {
+    enum ObjectStateEnum _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(270)
+inline enum ConnectModeEnum _Stream::GetMode ( ) {
+    enum ConnectModeEnum _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(271)
+inline void _Stream::PutMode ( enum ConnectModeEnum pMode ) {
+    HRESULT _hr = put_Mode(pMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(272)
+inline _bstr_t _Stream::GetCharset ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Charset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(273)
+inline void _Stream::PutCharset ( _bstr_t pbstrCharset ) {
+    HRESULT _hr = put_Charset(pbstrCharset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(274)
+inline _variant_t _Stream::Read ( long NumBytes ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Read(NumBytes, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(275)
+inline HRESULT _Stream::Open ( const _variant_t & Source, enum ConnectModeEnum Mode, enum StreamOpenOptionsEnum Options, _bstr_t UserName, _bstr_t Password ) {
+    HRESULT _hr = raw_Open(Source, Mode, Options, UserName, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(276)
+inline HRESULT _Stream::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(277)
+inline HRESULT _Stream::SkipLine ( ) {
+    HRESULT _hr = raw_SkipLine();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(278)
+inline HRESULT _Stream::Write ( const _variant_t & Buffer ) {
+    HRESULT _hr = raw_Write(Buffer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(279)
+inline HRESULT _Stream::SetEOS ( ) {
+    HRESULT _hr = raw_SetEOS();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(280)
+inline HRESULT _Stream::CopyTo ( struct _Stream * DestStream, long CharNumber ) {
+    HRESULT _hr = raw_CopyTo(DestStream, CharNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(281)
+inline HRESULT _Stream::Flush ( ) {
+    HRESULT _hr = raw_Flush();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(282)
+inline HRESULT _Stream::SaveToFile ( _bstr_t FileName, enum SaveOptionsEnum Options ) {
+    HRESULT _hr = raw_SaveToFile(FileName, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(283)
+inline HRESULT _Stream::LoadFromFile ( _bstr_t FileName ) {
+    HRESULT _hr = raw_LoadFromFile(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(284)
+inline _bstr_t _Stream::ReadText ( long NumChars ) {
+    BSTR _result;
+    HRESULT _hr = raw_ReadText(NumChars, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(285)
+inline HRESULT _Stream::WriteText ( _bstr_t Data, enum StreamWriteEnum Options ) {
+    HRESULT _hr = raw_WriteText(Data, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(286)
+inline HRESULT _Stream::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ADORecordConstruction wrapper method implementations
+//
+
+#pragma implementation_key(287)
+inline IUnknownPtr ADORecordConstruction::GetRow ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_Row(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(288)
+inline void ADORecordConstruction::PutRow ( IUnknown * ppRow ) {
+    HRESULT _hr = put_Row(ppRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(289)
+inline void ADORecordConstruction::PutParentRow ( IUnknown * _arg1 ) {
+    HRESULT _hr = put_ParentRow(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ADOStreamConstruction wrapper method implementations
+//
+
+#pragma implementation_key(290)
+inline IUnknownPtr ADOStreamConstruction::GetStream ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_Stream(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(291)
+inline void ADOStreamConstruction::PutStream ( IUnknown * ppStm ) {
+    HRESULT _hr = put_Stream(ppStm);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ADOCommandConstruction wrapper method implementations
+//
+
+#pragma implementation_key(292)
+inline IUnknownPtr ADOCommandConstruction::GetOLEDBCommand ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_OLEDBCommand(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(293)
+inline void ADOCommandConstruction::PutOLEDBCommand ( IUnknown * ppOLEDBCommand ) {
+    HRESULT _hr = put_OLEDBCommand(ppOLEDBCommand);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface ADORecordsetConstruction wrapper method implementations
+//
+
+#pragma implementation_key(294)
+inline IUnknownPtr ADORecordsetConstruction::GetRowset ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_Rowset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(295)
+inline void ADORecordsetConstruction::PutRowset ( IUnknown * ppRowset ) {
+    HRESULT _hr = put_Rowset(ppRowset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(296)
+inline ADO_LONGPTR ADORecordsetConstruction::GetChapter ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_Chapter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(297)
+inline void ADORecordsetConstruction::PutChapter ( ADO_LONGPTR plChapter ) {
+    HRESULT _hr = put_Chapter(plChapter);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(298)
+inline IUnknownPtr ADORecordsetConstruction::GetRowPosition ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_RowPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(299)
+inline void ADORecordsetConstruction::PutRowPosition ( IUnknown * ppRowPos ) {
+    HRESULT _hr = put_RowPosition(ppRowPos);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Field15 wrapper method implementations
+//
+
+#pragma implementation_key(300)
+inline long Field15::GetActualSize ( ) {
+    long _result;
+    HRESULT _hr = get_ActualSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(301)
+inline long Field15::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(302)
+inline long Field15::GetDefinedSize ( ) {
+    long _result;
+    HRESULT _hr = get_DefinedSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(303)
+inline _bstr_t Field15::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(304)
+inline enum DataTypeEnum Field15::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(305)
+inline _variant_t Field15::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(306)
+inline void Field15::PutValue ( const _variant_t & pvar ) {
+    HRESULT _hr = put_Value(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(307)
+inline unsigned char Field15::GetPrecision ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(308)
+inline unsigned char Field15::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(309)
+inline HRESULT Field15::AppendChunk ( const _variant_t & Data ) {
+    HRESULT _hr = raw_AppendChunk(Data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(310)
+inline _variant_t Field15::GetChunk ( long Length ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetChunk(Length, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(311)
+inline _variant_t Field15::GetOriginalValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_OriginalValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(312)
+inline _variant_t Field15::GetUnderlyingValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_UnderlyingValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ConnectionEventsVt_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(313)
+inline HRESULT ConnectionEventsVt_Deprecated::InfoMessage ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_InfoMessage(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(314)
+inline HRESULT ConnectionEventsVt_Deprecated::BeginTransComplete ( long TransactionLevel, struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_BeginTransComplete(TransactionLevel, pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(315)
+inline HRESULT ConnectionEventsVt_Deprecated::CommitTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_CommitTransComplete(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(316)
+inline HRESULT ConnectionEventsVt_Deprecated::RollbackTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_RollbackTransComplete(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(317)
+inline HRESULT ConnectionEventsVt_Deprecated::WillExecute ( BSTR * Source, enum CursorTypeEnum * CursorType, enum LockTypeEnum * LockType, long * Options, enum EventStatusEnum * adStatus, struct _Command_Deprecated * pCommand, struct _Recordset_Deprecated * pRecordset, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_WillExecute(Source, CursorType, LockType, Options, adStatus, pCommand, pRecordset, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(318)
+inline HRESULT ConnectionEventsVt_Deprecated::ExecuteComplete ( long RecordsAffected, struct Error * pError, enum EventStatusEnum * adStatus, struct _Command_Deprecated * pCommand, struct _Recordset_Deprecated * pRecordset, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_ExecuteComplete(RecordsAffected, pError, adStatus, pCommand, pRecordset, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(319)
+inline HRESULT ConnectionEventsVt_Deprecated::WillConnect ( BSTR * ConnectionString, BSTR * UserID, BSTR * Password, long * Options, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_WillConnect(ConnectionString, UserID, Password, Options, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(320)
+inline HRESULT ConnectionEventsVt_Deprecated::ConnectComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_ConnectComplete(pError, adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(321)
+inline HRESULT ConnectionEventsVt_Deprecated::Disconnect ( enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _hr = raw_Disconnect(adStatus, pConnection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Connection15_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(322)
+inline _bstr_t Connection15_Deprecated::GetConnectionString ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ConnectionString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(323)
+inline void Connection15_Deprecated::PutConnectionString ( _bstr_t pbstr ) {
+    HRESULT _hr = put_ConnectionString(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(324)
+inline long Connection15_Deprecated::GetCommandTimeout ( ) {
+    long _result;
+    HRESULT _hr = get_CommandTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(325)
+inline void Connection15_Deprecated::PutCommandTimeout ( long plTimeout ) {
+    HRESULT _hr = put_CommandTimeout(plTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(326)
+inline long Connection15_Deprecated::GetConnectionTimeout ( ) {
+    long _result;
+    HRESULT _hr = get_ConnectionTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(327)
+inline void Connection15_Deprecated::PutConnectionTimeout ( long plTimeout ) {
+    HRESULT _hr = put_ConnectionTimeout(plTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(328)
+inline _bstr_t Connection15_Deprecated::GetVersion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(329)
+inline HRESULT Connection15_Deprecated::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(330)
+inline _Recordset_DeprecatedPtr Connection15_Deprecated::Execute ( _bstr_t CommandText, VARIANT * RecordsAffected, long Options ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw_Execute(CommandText, RecordsAffected, Options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(331)
+inline long Connection15_Deprecated::BeginTrans ( ) {
+    long _result;
+    HRESULT _hr = raw_BeginTrans(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(332)
+inline HRESULT Connection15_Deprecated::CommitTrans ( ) {
+    HRESULT _hr = raw_CommitTrans();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(333)
+inline HRESULT Connection15_Deprecated::RollbackTrans ( ) {
+    HRESULT _hr = raw_RollbackTrans();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(334)
+inline HRESULT Connection15_Deprecated::Open ( _bstr_t ConnectionString, _bstr_t UserID, _bstr_t Password, long Options ) {
+    HRESULT _hr = raw_Open(ConnectionString, UserID, Password, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(335)
+inline ErrorsPtr Connection15_Deprecated::GetErrors ( ) {
+    struct Errors * _result;
+    HRESULT _hr = get_Errors(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ErrorsPtr(_result, false);
+}
+
+#pragma implementation_key(336)
+inline _bstr_t Connection15_Deprecated::GetDefaultDatabase ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DefaultDatabase(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(337)
+inline void Connection15_Deprecated::PutDefaultDatabase ( _bstr_t pbstr ) {
+    HRESULT _hr = put_DefaultDatabase(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(338)
+inline enum IsolationLevelEnum Connection15_Deprecated::GetIsolationLevel ( ) {
+    enum IsolationLevelEnum _result;
+    HRESULT _hr = get_IsolationLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(339)
+inline void Connection15_Deprecated::PutIsolationLevel ( enum IsolationLevelEnum Level ) {
+    HRESULT _hr = put_IsolationLevel(Level);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(340)
+inline long Connection15_Deprecated::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(341)
+inline void Connection15_Deprecated::PutAttributes ( long plAttr ) {
+    HRESULT _hr = put_Attributes(plAttr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(342)
+inline enum CursorLocationEnum Connection15_Deprecated::GetCursorLocation ( ) {
+    enum CursorLocationEnum _result;
+    HRESULT _hr = get_CursorLocation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(343)
+inline void Connection15_Deprecated::PutCursorLocation ( enum CursorLocationEnum plCursorLoc ) {
+    HRESULT _hr = put_CursorLocation(plCursorLoc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(344)
+inline enum ConnectModeEnum Connection15_Deprecated::GetMode ( ) {
+    enum ConnectModeEnum _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(345)
+inline void Connection15_Deprecated::PutMode ( enum ConnectModeEnum plMode ) {
+    HRESULT _hr = put_Mode(plMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(346)
+inline _bstr_t Connection15_Deprecated::GetProvider ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Provider(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(347)
+inline void Connection15_Deprecated::PutProvider ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Provider(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(348)
+inline long Connection15_Deprecated::GetState ( ) {
+    long _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(349)
+inline _Recordset_DeprecatedPtr Connection15_Deprecated::OpenSchema ( enum SchemaEnum Schema, const _variant_t & Restrictions, const _variant_t & SchemaID ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw_OpenSchema(Schema, Restrictions, SchemaID, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+//
+// interface _Connection_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(350)
+inline HRESULT _Connection_Deprecated::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Recordset15_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(351)
+inline PositionEnum_Param Recordset15_Deprecated::GetAbsolutePosition ( ) {
+    PositionEnum_Param _result;
+    HRESULT _hr = get_AbsolutePosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(352)
+inline void Recordset15_Deprecated::PutAbsolutePosition ( PositionEnum_Param pl ) {
+    HRESULT _hr = put_AbsolutePosition(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(353)
+inline void Recordset15_Deprecated::PutRefActiveConnection ( IDispatch * pvar ) {
+    HRESULT _hr = putref_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(354)
+inline void Recordset15_Deprecated::PutActiveConnection ( const _variant_t & pvar ) {
+    HRESULT _hr = put_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(355)
+inline _variant_t Recordset15_Deprecated::GetActiveConnection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(356)
+inline VARIANT_BOOL Recordset15_Deprecated::GetadoBOF ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_adoBOF(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(357)
+inline _variant_t Recordset15_Deprecated::GetBookmark ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Bookmark(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(358)
+inline void Recordset15_Deprecated::PutBookmark ( const _variant_t & pvBookmark ) {
+    HRESULT _hr = put_Bookmark(pvBookmark);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(359)
+inline long Recordset15_Deprecated::GetCacheSize ( ) {
+    long _result;
+    HRESULT _hr = get_CacheSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(360)
+inline void Recordset15_Deprecated::PutCacheSize ( long pl ) {
+    HRESULT _hr = put_CacheSize(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(361)
+inline enum CursorTypeEnum Recordset15_Deprecated::GetCursorType ( ) {
+    enum CursorTypeEnum _result;
+    HRESULT _hr = get_CursorType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(362)
+inline void Recordset15_Deprecated::PutCursorType ( enum CursorTypeEnum plCursorType ) {
+    HRESULT _hr = put_CursorType(plCursorType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(363)
+inline VARIANT_BOOL Recordset15_Deprecated::GetadoEOF ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_adoEOF(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(364)
+inline Fields_DeprecatedPtr Recordset15_Deprecated::GetFields ( ) {
+    struct Fields_Deprecated * _result;
+    HRESULT _hr = get_Fields(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return Fields_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(365)
+inline enum LockTypeEnum Recordset15_Deprecated::GetLockType ( ) {
+    enum LockTypeEnum _result;
+    HRESULT _hr = get_LockType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(366)
+inline void Recordset15_Deprecated::PutLockType ( enum LockTypeEnum plLockType ) {
+    HRESULT _hr = put_LockType(plLockType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(367)
+inline ADO_LONGPTR Recordset15_Deprecated::GetMaxRecords ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_MaxRecords(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(368)
+inline void Recordset15_Deprecated::PutMaxRecords ( ADO_LONGPTR plMaxRecords ) {
+    HRESULT _hr = put_MaxRecords(plMaxRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(369)
+inline ADO_LONGPTR Recordset15_Deprecated::GetRecordCount ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_RecordCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(370)
+inline void Recordset15_Deprecated::PutRefSource ( IDispatch * pvSource ) {
+    HRESULT _hr = putref_Source(pvSource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(371)
+inline void Recordset15_Deprecated::PutSource ( _bstr_t pvSource ) {
+    HRESULT _hr = put_Source(pvSource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(372)
+inline _variant_t Recordset15_Deprecated::GetSource ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(373)
+inline HRESULT Recordset15_Deprecated::AddNew ( const _variant_t & FieldList, const _variant_t & Values ) {
+    HRESULT _hr = raw_AddNew(FieldList, Values);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(374)
+inline HRESULT Recordset15_Deprecated::CancelUpdate ( ) {
+    HRESULT _hr = raw_CancelUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(375)
+inline HRESULT Recordset15_Deprecated::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(376)
+inline HRESULT Recordset15_Deprecated::Delete ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw_Delete(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(377)
+inline _variant_t Recordset15_Deprecated::GetRows ( long Rows, const _variant_t & Start, const _variant_t & Fields ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetRows(Rows, Start, Fields, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(378)
+inline HRESULT Recordset15_Deprecated::Move ( ADO_LONGPTR NumRecords, const _variant_t & Start ) {
+    HRESULT _hr = raw_Move(NumRecords, Start);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(379)
+inline HRESULT Recordset15_Deprecated::MoveNext ( ) {
+    HRESULT _hr = raw_MoveNext();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(380)
+inline HRESULT Recordset15_Deprecated::MovePrevious ( ) {
+    HRESULT _hr = raw_MovePrevious();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(381)
+inline HRESULT Recordset15_Deprecated::MoveFirst ( ) {
+    HRESULT _hr = raw_MoveFirst();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(382)
+inline HRESULT Recordset15_Deprecated::MoveLast ( ) {
+    HRESULT _hr = raw_MoveLast();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(383)
+inline HRESULT Recordset15_Deprecated::Open ( const _variant_t & Source, const _variant_t & ActiveConnection, enum CursorTypeEnum CursorType, enum LockTypeEnum LockType, long Options ) {
+    HRESULT _hr = raw_Open(Source, ActiveConnection, CursorType, LockType, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(384)
+inline HRESULT Recordset15_Deprecated::Requery ( long Options ) {
+    HRESULT _hr = raw_Requery(Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(385)
+inline HRESULT Recordset15_Deprecated::_xResync ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw__xResync(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(386)
+inline HRESULT Recordset15_Deprecated::Update ( const _variant_t & Fields, const _variant_t & Values ) {
+    HRESULT _hr = raw_Update(Fields, Values);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(387)
+inline PositionEnum_Param Recordset15_Deprecated::GetAbsolutePage ( ) {
+    PositionEnum_Param _result;
+    HRESULT _hr = get_AbsolutePage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(388)
+inline void Recordset15_Deprecated::PutAbsolutePage ( PositionEnum_Param pl ) {
+    HRESULT _hr = put_AbsolutePage(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(389)
+inline enum EditModeEnum Recordset15_Deprecated::GetEditMode ( ) {
+    enum EditModeEnum _result;
+    HRESULT _hr = get_EditMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(390)
+inline _variant_t Recordset15_Deprecated::GetFilter ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Filter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(391)
+inline void Recordset15_Deprecated::PutFilter ( const _variant_t & Criteria ) {
+    HRESULT _hr = put_Filter(Criteria);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(392)
+inline ADO_LONGPTR Recordset15_Deprecated::GetPageCount ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_PageCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(393)
+inline long Recordset15_Deprecated::GetPageSize ( ) {
+    long _result;
+    HRESULT _hr = get_PageSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(394)
+inline void Recordset15_Deprecated::PutPageSize ( long pl ) {
+    HRESULT _hr = put_PageSize(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(395)
+inline _bstr_t Recordset15_Deprecated::GetSort ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Sort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(396)
+inline void Recordset15_Deprecated::PutSort ( _bstr_t Criteria ) {
+    HRESULT _hr = put_Sort(Criteria);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(397)
+inline long Recordset15_Deprecated::GetStatus ( ) {
+    long _result;
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(398)
+inline long Recordset15_Deprecated::GetState ( ) {
+    long _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(399)
+inline _Recordset_DeprecatedPtr Recordset15_Deprecated::_xClone ( ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw__xClone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(400)
+inline HRESULT Recordset15_Deprecated::UpdateBatch ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw_UpdateBatch(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(401)
+inline HRESULT Recordset15_Deprecated::CancelBatch ( enum AffectEnum AffectRecords ) {
+    HRESULT _hr = raw_CancelBatch(AffectRecords);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(402)
+inline enum CursorLocationEnum Recordset15_Deprecated::GetCursorLocation ( ) {
+    enum CursorLocationEnum _result;
+    HRESULT _hr = get_CursorLocation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(403)
+inline void Recordset15_Deprecated::PutCursorLocation ( enum CursorLocationEnum plCursorLoc ) {
+    HRESULT _hr = put_CursorLocation(plCursorLoc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(404)
+inline _Recordset_DeprecatedPtr Recordset15_Deprecated::NextRecordset ( VARIANT * RecordsAffected ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw_NextRecordset(RecordsAffected, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(405)
+inline VARIANT_BOOL Recordset15_Deprecated::Supports ( enum CursorOptionEnum CursorOptions ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_Supports(CursorOptions, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(406)
+inline _variant_t Recordset15_Deprecated::GetCollect ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Collect(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(407)
+inline void Recordset15_Deprecated::PutCollect ( const _variant_t & Index, const _variant_t & pvar ) {
+    HRESULT _hr = put_Collect(Index, pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(408)
+inline enum MarshalOptionsEnum Recordset15_Deprecated::GetMarshalOptions ( ) {
+    enum MarshalOptionsEnum _result;
+    HRESULT _hr = get_MarshalOptions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(409)
+inline void Recordset15_Deprecated::PutMarshalOptions ( enum MarshalOptionsEnum peMarshal ) {
+    HRESULT _hr = put_MarshalOptions(peMarshal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(410)
+inline HRESULT Recordset15_Deprecated::Find ( _bstr_t Criteria, ADO_LONGPTR SkipRecords, enum SearchDirectionEnum SearchDirection, const _variant_t & Start ) {
+    HRESULT _hr = raw_Find(Criteria, SkipRecords, SearchDirection, Start);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Recordset20_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(411)
+inline HRESULT Recordset20_Deprecated::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(412)
+inline IUnknownPtr Recordset20_Deprecated::GetDataSource ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_DataSource(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(413)
+inline void Recordset20_Deprecated::PutRefDataSource ( IUnknown * ppunkDataSource ) {
+    HRESULT _hr = putref_DataSource(ppunkDataSource);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(414)
+inline HRESULT Recordset20_Deprecated::_xSave ( _bstr_t FileName, enum PersistFormatEnum PersistFormat ) {
+    HRESULT _hr = raw__xSave(FileName, PersistFormat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(415)
+inline IDispatchPtr Recordset20_Deprecated::GetActiveCommand ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_ActiveCommand(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+#pragma implementation_key(416)
+inline void Recordset20_Deprecated::PutStayInSync ( VARIANT_BOOL pbStayInSync ) {
+    HRESULT _hr = put_StayInSync(pbStayInSync);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(417)
+inline VARIANT_BOOL Recordset20_Deprecated::GetStayInSync ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_StayInSync(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(418)
+inline _bstr_t Recordset20_Deprecated::GetString ( enum StringFormatEnum StringFormat, long NumRows, _bstr_t ColumnDelimeter, _bstr_t RowDelimeter, _bstr_t NullExpr ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetString(StringFormat, NumRows, ColumnDelimeter, RowDelimeter, NullExpr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(419)
+inline _bstr_t Recordset20_Deprecated::GetDataMember ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DataMember(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(420)
+inline void Recordset20_Deprecated::PutDataMember ( _bstr_t pbstrDataMember ) {
+    HRESULT _hr = put_DataMember(pbstrDataMember);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(421)
+inline enum CompareEnum Recordset20_Deprecated::CompareBookmarks ( const _variant_t & Bookmark1, const _variant_t & Bookmark2 ) {
+    enum CompareEnum _result;
+    HRESULT _hr = raw_CompareBookmarks(Bookmark1, Bookmark2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(422)
+inline _Recordset_DeprecatedPtr Recordset20_Deprecated::Clone ( enum LockTypeEnum LockType ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw_Clone(LockType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(423)
+inline HRESULT Recordset20_Deprecated::Resync ( enum AffectEnum AffectRecords, enum ResyncEnum ResyncValues ) {
+    HRESULT _hr = raw_Resync(AffectRecords, ResyncValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Recordset21_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(424)
+inline HRESULT Recordset21_Deprecated::Seek ( const _variant_t & KeyValues, enum SeekEnum SeekOption ) {
+    HRESULT _hr = raw_Seek(KeyValues, SeekOption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(425)
+inline void Recordset21_Deprecated::PutIndex ( _bstr_t pbstrIndex ) {
+    HRESULT _hr = put_Index(pbstrIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(426)
+inline _bstr_t Recordset21_Deprecated::GetIndex ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Index(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface _Recordset_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(427)
+inline HRESULT _Recordset_Deprecated::Save ( const _variant_t & Destination, enum PersistFormatEnum PersistFormat ) {
+    HRESULT _hr = raw_Save(Destination, PersistFormat);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Fields15_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(428)
+inline Field_DeprecatedPtr Fields15_Deprecated::GetItem ( const _variant_t & Index ) {
+    struct Field_Deprecated * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return Field_DeprecatedPtr(_result, false);
+}
+
+//
+// interface Fields20_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(429)
+inline HRESULT Fields20_Deprecated::_Append ( _bstr_t Name, enum DataTypeEnum Type, ADO_LONGPTR DefinedSize, enum FieldAttributeEnum Attrib ) {
+    HRESULT _hr = raw__Append(Name, Type, DefinedSize, Attrib);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(430)
+inline HRESULT Fields20_Deprecated::Delete ( const _variant_t & Index ) {
+    HRESULT _hr = raw_Delete(Index);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Fields_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(431)
+inline HRESULT Fields_Deprecated::Append ( _bstr_t Name, enum DataTypeEnum Type, ADO_LONGPTR DefinedSize, enum FieldAttributeEnum Attrib, const _variant_t & FieldValue ) {
+    HRESULT _hr = raw_Append(Name, Type, DefinedSize, Attrib, FieldValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(432)
+inline HRESULT Fields_Deprecated::Update ( ) {
+    HRESULT _hr = raw_Update();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(433)
+inline HRESULT Fields_Deprecated::Resync ( enum ResyncEnum ResyncValues ) {
+    HRESULT _hr = raw_Resync(ResyncValues);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(434)
+inline HRESULT Fields_Deprecated::CancelUpdate ( ) {
+    HRESULT _hr = raw_CancelUpdate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Field20_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(435)
+inline ADO_LONGPTR Field20_Deprecated::GetActualSize ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_ActualSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(436)
+inline long Field20_Deprecated::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(437)
+inline ADO_LONGPTR Field20_Deprecated::GetDefinedSize ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_DefinedSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(438)
+inline _bstr_t Field20_Deprecated::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(439)
+inline enum DataTypeEnum Field20_Deprecated::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(440)
+inline _variant_t Field20_Deprecated::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(441)
+inline void Field20_Deprecated::PutValue ( const _variant_t & pvar ) {
+    HRESULT _hr = put_Value(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(442)
+inline unsigned char Field20_Deprecated::GetPrecision ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(443)
+inline unsigned char Field20_Deprecated::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(444)
+inline HRESULT Field20_Deprecated::AppendChunk ( const _variant_t & Data ) {
+    HRESULT _hr = raw_AppendChunk(Data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(445)
+inline _variant_t Field20_Deprecated::GetChunk ( long Length ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetChunk(Length, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(446)
+inline _variant_t Field20_Deprecated::GetOriginalValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_OriginalValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(447)
+inline _variant_t Field20_Deprecated::GetUnderlyingValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_UnderlyingValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(448)
+inline IUnknownPtr Field20_Deprecated::GetDataFormat ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_DataFormat(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(449)
+inline void Field20_Deprecated::PutRefDataFormat ( IUnknown * ppiDF ) {
+    HRESULT _hr = putref_DataFormat(ppiDF);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(450)
+inline void Field20_Deprecated::PutPrecision ( unsigned char pbPrecision ) {
+    HRESULT _hr = put_Precision(pbPrecision);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(451)
+inline void Field20_Deprecated::PutNumericScale ( unsigned char pbNumericScale ) {
+    HRESULT _hr = put_NumericScale(pbNumericScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(452)
+inline void Field20_Deprecated::PutType ( enum DataTypeEnum pDataType ) {
+    HRESULT _hr = put_Type(pDataType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(453)
+inline void Field20_Deprecated::PutDefinedSize ( ADO_LONGPTR pl ) {
+    HRESULT _hr = put_DefinedSize(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(454)
+inline void Field20_Deprecated::PutAttributes ( long pl ) {
+    HRESULT _hr = put_Attributes(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Field_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(455)
+inline long Field_Deprecated::GetStatus ( ) {
+    long _result;
+    HRESULT _hr = get_Status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface Command15_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(456)
+inline _Connection_DeprecatedPtr Command15_Deprecated::GetActiveConnection ( ) {
+    struct _Connection_Deprecated * _result;
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Connection_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(457)
+inline void Command15_Deprecated::PutRefActiveConnection ( struct _Connection_Deprecated * ppvObject ) {
+    HRESULT _hr = putref_ActiveConnection(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(458)
+inline void Command15_Deprecated::PutActiveConnection ( const _variant_t & ppvObject ) {
+    HRESULT _hr = put_ActiveConnection(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(459)
+inline _bstr_t Command15_Deprecated::GetCommandText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_CommandText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(460)
+inline void Command15_Deprecated::PutCommandText ( _bstr_t pbstr ) {
+    HRESULT _hr = put_CommandText(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(461)
+inline long Command15_Deprecated::GetCommandTimeout ( ) {
+    long _result;
+    HRESULT _hr = get_CommandTimeout(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(462)
+inline void Command15_Deprecated::PutCommandTimeout ( long pl ) {
+    HRESULT _hr = put_CommandTimeout(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(463)
+inline VARIANT_BOOL Command15_Deprecated::GetPrepared ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Prepared(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(464)
+inline void Command15_Deprecated::PutPrepared ( VARIANT_BOOL pfPrepared ) {
+    HRESULT _hr = put_Prepared(pfPrepared);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(465)
+inline _Recordset_DeprecatedPtr Command15_Deprecated::Execute ( VARIANT * RecordsAffected, VARIANT * Parameters, long Options ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw_Execute(RecordsAffected, Parameters, Options, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(466)
+inline _Parameter_DeprecatedPtr Command15_Deprecated::CreateParameter ( _bstr_t Name, enum DataTypeEnum Type, enum ParameterDirectionEnum Direction, ADO_LONGPTR Size, const _variant_t & Value ) {
+    struct _Parameter_Deprecated * _result;
+    HRESULT _hr = raw_CreateParameter(Name, Type, Direction, Size, Value, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Parameter_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(467)
+inline Parameters_DeprecatedPtr Command15_Deprecated::GetParameters ( ) {
+    struct Parameters_Deprecated * _result;
+    HRESULT _hr = get_Parameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return Parameters_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(468)
+inline void Command15_Deprecated::PutCommandType ( enum CommandTypeEnum plCmdType ) {
+    HRESULT _hr = put_CommandType(plCmdType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(469)
+inline enum CommandTypeEnum Command15_Deprecated::GetCommandType ( ) {
+    enum CommandTypeEnum _result;
+    HRESULT _hr = get_CommandType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(470)
+inline _bstr_t Command15_Deprecated::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(471)
+inline void Command15_Deprecated::PutName ( _bstr_t pbstrName ) {
+    HRESULT _hr = put_Name(pbstrName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Command25_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(472)
+inline long Command25_Deprecated::GetState ( ) {
+    long _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(473)
+inline HRESULT Command25_Deprecated::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Command_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(474)
+inline void _Command_Deprecated::PutRefCommandStream ( IUnknown * pvStream ) {
+    HRESULT _hr = putref_CommandStream(pvStream);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(475)
+inline _variant_t _Command_Deprecated::GetCommandStream ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_CommandStream(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(476)
+inline void _Command_Deprecated::PutDialect ( _bstr_t pbstrDialect ) {
+    HRESULT _hr = put_Dialect(pbstrDialect);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(477)
+inline _bstr_t _Command_Deprecated::GetDialect ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Dialect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(478)
+inline void _Command_Deprecated::PutNamedParameters ( VARIANT_BOOL pfNamedParameters ) {
+    HRESULT _hr = put_NamedParameters(pfNamedParameters);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(479)
+inline VARIANT_BOOL _Command_Deprecated::GetNamedParameters ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_NamedParameters(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface _Parameter_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(480)
+inline _bstr_t _Parameter_Deprecated::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(481)
+inline void _Parameter_Deprecated::PutName ( _bstr_t pbstr ) {
+    HRESULT _hr = put_Name(pbstr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(482)
+inline _variant_t _Parameter_Deprecated::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(483)
+inline void _Parameter_Deprecated::PutValue ( const _variant_t & pvar ) {
+    HRESULT _hr = put_Value(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(484)
+inline enum DataTypeEnum _Parameter_Deprecated::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(485)
+inline void _Parameter_Deprecated::PutType ( enum DataTypeEnum psDataType ) {
+    HRESULT _hr = put_Type(psDataType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(486)
+inline void _Parameter_Deprecated::PutDirection ( enum ParameterDirectionEnum plParmDirection ) {
+    HRESULT _hr = put_Direction(plParmDirection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(487)
+inline enum ParameterDirectionEnum _Parameter_Deprecated::GetDirection ( ) {
+    enum ParameterDirectionEnum _result;
+    HRESULT _hr = get_Direction(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(488)
+inline void _Parameter_Deprecated::PutPrecision ( unsigned char pbPrecision ) {
+    HRESULT _hr = put_Precision(pbPrecision);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(489)
+inline unsigned char _Parameter_Deprecated::GetPrecision ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(490)
+inline void _Parameter_Deprecated::PutNumericScale ( unsigned char pbScale ) {
+    HRESULT _hr = put_NumericScale(pbScale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(491)
+inline unsigned char _Parameter_Deprecated::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(492)
+inline void _Parameter_Deprecated::PutSize ( ADO_LONGPTR pl ) {
+    HRESULT _hr = put_Size(pl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(493)
+inline ADO_LONGPTR _Parameter_Deprecated::GetSize ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(494)
+inline HRESULT _Parameter_Deprecated::AppendChunk ( const _variant_t & Val ) {
+    HRESULT _hr = raw_AppendChunk(Val);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(495)
+inline long _Parameter_Deprecated::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(496)
+inline void _Parameter_Deprecated::PutAttributes ( long plParmAttribs ) {
+    HRESULT _hr = put_Attributes(plParmAttribs);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Parameters_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(497)
+inline _Parameter_DeprecatedPtr Parameters_Deprecated::GetItem ( const _variant_t & Index ) {
+    struct _Parameter_Deprecated * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Parameter_DeprecatedPtr(_result, false);
+}
+
+//
+// interface RecordsetEventsVt_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(498)
+inline HRESULT RecordsetEventsVt_Deprecated::WillChangeField ( long cFields, const _variant_t & Fields, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_WillChangeField(cFields, Fields, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(499)
+inline HRESULT RecordsetEventsVt_Deprecated::FieldChangeComplete ( long cFields, const _variant_t & Fields, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_FieldChangeComplete(cFields, Fields, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(500)
+inline HRESULT RecordsetEventsVt_Deprecated::WillChangeRecord ( enum EventReasonEnum adReason, long cRecords, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_WillChangeRecord(adReason, cRecords, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(501)
+inline HRESULT RecordsetEventsVt_Deprecated::RecordChangeComplete ( enum EventReasonEnum adReason, long cRecords, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_RecordChangeComplete(adReason, cRecords, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(502)
+inline HRESULT RecordsetEventsVt_Deprecated::WillChangeRecordset ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_WillChangeRecordset(adReason, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(503)
+inline HRESULT RecordsetEventsVt_Deprecated::RecordsetChangeComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_RecordsetChangeComplete(adReason, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(504)
+inline HRESULT RecordsetEventsVt_Deprecated::WillMove ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_WillMove(adReason, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(505)
+inline HRESULT RecordsetEventsVt_Deprecated::MoveComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_MoveComplete(adReason, pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(506)
+inline HRESULT RecordsetEventsVt_Deprecated::EndOfRecordset ( VARIANT_BOOL * fMoreData, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_EndOfRecordset(fMoreData, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(507)
+inline HRESULT RecordsetEventsVt_Deprecated::FetchProgress ( long Progress, long MaxProgress, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_FetchProgress(Progress, MaxProgress, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(508)
+inline HRESULT RecordsetEventsVt_Deprecated::FetchComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _hr = raw_FetchComplete(pError, adStatus, pRecordset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface ConnectionEvents_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(509)
+inline HRESULT ConnectionEvents_Deprecated::InfoMessage ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x0, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(510)
+inline HRESULT ConnectionEvents_Deprecated::BeginTransComplete ( long TransactionLevel, struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009", TransactionLevel, pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(511)
+inline HRESULT ConnectionEvents_Deprecated::CommitTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(512)
+inline HRESULT ConnectionEvents_Deprecated::RollbackTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(513)
+inline HRESULT ConnectionEvents_Deprecated::WillExecute ( BSTR * Source, enum CursorTypeEnum * CursorType, enum LockTypeEnum * LockType, long * Options, enum EventStatusEnum * adStatus, struct _Command_Deprecated * pCommand, struct _Recordset_Deprecated * pRecordset, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008\x4003\x4003\x4003\x4003\x0009\x0009\x0009", Source, CursorType, LockType, Options, adStatus, pCommand, pRecordset, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(514)
+inline HRESULT ConnectionEvents_Deprecated::ExecuteComplete ( long RecordsAffected, struct Error * pError, enum EventStatusEnum * adStatus, struct _Command_Deprecated * pCommand, struct _Recordset_Deprecated * pRecordset, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009\x0009\x0009", RecordsAffected, pError, adStatus, pCommand, pRecordset, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(515)
+inline HRESULT ConnectionEvents_Deprecated::WillConnect ( BSTR * ConnectionString, BSTR * UserID, BSTR * Password, long * Options, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4008\x4008\x4008\x4003\x4003\x0009", ConnectionString, UserID, Password, Options, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(516)
+inline HRESULT ConnectionEvents_Deprecated::ConnectComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
+}
+
+#pragma implementation_key(517)
+inline HRESULT ConnectionEvents_Deprecated::Disconnect ( enum EventStatusEnum * adStatus, struct _Connection_Deprecated * pConnection ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x4003\x0009", adStatus, pConnection);
+    return _result;
+}
+
+//
+// dispinterface RecordsetEvents_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(518)
+inline HRESULT RecordsetEvents_Deprecated::WillChangeField ( long cFields, const _variant_t & Fields, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x000c\x4003\x0009", cFields, &Fields, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(519)
+inline HRESULT RecordsetEvents_Deprecated::FieldChangeComplete ( long cFields, const _variant_t & Fields, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x000c\x0009\x4003\x0009", cFields, &Fields, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(520)
+inline HRESULT RecordsetEvents_Deprecated::WillChangeRecord ( enum EventReasonEnum adReason, long cRecords, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0003\x4003\x0009", adReason, cRecords, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(521)
+inline HRESULT RecordsetEvents_Deprecated::RecordChangeComplete ( enum EventReasonEnum adReason, long cRecords, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0003\x0009\x4003\x0009", adReason, cRecords, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(522)
+inline HRESULT RecordsetEvents_Deprecated::WillChangeRecordset ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x4003\x0009", adReason, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(523)
+inline HRESULT RecordsetEvents_Deprecated::RecordsetChangeComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009", adReason, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(524)
+inline HRESULT RecordsetEvents_Deprecated::WillMove ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x4003\x0009", adReason, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(525)
+inline HRESULT RecordsetEvents_Deprecated::MoveComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0009\x4003\x0009", adReason, pError, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(526)
+inline HRESULT RecordsetEvents_Deprecated::EndOfRecordset ( VARIANT_BOOL * fMoreData, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x11, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x400b\x4003\x0009", fMoreData, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(527)
+inline HRESULT RecordsetEvents_Deprecated::FetchProgress ( long Progress, long MaxProgress, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x12, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0003\x0003\x4003\x0009", Progress, MaxProgress, adStatus, pRecordset);
+    return _result;
+}
+
+#pragma implementation_key(528)
+inline HRESULT RecordsetEvents_Deprecated::FetchComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset_Deprecated * pRecordset ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0x13, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x0009\x4003\x0009", pError, adStatus, pRecordset);
+    return _result;
+}
+
+//
+// interface _Record_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(529)
+inline _variant_t _Record_Deprecated::GetActiveConnection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(530)
+inline void _Record_Deprecated::PutActiveConnection ( _bstr_t pvar ) {
+    HRESULT _hr = put_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(531)
+inline void _Record_Deprecated::PutRefActiveConnection ( struct _Connection_Deprecated * pvar ) {
+    HRESULT _hr = putref_ActiveConnection(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(532)
+inline enum ObjectStateEnum _Record_Deprecated::GetState ( ) {
+    enum ObjectStateEnum _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(533)
+inline _variant_t _Record_Deprecated::GetSource ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Source(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(534)
+inline void _Record_Deprecated::PutSource ( _bstr_t pvar ) {
+    HRESULT _hr = put_Source(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(535)
+inline void _Record_Deprecated::PutRefSource ( IDispatch * pvar ) {
+    HRESULT _hr = putref_Source(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(536)
+inline enum ConnectModeEnum _Record_Deprecated::GetMode ( ) {
+    enum ConnectModeEnum _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(537)
+inline void _Record_Deprecated::PutMode ( enum ConnectModeEnum pMode ) {
+    HRESULT _hr = put_Mode(pMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(538)
+inline _bstr_t _Record_Deprecated::GetParentURL ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ParentURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(539)
+inline _bstr_t _Record_Deprecated::MoveRecord ( _bstr_t Source, _bstr_t Destination, _bstr_t UserName, _bstr_t Password, enum MoveRecordOptionsEnum Options, VARIANT_BOOL Async ) {
+    BSTR _result;
+    HRESULT _hr = raw_MoveRecord(Source, Destination, UserName, Password, Options, Async, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(540)
+inline _bstr_t _Record_Deprecated::CopyRecord ( _bstr_t Source, _bstr_t Destination, _bstr_t UserName, _bstr_t Password, enum CopyRecordOptionsEnum Options, VARIANT_BOOL Async ) {
+    BSTR _result;
+    HRESULT _hr = raw_CopyRecord(Source, Destination, UserName, Password, Options, Async, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(541)
+inline HRESULT _Record_Deprecated::DeleteRecord ( _bstr_t Source, VARIANT_BOOL Async ) {
+    HRESULT _hr = raw_DeleteRecord(Source, Async);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(542)
+inline HRESULT _Record_Deprecated::Open ( const _variant_t & Source, const _variant_t & ActiveConnection, enum ConnectModeEnum Mode, enum RecordCreateOptionsEnum CreateOptions, enum RecordOpenOptionsEnum Options, _bstr_t UserName, _bstr_t Password ) {
+    HRESULT _hr = raw_Open(Source, ActiveConnection, Mode, CreateOptions, Options, UserName, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(543)
+inline HRESULT _Record_Deprecated::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(544)
+inline Fields_DeprecatedPtr _Record_Deprecated::GetFields ( ) {
+    struct Fields_Deprecated * _result;
+    HRESULT _hr = get_Fields(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return Fields_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(545)
+inline enum RecordTypeEnum _Record_Deprecated::GetRecordType ( ) {
+    enum RecordTypeEnum _result;
+    HRESULT _hr = get_RecordType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(546)
+inline _Recordset_DeprecatedPtr _Record_Deprecated::GetChildren ( ) {
+    struct _Recordset_Deprecated * _result;
+    HRESULT _hr = raw_GetChildren(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _Recordset_DeprecatedPtr(_result, false);
+}
+
+#pragma implementation_key(547)
+inline HRESULT _Record_Deprecated::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Stream_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(548)
+inline ADO_LONGPTR _Stream_Deprecated::GetSize ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_Size(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(549)
+inline VARIANT_BOOL _Stream_Deprecated::GetEOS ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_EOS(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(550)
+inline ADO_LONGPTR _Stream_Deprecated::GetPosition ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_Position(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(551)
+inline void _Stream_Deprecated::PutPosition ( ADO_LONGPTR pPos ) {
+    HRESULT _hr = put_Position(pPos);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(552)
+inline enum StreamTypeEnum _Stream_Deprecated::GetType ( ) {
+    enum StreamTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(553)
+inline void _Stream_Deprecated::PutType ( enum StreamTypeEnum ptype ) {
+    HRESULT _hr = put_Type(ptype);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(554)
+inline enum LineSeparatorEnum _Stream_Deprecated::GetLineSeparator ( ) {
+    enum LineSeparatorEnum _result;
+    HRESULT _hr = get_LineSeparator(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(555)
+inline void _Stream_Deprecated::PutLineSeparator ( enum LineSeparatorEnum pLS ) {
+    HRESULT _hr = put_LineSeparator(pLS);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(556)
+inline enum ObjectStateEnum _Stream_Deprecated::GetState ( ) {
+    enum ObjectStateEnum _result;
+    HRESULT _hr = get_State(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(557)
+inline enum ConnectModeEnum _Stream_Deprecated::GetMode ( ) {
+    enum ConnectModeEnum _result;
+    HRESULT _hr = get_Mode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(558)
+inline void _Stream_Deprecated::PutMode ( enum ConnectModeEnum pMode ) {
+    HRESULT _hr = put_Mode(pMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(559)
+inline _bstr_t _Stream_Deprecated::GetCharset ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Charset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(560)
+inline void _Stream_Deprecated::PutCharset ( _bstr_t pbstrCharset ) {
+    HRESULT _hr = put_Charset(pbstrCharset);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(561)
+inline _variant_t _Stream_Deprecated::Read ( long NumBytes ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Read(NumBytes, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(562)
+inline HRESULT _Stream_Deprecated::Open ( const _variant_t & Source, enum ConnectModeEnum Mode, enum StreamOpenOptionsEnum Options, _bstr_t UserName, _bstr_t Password ) {
+    HRESULT _hr = raw_Open(Source, Mode, Options, UserName, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(563)
+inline HRESULT _Stream_Deprecated::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(564)
+inline HRESULT _Stream_Deprecated::SkipLine ( ) {
+    HRESULT _hr = raw_SkipLine();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(565)
+inline HRESULT _Stream_Deprecated::Write ( const _variant_t & Buffer ) {
+    HRESULT _hr = raw_Write(Buffer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(566)
+inline HRESULT _Stream_Deprecated::SetEOS ( ) {
+    HRESULT _hr = raw_SetEOS();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(567)
+inline HRESULT _Stream_Deprecated::CopyTo ( struct _Stream_Deprecated * DestStream, ADO_LONGPTR CharNumber ) {
+    HRESULT _hr = raw_CopyTo(DestStream, CharNumber);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(568)
+inline HRESULT _Stream_Deprecated::Flush ( ) {
+    HRESULT _hr = raw_Flush();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(569)
+inline HRESULT _Stream_Deprecated::SaveToFile ( _bstr_t FileName, enum SaveOptionsEnum Options ) {
+    HRESULT _hr = raw_SaveToFile(FileName, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(570)
+inline HRESULT _Stream_Deprecated::LoadFromFile ( _bstr_t FileName ) {
+    HRESULT _hr = raw_LoadFromFile(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(571)
+inline _bstr_t _Stream_Deprecated::ReadText ( long NumChars ) {
+    BSTR _result;
+    HRESULT _hr = raw_ReadText(NumChars, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(572)
+inline HRESULT _Stream_Deprecated::WriteText ( _bstr_t Data, enum StreamWriteEnum Options ) {
+    HRESULT _hr = raw_WriteText(Data, Options);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(573)
+inline HRESULT _Stream_Deprecated::Cancel ( ) {
+    HRESULT _hr = raw_Cancel();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Field15_Deprecated wrapper method implementations
+//
+
+#pragma implementation_key(574)
+inline ADO_LONGPTR Field15_Deprecated::GetActualSize ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_ActualSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(575)
+inline long Field15_Deprecated::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(576)
+inline ADO_LONGPTR Field15_Deprecated::GetDefinedSize ( ) {
+    ADO_LONGPTR _result;
+    HRESULT _hr = get_DefinedSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(577)
+inline _bstr_t Field15_Deprecated::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(578)
+inline enum DataTypeEnum Field15_Deprecated::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(579)
+inline _variant_t Field15_Deprecated::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(580)
+inline void Field15_Deprecated::PutValue ( const _variant_t & pvar ) {
+    HRESULT _hr = put_Value(pvar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(581)
+inline unsigned char Field15_Deprecated::GetPrecision ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(582)
+inline unsigned char Field15_Deprecated::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(583)
+inline HRESULT Field15_Deprecated::AppendChunk ( const _variant_t & Data ) {
+    HRESULT _hr = raw_AppendChunk(Data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(584)
+inline _variant_t Field15_Deprecated::GetChunk ( long Length ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetChunk(Length, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(585)
+inline _variant_t Field15_Deprecated::GetOriginalValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_OriginalValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(586)
+inline _variant_t Field15_Deprecated::GetUnderlyingValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_UnderlyingValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}

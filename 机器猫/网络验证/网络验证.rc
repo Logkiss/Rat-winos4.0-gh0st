@@ -1,0 +1,134 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\网络验证.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\网络验证.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+KPass DIALOGEX 0, 0, 198, 165
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "稳定版1.2 网络验证"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "监听端口",IDC_STATIC,34,11,32,8
+    EDITTEXT        IDC_EDIT1,72,9,47,12,ES_CENTER | ES_NUMBER
+    PUSHBUTTON      "开启服务",IDC_START,148,5,41,15
+    PUSHBUTTON      "退出程序",IDC_EXIT,148,23,41,15
+    CONTROL         "添加/用户",IDC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,26,50,10
+    EDITTEXT        IDC_USERNEMA,53,59,126,14,ES_AUTOHSCROLL
+    LTEXT           "用 户 名",IDC_STATIC,17,62,33,8
+    LTEXT           "登录密码",IDC_STATIC,17,78,33,8
+    LTEXT           "绑定域名",IDC_STATIC,17,94,33,8
+    LTEXT           "生成次数",IDC_STATIC,17,126,33,8
+    EDITTEXT        IDC_PASSWORD,53,75,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DNS,53,91,126,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUILD,53,123,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加用户",IDC_BUTTON1,149,123,41,14
+    GROUPBOX        "",IDC_STATIC,2,0,194,40
+    LTEXT           "到期时间",IDC_STATIC,17,110,33,8
+    EDITTEXT        IDC_DATA,53,107,70,14,ES_AUTOHSCROLL
+    LTEXT           "格式：20120101",IDC_STATIC,125,110,57,8,WS_DISABLED
+    GROUPBOX        "添加账号",IDC_STATIC,2,48,194,114
+    LTEXT           "更新日期",IDC_STATIC,16,141,33,8
+    EDITTEXT        IDC_GENGX,53,140,92,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "更新时间",IDC_BUTTON2,149,140,41,14
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\网络验证.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

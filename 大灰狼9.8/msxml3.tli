@@ -1,0 +1,4504 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (0b208db3).
+//
+// msxml3.tli
+//
+// Wrapper implementations for Win32 type library msxml3.dll
+// compiler-generated file created 01/06/20 at 17:13:17 - DO NOT EDIT!
+
+
+//
+// interface IXMLDOMImplementation wrapper method implementations
+//
+
+#pragma implementation_key(1)
+inline VARIANT_BOOL MSXML2::IXMLDOMImplementation::hasFeature ( _bstr_t feature, _bstr_t version ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_hasFeature(feature, version, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IXMLDOMNode wrapper method implementations
+//
+
+#pragma implementation_key(2)
+inline _bstr_t MSXML2::IXMLDOMNode::GetnodeName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_nodeName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(3)
+inline _variant_t MSXML2::IXMLDOMNode::GetnodeValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_nodeValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(4)
+inline void MSXML2::IXMLDOMNode::PutnodeValue ( const _variant_t & value ) {
+    HRESULT _hr = put_nodeValue(value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(5)
+inline DOMNodeType MSXML2::IXMLDOMNode::GetnodeType ( ) {
+    DOMNodeType _result;
+    HRESULT _hr = get_nodeType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(6)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::GetparentNode ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_parentNode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(7)
+inline MSXML2::IXMLDOMNodeListPtr MSXML2::IXMLDOMNode::GetchildNodes ( ) {
+    struct IXMLDOMNodeList * _result;
+    HRESULT _hr = get_childNodes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodeListPtr(_result, false);
+}
+
+#pragma implementation_key(8)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::GetfirstChild ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_firstChild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(9)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::GetlastChild ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_lastChild(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(10)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::GetpreviousSibling ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_previousSibling(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(11)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::GetnextSibling ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_nextSibling(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(12)
+inline MSXML2::IXMLDOMNamedNodeMapPtr MSXML2::IXMLDOMNode::Getattributes ( ) {
+    struct IXMLDOMNamedNodeMap * _result;
+    HRESULT _hr = get_attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNamedNodeMapPtr(_result, false);
+}
+
+#pragma implementation_key(13)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::insertBefore ( struct IXMLDOMNode * newChild, const _variant_t & refChild ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_insertBefore(newChild, refChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(14)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::replaceChild ( struct IXMLDOMNode * newChild, struct IXMLDOMNode * oldChild ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_replaceChild(newChild, oldChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(15)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::removeChild ( struct IXMLDOMNode * childNode ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_removeChild(childNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(16)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::appendChild ( struct IXMLDOMNode * newChild ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_appendChild(newChild, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(17)
+inline VARIANT_BOOL MSXML2::IXMLDOMNode::hasChildNodes ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_hasChildNodes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(18)
+inline MSXML2::IXMLDOMDocumentPtr MSXML2::IXMLDOMNode::GetownerDocument ( ) {
+    struct IXMLDOMDocument * _result;
+    HRESULT _hr = get_ownerDocument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMDocumentPtr(_result, false);
+}
+
+#pragma implementation_key(19)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::cloneNode ( VARIANT_BOOL deep ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_cloneNode(deep, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(20)
+inline _bstr_t MSXML2::IXMLDOMNode::GetnodeTypeString ( ) {
+    BSTR _result;
+    HRESULT _hr = get_nodeTypeString(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(21)
+inline _bstr_t MSXML2::IXMLDOMNode::Gettext ( ) {
+    BSTR _result;
+    HRESULT _hr = get_text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(22)
+inline void MSXML2::IXMLDOMNode::Puttext ( _bstr_t text ) {
+    HRESULT _hr = put_text(text);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(23)
+inline VARIANT_BOOL MSXML2::IXMLDOMNode::Getspecified ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_specified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(24)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::Getdefinition ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_definition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(25)
+inline _variant_t MSXML2::IXMLDOMNode::GetnodeTypedValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_nodeTypedValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(26)
+inline void MSXML2::IXMLDOMNode::PutnodeTypedValue ( const _variant_t & typedValue ) {
+    HRESULT _hr = put_nodeTypedValue(typedValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(27)
+inline _variant_t MSXML2::IXMLDOMNode::GetdataType ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_dataType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(28)
+inline void MSXML2::IXMLDOMNode::PutdataType ( _bstr_t dataTypeName ) {
+    HRESULT _hr = put_dataType(dataTypeName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(29)
+inline _bstr_t MSXML2::IXMLDOMNode::Getxml ( ) {
+    BSTR _result;
+    HRESULT _hr = get_xml(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(30)
+inline _bstr_t MSXML2::IXMLDOMNode::transformNode ( struct IXMLDOMNode * stylesheet ) {
+    BSTR _result;
+    HRESULT _hr = raw_transformNode(stylesheet, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(31)
+inline MSXML2::IXMLDOMNodeListPtr MSXML2::IXMLDOMNode::selectNodes ( _bstr_t queryString ) {
+    struct IXMLDOMNodeList * _result;
+    HRESULT _hr = raw_selectNodes(queryString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodeListPtr(_result, false);
+}
+
+#pragma implementation_key(32)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNode::selectSingleNode ( _bstr_t queryString ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_selectSingleNode(queryString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(33)
+inline VARIANT_BOOL MSXML2::IXMLDOMNode::Getparsed ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_parsed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(34)
+inline _bstr_t MSXML2::IXMLDOMNode::GetnamespaceURI ( ) {
+    BSTR _result;
+    HRESULT _hr = get_namespaceURI(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(35)
+inline _bstr_t MSXML2::IXMLDOMNode::Getprefix ( ) {
+    BSTR _result;
+    HRESULT _hr = get_prefix(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(36)
+inline _bstr_t MSXML2::IXMLDOMNode::GetbaseName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_baseName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(37)
+inline HRESULT MSXML2::IXMLDOMNode::transformNodeToObject ( struct IXMLDOMNode * stylesheet, const _variant_t & outputObject ) {
+    HRESULT _hr = raw_transformNodeToObject(stylesheet, outputObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IXMLDOMNodeList wrapper method implementations
+//
+
+#pragma implementation_key(38)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNodeList::Getitem ( long index ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(39)
+inline long MSXML2::IXMLDOMNodeList::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(40)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNodeList::nextNode ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_nextNode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(41)
+inline HRESULT MSXML2::IXMLDOMNodeList::reset ( ) {
+    HRESULT _hr = raw_reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(42)
+inline IUnknownPtr MSXML2::IXMLDOMNodeList::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IXMLDOMNamedNodeMap wrapper method implementations
+//
+
+#pragma implementation_key(43)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::getNamedItem ( _bstr_t name ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_getNamedItem(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(44)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::setNamedItem ( struct IXMLDOMNode * newItem ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_setNamedItem(newItem, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(45)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::removeNamedItem ( _bstr_t name ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_removeNamedItem(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(46)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::Getitem ( long index ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(47)
+inline long MSXML2::IXMLDOMNamedNodeMap::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(48)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::getQualifiedItem ( _bstr_t baseName, _bstr_t namespaceURI ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_getQualifiedItem(baseName, namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(49)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::removeQualifiedItem ( _bstr_t baseName, _bstr_t namespaceURI ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_removeQualifiedItem(baseName, namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(50)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMNamedNodeMap::nextNode ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_nextNode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(51)
+inline HRESULT MSXML2::IXMLDOMNamedNodeMap::reset ( ) {
+    HRESULT _hr = raw_reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(52)
+inline IUnknownPtr MSXML2::IXMLDOMNamedNodeMap::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IXMLDOMDocument wrapper method implementations
+//
+
+#pragma implementation_key(53)
+inline MSXML2::IXMLDOMDocumentTypePtr MSXML2::IXMLDOMDocument::Getdoctype ( ) {
+    struct IXMLDOMDocumentType * _result;
+    HRESULT _hr = get_doctype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMDocumentTypePtr(_result, false);
+}
+
+#pragma implementation_key(54)
+inline MSXML2::IXMLDOMImplementationPtr MSXML2::IXMLDOMDocument::Getimplementation ( ) {
+    struct IXMLDOMImplementation * _result;
+    HRESULT _hr = get_implementation(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMImplementationPtr(_result, false);
+}
+
+#pragma implementation_key(55)
+inline MSXML2::IXMLDOMElementPtr MSXML2::IXMLDOMDocument::GetdocumentElement ( ) {
+    struct IXMLDOMElement * _result;
+    HRESULT _hr = get_documentElement(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMElementPtr(_result, false);
+}
+
+#pragma implementation_key(56)
+inline void MSXML2::IXMLDOMDocument::PutRefdocumentElement ( struct IXMLDOMElement * DOMElement ) {
+    HRESULT _hr = putref_documentElement(DOMElement);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(57)
+inline MSXML2::IXMLDOMElementPtr MSXML2::IXMLDOMDocument::createElement ( _bstr_t tagName ) {
+    struct IXMLDOMElement * _result;
+    HRESULT _hr = raw_createElement(tagName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMElementPtr(_result, false);
+}
+
+#pragma implementation_key(58)
+inline MSXML2::IXMLDOMDocumentFragmentPtr MSXML2::IXMLDOMDocument::createDocumentFragment ( ) {
+    struct IXMLDOMDocumentFragment * _result;
+    HRESULT _hr = raw_createDocumentFragment(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMDocumentFragmentPtr(_result, false);
+}
+
+#pragma implementation_key(59)
+inline MSXML2::IXMLDOMTextPtr MSXML2::IXMLDOMDocument::createTextNode ( _bstr_t data ) {
+    struct IXMLDOMText * _result;
+    HRESULT _hr = raw_createTextNode(data, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMTextPtr(_result, false);
+}
+
+#pragma implementation_key(60)
+inline MSXML2::IXMLDOMCommentPtr MSXML2::IXMLDOMDocument::createComment ( _bstr_t data ) {
+    struct IXMLDOMComment * _result;
+    HRESULT _hr = raw_createComment(data, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMCommentPtr(_result, false);
+}
+
+#pragma implementation_key(61)
+inline MSXML2::IXMLDOMCDATASectionPtr MSXML2::IXMLDOMDocument::createCDATASection ( _bstr_t data ) {
+    struct IXMLDOMCDATASection * _result;
+    HRESULT _hr = raw_createCDATASection(data, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMCDATASectionPtr(_result, false);
+}
+
+#pragma implementation_key(62)
+inline MSXML2::IXMLDOMProcessingInstructionPtr MSXML2::IXMLDOMDocument::createProcessingInstruction ( _bstr_t target, _bstr_t data ) {
+    struct IXMLDOMProcessingInstruction * _result;
+    HRESULT _hr = raw_createProcessingInstruction(target, data, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMProcessingInstructionPtr(_result, false);
+}
+
+#pragma implementation_key(63)
+inline MSXML2::IXMLDOMAttributePtr MSXML2::IXMLDOMDocument::createAttribute ( _bstr_t name ) {
+    struct IXMLDOMAttribute * _result;
+    HRESULT _hr = raw_createAttribute(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMAttributePtr(_result, false);
+}
+
+#pragma implementation_key(64)
+inline MSXML2::IXMLDOMEntityReferencePtr MSXML2::IXMLDOMDocument::createEntityReference ( _bstr_t name ) {
+    struct IXMLDOMEntityReference * _result;
+    HRESULT _hr = raw_createEntityReference(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMEntityReferencePtr(_result, false);
+}
+
+#pragma implementation_key(65)
+inline MSXML2::IXMLDOMNodeListPtr MSXML2::IXMLDOMDocument::getElementsByTagName ( _bstr_t tagName ) {
+    struct IXMLDOMNodeList * _result;
+    HRESULT _hr = raw_getElementsByTagName(tagName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodeListPtr(_result, false);
+}
+
+#pragma implementation_key(66)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMDocument::createNode ( const _variant_t & type, _bstr_t name, _bstr_t namespaceURI ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_createNode(type, name, namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(67)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMDocument::nodeFromID ( _bstr_t idString ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_nodeFromID(idString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(68)
+inline VARIANT_BOOL MSXML2::IXMLDOMDocument::load ( const _variant_t & xmlSource ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_load(xmlSource, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(69)
+inline long MSXML2::IXMLDOMDocument::GetreadyState ( ) {
+    long _result;
+    HRESULT _hr = get_readyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(70)
+inline MSXML2::IXMLDOMParseErrorPtr MSXML2::IXMLDOMDocument::GetparseError ( ) {
+    struct IXMLDOMParseError * _result;
+    HRESULT _hr = get_parseError(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMParseErrorPtr(_result, false);
+}
+
+#pragma implementation_key(71)
+inline _bstr_t MSXML2::IXMLDOMDocument::Geturl ( ) {
+    BSTR _result;
+    HRESULT _hr = get_url(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(72)
+inline VARIANT_BOOL MSXML2::IXMLDOMDocument::Getasync ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_async(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(73)
+inline void MSXML2::IXMLDOMDocument::Putasync ( VARIANT_BOOL isAsync ) {
+    HRESULT _hr = put_async(isAsync);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(74)
+inline HRESULT MSXML2::IXMLDOMDocument::abort ( ) {
+    HRESULT _hr = raw_abort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(75)
+inline VARIANT_BOOL MSXML2::IXMLDOMDocument::loadXML ( _bstr_t bstrXML ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_loadXML(bstrXML, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(76)
+inline HRESULT MSXML2::IXMLDOMDocument::save ( const _variant_t & destination ) {
+    HRESULT _hr = raw_save(destination);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(77)
+inline VARIANT_BOOL MSXML2::IXMLDOMDocument::GetvalidateOnParse ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_validateOnParse(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(78)
+inline void MSXML2::IXMLDOMDocument::PutvalidateOnParse ( VARIANT_BOOL isValidating ) {
+    HRESULT _hr = put_validateOnParse(isValidating);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(79)
+inline VARIANT_BOOL MSXML2::IXMLDOMDocument::GetresolveExternals ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_resolveExternals(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(80)
+inline void MSXML2::IXMLDOMDocument::PutresolveExternals ( VARIANT_BOOL isResolving ) {
+    HRESULT _hr = put_resolveExternals(isResolving);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(81)
+inline VARIANT_BOOL MSXML2::IXMLDOMDocument::GetpreserveWhiteSpace ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_preserveWhiteSpace(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(82)
+inline void MSXML2::IXMLDOMDocument::PutpreserveWhiteSpace ( VARIANT_BOOL isPreserving ) {
+    HRESULT _hr = put_preserveWhiteSpace(isPreserving);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(83)
+inline void MSXML2::IXMLDOMDocument::Putonreadystatechange ( const _variant_t & _arg1 ) {
+    HRESULT _hr = put_onreadystatechange(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(84)
+inline void MSXML2::IXMLDOMDocument::Putondataavailable ( const _variant_t & _arg1 ) {
+    HRESULT _hr = put_ondataavailable(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(85)
+inline void MSXML2::IXMLDOMDocument::Putontransformnode ( const _variant_t & _arg1 ) {
+    HRESULT _hr = put_ontransformnode(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IXMLDOMDocumentType wrapper method implementations
+//
+
+#pragma implementation_key(86)
+inline _bstr_t MSXML2::IXMLDOMDocumentType::Getname ( ) {
+    BSTR _result;
+    HRESULT _hr = get_name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(87)
+inline MSXML2::IXMLDOMNamedNodeMapPtr MSXML2::IXMLDOMDocumentType::Getentities ( ) {
+    struct IXMLDOMNamedNodeMap * _result;
+    HRESULT _hr = get_entities(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNamedNodeMapPtr(_result, false);
+}
+
+#pragma implementation_key(88)
+inline MSXML2::IXMLDOMNamedNodeMapPtr MSXML2::IXMLDOMDocumentType::Getnotations ( ) {
+    struct IXMLDOMNamedNodeMap * _result;
+    HRESULT _hr = get_notations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNamedNodeMapPtr(_result, false);
+}
+
+//
+// interface IXMLDOMElement wrapper method implementations
+//
+
+#pragma implementation_key(89)
+inline _bstr_t MSXML2::IXMLDOMElement::GettagName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_tagName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(90)
+inline _variant_t MSXML2::IXMLDOMElement::getAttribute ( _bstr_t name ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getAttribute(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(91)
+inline HRESULT MSXML2::IXMLDOMElement::setAttribute ( _bstr_t name, const _variant_t & value ) {
+    HRESULT _hr = raw_setAttribute(name, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(92)
+inline HRESULT MSXML2::IXMLDOMElement::removeAttribute ( _bstr_t name ) {
+    HRESULT _hr = raw_removeAttribute(name);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(93)
+inline MSXML2::IXMLDOMAttributePtr MSXML2::IXMLDOMElement::getAttributeNode ( _bstr_t name ) {
+    struct IXMLDOMAttribute * _result;
+    HRESULT _hr = raw_getAttributeNode(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMAttributePtr(_result, false);
+}
+
+#pragma implementation_key(94)
+inline MSXML2::IXMLDOMAttributePtr MSXML2::IXMLDOMElement::setAttributeNode ( struct IXMLDOMAttribute * DOMAttribute ) {
+    struct IXMLDOMAttribute * _result;
+    HRESULT _hr = raw_setAttributeNode(DOMAttribute, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMAttributePtr(_result, false);
+}
+
+#pragma implementation_key(95)
+inline MSXML2::IXMLDOMAttributePtr MSXML2::IXMLDOMElement::removeAttributeNode ( struct IXMLDOMAttribute * DOMAttribute ) {
+    struct IXMLDOMAttribute * _result;
+    HRESULT _hr = raw_removeAttributeNode(DOMAttribute, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMAttributePtr(_result, false);
+}
+
+#pragma implementation_key(96)
+inline MSXML2::IXMLDOMNodeListPtr MSXML2::IXMLDOMElement::getElementsByTagName ( _bstr_t tagName ) {
+    struct IXMLDOMNodeList * _result;
+    HRESULT _hr = raw_getElementsByTagName(tagName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodeListPtr(_result, false);
+}
+
+#pragma implementation_key(97)
+inline HRESULT MSXML2::IXMLDOMElement::normalize ( ) {
+    HRESULT _hr = raw_normalize();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IXMLDOMAttribute wrapper method implementations
+//
+
+#pragma implementation_key(98)
+inline _bstr_t MSXML2::IXMLDOMAttribute::Getname ( ) {
+    BSTR _result;
+    HRESULT _hr = get_name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(99)
+inline _variant_t MSXML2::IXMLDOMAttribute::Getvalue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(100)
+inline void MSXML2::IXMLDOMAttribute::Putvalue ( const _variant_t & attributeValue ) {
+    HRESULT _hr = put_value(attributeValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IXMLDOMCharacterData wrapper method implementations
+//
+
+#pragma implementation_key(101)
+inline _bstr_t MSXML2::IXMLDOMCharacterData::Getdata ( ) {
+    BSTR _result;
+    HRESULT _hr = get_data(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(102)
+inline void MSXML2::IXMLDOMCharacterData::Putdata ( _bstr_t data ) {
+    HRESULT _hr = put_data(data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(103)
+inline long MSXML2::IXMLDOMCharacterData::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(104)
+inline _bstr_t MSXML2::IXMLDOMCharacterData::substringData ( long offset, long count ) {
+    BSTR _result;
+    HRESULT _hr = raw_substringData(offset, count, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(105)
+inline HRESULT MSXML2::IXMLDOMCharacterData::appendData ( _bstr_t data ) {
+    HRESULT _hr = raw_appendData(data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(106)
+inline HRESULT MSXML2::IXMLDOMCharacterData::insertData ( long offset, _bstr_t data ) {
+    HRESULT _hr = raw_insertData(offset, data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(107)
+inline HRESULT MSXML2::IXMLDOMCharacterData::deleteData ( long offset, long count ) {
+    HRESULT _hr = raw_deleteData(offset, count);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(108)
+inline HRESULT MSXML2::IXMLDOMCharacterData::replaceData ( long offset, long count, _bstr_t data ) {
+    HRESULT _hr = raw_replaceData(offset, count, data);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IXMLDOMText wrapper method implementations
+//
+
+#pragma implementation_key(109)
+inline MSXML2::IXMLDOMTextPtr MSXML2::IXMLDOMText::splitText ( long offset ) {
+    struct IXMLDOMText * _result;
+    HRESULT _hr = raw_splitText(offset, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMTextPtr(_result, false);
+}
+
+//
+// interface IXMLDOMProcessingInstruction wrapper method implementations
+//
+
+#pragma implementation_key(110)
+inline _bstr_t MSXML2::IXMLDOMProcessingInstruction::Gettarget ( ) {
+    BSTR _result;
+    HRESULT _hr = get_target(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(111)
+inline _bstr_t MSXML2::IXMLDOMProcessingInstruction::Getdata ( ) {
+    BSTR _result;
+    HRESULT _hr = get_data(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(112)
+inline void MSXML2::IXMLDOMProcessingInstruction::Putdata ( _bstr_t value ) {
+    HRESULT _hr = put_data(value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IXMLDOMParseError wrapper method implementations
+//
+
+#pragma implementation_key(113)
+inline long MSXML2::IXMLDOMParseError::GeterrorCode ( ) {
+    long _result;
+    HRESULT _hr = get_errorCode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(114)
+inline _bstr_t MSXML2::IXMLDOMParseError::Geturl ( ) {
+    BSTR _result;
+    HRESULT _hr = get_url(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(115)
+inline _bstr_t MSXML2::IXMLDOMParseError::Getreason ( ) {
+    BSTR _result;
+    HRESULT _hr = get_reason(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(116)
+inline _bstr_t MSXML2::IXMLDOMParseError::GetsrcText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_srcText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(117)
+inline long MSXML2::IXMLDOMParseError::Getline ( ) {
+    long _result;
+    HRESULT _hr = get_line(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(118)
+inline long MSXML2::IXMLDOMParseError::Getlinepos ( ) {
+    long _result;
+    HRESULT _hr = get_linepos(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(119)
+inline long MSXML2::IXMLDOMParseError::Getfilepos ( ) {
+    long _result;
+    HRESULT _hr = get_filepos(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IXMLDOMDocument2 wrapper method implementations
+//
+
+#pragma implementation_key(120)
+inline MSXML2::IXMLDOMSchemaCollectionPtr MSXML2::IXMLDOMDocument2::Getnamespaces ( ) {
+    struct IXMLDOMSchemaCollection * _result;
+    HRESULT _hr = get_namespaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMSchemaCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(121)
+inline _variant_t MSXML2::IXMLDOMDocument2::Getschemas ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_schemas(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(122)
+inline void MSXML2::IXMLDOMDocument2::PutRefschemas ( const _variant_t & otherCollection ) {
+    HRESULT _hr = putref_schemas(otherCollection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(123)
+inline MSXML2::IXMLDOMParseErrorPtr MSXML2::IXMLDOMDocument2::validate ( ) {
+    struct IXMLDOMParseError * _result;
+    HRESULT _hr = raw_validate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMParseErrorPtr(_result, false);
+}
+
+#pragma implementation_key(124)
+inline HRESULT MSXML2::IXMLDOMDocument2::setProperty ( _bstr_t name, const _variant_t & value ) {
+    HRESULT _hr = raw_setProperty(name, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(125)
+inline _variant_t MSXML2::IXMLDOMDocument2::getProperty ( _bstr_t name ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getProperty(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IXMLDOMSchemaCollection wrapper method implementations
+//
+
+#pragma implementation_key(126)
+inline HRESULT MSXML2::IXMLDOMSchemaCollection::add ( _bstr_t namespaceURI, const _variant_t & var ) {
+    HRESULT _hr = raw_add(namespaceURI, var);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(127)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMSchemaCollection::get ( _bstr_t namespaceURI ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_get(namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(128)
+inline HRESULT MSXML2::IXMLDOMSchemaCollection::remove ( _bstr_t namespaceURI ) {
+    HRESULT _hr = raw_remove(namespaceURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(129)
+inline long MSXML2::IXMLDOMSchemaCollection::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(130)
+inline _bstr_t MSXML2::IXMLDOMSchemaCollection::GetnamespaceURI ( long index ) {
+    BSTR _result;
+    HRESULT _hr = get_namespaceURI(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(131)
+inline HRESULT MSXML2::IXMLDOMSchemaCollection::addCollection ( struct IXMLDOMSchemaCollection * otherCollection ) {
+    HRESULT _hr = raw_addCollection(otherCollection);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(132)
+inline IUnknownPtr MSXML2::IXMLDOMSchemaCollection::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IXMLDOMDocument3 wrapper method implementations
+//
+
+#pragma implementation_key(133)
+inline MSXML2::IXMLDOMParseErrorPtr MSXML2::IXMLDOMDocument3::validateNode ( struct IXMLDOMNode * node ) {
+    struct IXMLDOMParseError * _result;
+    HRESULT _hr = raw_validateNode(node, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMParseErrorPtr(_result, false);
+}
+
+#pragma implementation_key(134)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMDocument3::importNode ( struct IXMLDOMNode * node, VARIANT_BOOL deep ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_importNode(node, deep, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+//
+// interface IXMLDOMNotation wrapper method implementations
+//
+
+#pragma implementation_key(135)
+inline _variant_t MSXML2::IXMLDOMNotation::GetpublicId ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_publicId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(136)
+inline _variant_t MSXML2::IXMLDOMNotation::GetsystemId ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_systemId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IXMLDOMEntity wrapper method implementations
+//
+
+#pragma implementation_key(137)
+inline _variant_t MSXML2::IXMLDOMEntity::GetpublicId ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_publicId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(138)
+inline _variant_t MSXML2::IXMLDOMEntity::GetsystemId ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_systemId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(139)
+inline _bstr_t MSXML2::IXMLDOMEntity::GetnotationName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_notationName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IXMLDOMParseError2 wrapper method implementations
+//
+
+#pragma implementation_key(140)
+inline _bstr_t MSXML2::IXMLDOMParseError2::GeterrorXPath ( ) {
+    BSTR _result;
+    HRESULT _hr = get_errorXPath(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(141)
+inline MSXML2::IXMLDOMParseErrorCollectionPtr MSXML2::IXMLDOMParseError2::GetallErrors ( ) {
+    struct IXMLDOMParseErrorCollection * _result;
+    HRESULT _hr = get_allErrors(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMParseErrorCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(142)
+inline _bstr_t MSXML2::IXMLDOMParseError2::errorParameters ( long index ) {
+    BSTR _result;
+    HRESULT _hr = raw_errorParameters(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(143)
+inline long MSXML2::IXMLDOMParseError2::GeterrorParametersCount ( ) {
+    long _result;
+    HRESULT _hr = get_errorParametersCount(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IXMLDOMParseErrorCollection wrapper method implementations
+//
+
+#pragma implementation_key(144)
+inline MSXML2::IXMLDOMParseError2Ptr MSXML2::IXMLDOMParseErrorCollection::Getitem ( long index ) {
+    struct IXMLDOMParseError2 * _result;
+    HRESULT _hr = get_item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMParseError2Ptr(_result, false);
+}
+
+#pragma implementation_key(145)
+inline long MSXML2::IXMLDOMParseErrorCollection::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(146)
+inline MSXML2::IXMLDOMParseError2Ptr MSXML2::IXMLDOMParseErrorCollection::Getnext ( ) {
+    struct IXMLDOMParseError2 * _result;
+    HRESULT _hr = get_next(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMParseError2Ptr(_result, false);
+}
+
+#pragma implementation_key(147)
+inline HRESULT MSXML2::IXMLDOMParseErrorCollection::reset ( ) {
+    HRESULT _hr = raw_reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(148)
+inline IUnknownPtr MSXML2::IXMLDOMParseErrorCollection::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IXTLRuntime wrapper method implementations
+//
+
+#pragma implementation_key(149)
+inline long MSXML2::IXTLRuntime::uniqueID ( struct IXMLDOMNode * pNode ) {
+    long _result;
+    HRESULT _hr = raw_uniqueID(pNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(150)
+inline long MSXML2::IXTLRuntime::depth ( struct IXMLDOMNode * pNode ) {
+    long _result;
+    HRESULT _hr = raw_depth(pNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(151)
+inline long MSXML2::IXTLRuntime::childNumber ( struct IXMLDOMNode * pNode ) {
+    long _result;
+    HRESULT _hr = raw_childNumber(pNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(152)
+inline long MSXML2::IXTLRuntime::ancestorChildNumber ( _bstr_t bstrNodeName, struct IXMLDOMNode * pNode ) {
+    long _result;
+    HRESULT _hr = raw_ancestorChildNumber(bstrNodeName, pNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(153)
+inline long MSXML2::IXTLRuntime::absoluteChildNumber ( struct IXMLDOMNode * pNode ) {
+    long _result;
+    HRESULT _hr = raw_absoluteChildNumber(pNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(154)
+inline _bstr_t MSXML2::IXTLRuntime::formatIndex ( long lIndex, _bstr_t bstrFormat ) {
+    BSTR _result;
+    HRESULT _hr = raw_formatIndex(lIndex, bstrFormat, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(155)
+inline _bstr_t MSXML2::IXTLRuntime::formatNumber ( double dblNumber, _bstr_t bstrFormat ) {
+    BSTR _result;
+    HRESULT _hr = raw_formatNumber(dblNumber, bstrFormat, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(156)
+inline _bstr_t MSXML2::IXTLRuntime::formatDate ( const _variant_t & varDate, _bstr_t bstrFormat, const _variant_t & varDestLocale ) {
+    BSTR _result;
+    HRESULT _hr = raw_formatDate(varDate, bstrFormat, varDestLocale, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(157)
+inline _bstr_t MSXML2::IXTLRuntime::formatTime ( const _variant_t & varTime, _bstr_t bstrFormat, const _variant_t & varDestLocale ) {
+    BSTR _result;
+    HRESULT _hr = raw_formatTime(varTime, bstrFormat, varDestLocale, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IXSLTemplate wrapper method implementations
+//
+
+#pragma implementation_key(158)
+inline void MSXML2::IXSLTemplate::PutRefstylesheet ( struct IXMLDOMNode * stylesheet ) {
+    HRESULT _hr = putref_stylesheet(stylesheet);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(159)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXSLTemplate::Getstylesheet ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_stylesheet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(160)
+inline MSXML2::IXSLProcessorPtr MSXML2::IXSLTemplate::createProcessor ( ) {
+    struct IXSLProcessor * _result;
+    HRESULT _hr = raw_createProcessor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXSLProcessorPtr(_result, false);
+}
+
+//
+// interface IXSLProcessor wrapper method implementations
+//
+
+#pragma implementation_key(161)
+inline void MSXML2::IXSLProcessor::Putinput ( const _variant_t & pVar ) {
+    HRESULT _hr = put_input(pVar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(162)
+inline _variant_t MSXML2::IXSLProcessor::Getinput ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_input(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(163)
+inline MSXML2::IXSLTemplatePtr MSXML2::IXSLProcessor::GetownerTemplate ( ) {
+    struct IXSLTemplate * _result;
+    HRESULT _hr = get_ownerTemplate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXSLTemplatePtr(_result, false);
+}
+
+#pragma implementation_key(164)
+inline HRESULT MSXML2::IXSLProcessor::setStartMode ( _bstr_t mode, _bstr_t namespaceURI ) {
+    HRESULT _hr = raw_setStartMode(mode, namespaceURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(165)
+inline _bstr_t MSXML2::IXSLProcessor::GetstartMode ( ) {
+    BSTR _result;
+    HRESULT _hr = get_startMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(166)
+inline _bstr_t MSXML2::IXSLProcessor::GetstartModeURI ( ) {
+    BSTR _result;
+    HRESULT _hr = get_startModeURI(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(167)
+inline void MSXML2::IXSLProcessor::Putoutput ( const _variant_t & pOutput ) {
+    HRESULT _hr = put_output(pOutput);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(168)
+inline _variant_t MSXML2::IXSLProcessor::Getoutput ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_output(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(169)
+inline VARIANT_BOOL MSXML2::IXSLProcessor::transform ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_transform(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(170)
+inline HRESULT MSXML2::IXSLProcessor::reset ( ) {
+    HRESULT _hr = raw_reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(171)
+inline long MSXML2::IXSLProcessor::GetreadyState ( ) {
+    long _result;
+    HRESULT _hr = get_readyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(172)
+inline HRESULT MSXML2::IXSLProcessor::addParameter ( _bstr_t baseName, const _variant_t & parameter, _bstr_t namespaceURI ) {
+    HRESULT _hr = raw_addParameter(baseName, parameter, namespaceURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(173)
+inline HRESULT MSXML2::IXSLProcessor::addObject ( IDispatch * obj, _bstr_t namespaceURI ) {
+    HRESULT _hr = raw_addObject(obj, namespaceURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(174)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXSLProcessor::Getstylesheet ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_stylesheet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+//
+// interface ISAXXMLReader wrapper method implementations
+//
+
+#pragma implementation_key(175)
+inline VARIANT_BOOL MSXML2::ISAXXMLReader::getFeature ( unsigned short * pwchName ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_getFeature(pwchName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(176)
+inline HRESULT MSXML2::ISAXXMLReader::putFeature ( unsigned short * pwchName, VARIANT_BOOL vfValue ) {
+    HRESULT _hr = raw_putFeature(pwchName, vfValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(177)
+inline _variant_t MSXML2::ISAXXMLReader::getProperty ( unsigned short * pwchName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getProperty(pwchName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(178)
+inline HRESULT MSXML2::ISAXXMLReader::putProperty ( unsigned short * pwchName, const _variant_t & varValue ) {
+    HRESULT _hr = raw_putProperty(pwchName, varValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(179)
+inline MSXML2::ISAXEntityResolverPtr MSXML2::ISAXXMLReader::getEntityResolver ( ) {
+    struct ISAXEntityResolver * _result;
+    HRESULT _hr = raw_getEntityResolver(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISAXEntityResolverPtr(_result, false);
+}
+
+#pragma implementation_key(180)
+inline HRESULT MSXML2::ISAXXMLReader::putEntityResolver ( struct ISAXEntityResolver * pResolver ) {
+    HRESULT _hr = raw_putEntityResolver(pResolver);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(181)
+inline MSXML2::ISAXContentHandlerPtr MSXML2::ISAXXMLReader::getContentHandler ( ) {
+    struct ISAXContentHandler * _result;
+    HRESULT _hr = raw_getContentHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISAXContentHandlerPtr(_result, false);
+}
+
+#pragma implementation_key(182)
+inline HRESULT MSXML2::ISAXXMLReader::putContentHandler ( struct ISAXContentHandler * pHandler ) {
+    HRESULT _hr = raw_putContentHandler(pHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(183)
+inline MSXML2::ISAXDTDHandlerPtr MSXML2::ISAXXMLReader::getDTDHandler ( ) {
+    struct ISAXDTDHandler * _result;
+    HRESULT _hr = raw_getDTDHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISAXDTDHandlerPtr(_result, false);
+}
+
+#pragma implementation_key(184)
+inline HRESULT MSXML2::ISAXXMLReader::putDTDHandler ( struct ISAXDTDHandler * pHandler ) {
+    HRESULT _hr = raw_putDTDHandler(pHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(185)
+inline MSXML2::ISAXErrorHandlerPtr MSXML2::ISAXXMLReader::getErrorHandler ( ) {
+    struct ISAXErrorHandler * _result;
+    HRESULT _hr = raw_getErrorHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISAXErrorHandlerPtr(_result, false);
+}
+
+#pragma implementation_key(186)
+inline HRESULT MSXML2::ISAXXMLReader::putErrorHandler ( struct ISAXErrorHandler * pHandler ) {
+    HRESULT _hr = raw_putErrorHandler(pHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(187)
+inline unsigned short * MSXML2::ISAXXMLReader::getBaseURL ( ) {
+    unsigned short * _result;
+    HRESULT _hr = raw_getBaseURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(188)
+inline HRESULT MSXML2::ISAXXMLReader::putBaseURL ( unsigned short * pwchBaseUrl ) {
+    HRESULT _hr = raw_putBaseURL(pwchBaseUrl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(189)
+inline unsigned short * MSXML2::ISAXXMLReader::getSecureBaseURL ( ) {
+    unsigned short * _result;
+    HRESULT _hr = raw_getSecureBaseURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(190)
+inline HRESULT MSXML2::ISAXXMLReader::putSecureBaseURL ( unsigned short * pwchSecureBaseUrl ) {
+    HRESULT _hr = raw_putSecureBaseURL(pwchSecureBaseUrl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(191)
+inline HRESULT MSXML2::ISAXXMLReader::parse ( const _variant_t & varInput ) {
+    HRESULT _hr = raw_parse(varInput);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(192)
+inline HRESULT MSXML2::ISAXXMLReader::parseURL ( unsigned short * pwchUrl ) {
+    HRESULT _hr = raw_parseURL(pwchUrl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXEntityResolver wrapper method implementations
+//
+
+#pragma implementation_key(193)
+inline _variant_t MSXML2::ISAXEntityResolver::resolveEntity ( unsigned short * pwchPublicId, unsigned short * pwchSystemId ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_resolveEntity(pwchPublicId, pwchSystemId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ISAXContentHandler wrapper method implementations
+//
+
+#pragma implementation_key(194)
+inline HRESULT MSXML2::ISAXContentHandler::putDocumentLocator ( struct ISAXLocator * pLocator ) {
+    HRESULT _hr = raw_putDocumentLocator(pLocator);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(195)
+inline HRESULT MSXML2::ISAXContentHandler::startDocument ( ) {
+    HRESULT _hr = raw_startDocument();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(196)
+inline HRESULT MSXML2::ISAXContentHandler::endDocument ( ) {
+    HRESULT _hr = raw_endDocument();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(197)
+inline HRESULT MSXML2::ISAXContentHandler::startPrefixMapping ( unsigned short * pwchPrefix, int cchPrefix, unsigned short * pwchUri, int cchUri ) {
+    HRESULT _hr = raw_startPrefixMapping(pwchPrefix, cchPrefix, pwchUri, cchUri);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(198)
+inline HRESULT MSXML2::ISAXContentHandler::endPrefixMapping ( unsigned short * pwchPrefix, int cchPrefix ) {
+    HRESULT _hr = raw_endPrefixMapping(pwchPrefix, cchPrefix);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(199)
+inline HRESULT MSXML2::ISAXContentHandler::startElement ( unsigned short * pwchNamespaceUri, int cchNamespaceUri, unsigned short * pwchLocalName, int cchLocalName, unsigned short * pwchQName, int cchQName, struct ISAXAttributes * pAttributes ) {
+    HRESULT _hr = raw_startElement(pwchNamespaceUri, cchNamespaceUri, pwchLocalName, cchLocalName, pwchQName, cchQName, pAttributes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(200)
+inline HRESULT MSXML2::ISAXContentHandler::endElement ( unsigned short * pwchNamespaceUri, int cchNamespaceUri, unsigned short * pwchLocalName, int cchLocalName, unsigned short * pwchQName, int cchQName ) {
+    HRESULT _hr = raw_endElement(pwchNamespaceUri, cchNamespaceUri, pwchLocalName, cchLocalName, pwchQName, cchQName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(201)
+inline HRESULT MSXML2::ISAXContentHandler::characters ( unsigned short * pwchChars, int cchChars ) {
+    HRESULT _hr = raw_characters(pwchChars, cchChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(202)
+inline HRESULT MSXML2::ISAXContentHandler::ignorableWhitespace ( unsigned short * pwchChars, int cchChars ) {
+    HRESULT _hr = raw_ignorableWhitespace(pwchChars, cchChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(203)
+inline HRESULT MSXML2::ISAXContentHandler::processingInstruction ( unsigned short * pwchTarget, int cchTarget, unsigned short * pwchData, int cchData ) {
+    HRESULT _hr = raw_processingInstruction(pwchTarget, cchTarget, pwchData, cchData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(204)
+inline HRESULT MSXML2::ISAXContentHandler::skippedEntity ( unsigned short * pwchName, int cchName ) {
+    HRESULT _hr = raw_skippedEntity(pwchName, cchName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXLocator wrapper method implementations
+//
+
+#pragma implementation_key(205)
+inline int MSXML2::ISAXLocator::getColumnNumber ( ) {
+    int _result;
+    HRESULT _hr = raw_getColumnNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(206)
+inline int MSXML2::ISAXLocator::getLineNumber ( ) {
+    int _result;
+    HRESULT _hr = raw_getLineNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(207)
+inline unsigned short * MSXML2::ISAXLocator::getPublicId ( ) {
+    unsigned short * _result;
+    HRESULT _hr = raw_getPublicId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(208)
+inline unsigned short * MSXML2::ISAXLocator::getSystemId ( ) {
+    unsigned short * _result;
+    HRESULT _hr = raw_getSystemId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISAXAttributes wrapper method implementations
+//
+
+#pragma implementation_key(209)
+inline int MSXML2::ISAXAttributes::getLength ( ) {
+    int _result;
+    HRESULT _hr = raw_getLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(210)
+inline HRESULT MSXML2::ISAXAttributes::getURI ( int nIndex, unsigned short * * ppwchUri, int * pcchUri ) {
+    HRESULT _hr = raw_getURI(nIndex, ppwchUri, pcchUri);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(211)
+inline HRESULT MSXML2::ISAXAttributes::getLocalName ( int nIndex, unsigned short * * ppwchLocalName, int * pcchLocalName ) {
+    HRESULT _hr = raw_getLocalName(nIndex, ppwchLocalName, pcchLocalName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(212)
+inline HRESULT MSXML2::ISAXAttributes::getQName ( int nIndex, unsigned short * * ppwchQName, int * pcchQName ) {
+    HRESULT _hr = raw_getQName(nIndex, ppwchQName, pcchQName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(213)
+inline HRESULT MSXML2::ISAXAttributes::getName ( int nIndex, unsigned short * * ppwchUri, int * pcchUri, unsigned short * * ppwchLocalName, int * pcchLocalName, unsigned short * * ppwchQName, int * pcchQName ) {
+    HRESULT _hr = raw_getName(nIndex, ppwchUri, pcchUri, ppwchLocalName, pcchLocalName, ppwchQName, pcchQName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(214)
+inline int MSXML2::ISAXAttributes::getIndexFromName ( unsigned short * pwchUri, int cchUri, unsigned short * pwchLocalName, int cchLocalName ) {
+    int _result;
+    HRESULT _hr = raw_getIndexFromName(pwchUri, cchUri, pwchLocalName, cchLocalName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(215)
+inline int MSXML2::ISAXAttributes::getIndexFromQName ( unsigned short * pwchQName, int cchQName ) {
+    int _result;
+    HRESULT _hr = raw_getIndexFromQName(pwchQName, cchQName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(216)
+inline HRESULT MSXML2::ISAXAttributes::getType ( int nIndex, unsigned short * * ppwchType, int * pcchType ) {
+    HRESULT _hr = raw_getType(nIndex, ppwchType, pcchType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(217)
+inline HRESULT MSXML2::ISAXAttributes::getTypeFromName ( unsigned short * pwchUri, int cchUri, unsigned short * pwchLocalName, int cchLocalName, unsigned short * * ppwchType, int * pcchType ) {
+    HRESULT _hr = raw_getTypeFromName(pwchUri, cchUri, pwchLocalName, cchLocalName, ppwchType, pcchType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(218)
+inline HRESULT MSXML2::ISAXAttributes::getTypeFromQName ( unsigned short * pwchQName, int cchQName, unsigned short * * ppwchType, int * pcchType ) {
+    HRESULT _hr = raw_getTypeFromQName(pwchQName, cchQName, ppwchType, pcchType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(219)
+inline HRESULT MSXML2::ISAXAttributes::getValue ( int nIndex, unsigned short * * ppwchValue, int * pcchValue ) {
+    HRESULT _hr = raw_getValue(nIndex, ppwchValue, pcchValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(220)
+inline HRESULT MSXML2::ISAXAttributes::getValueFromName ( unsigned short * pwchUri, int cchUri, unsigned short * pwchLocalName, int cchLocalName, unsigned short * * ppwchValue, int * pcchValue ) {
+    HRESULT _hr = raw_getValueFromName(pwchUri, cchUri, pwchLocalName, cchLocalName, ppwchValue, pcchValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(221)
+inline HRESULT MSXML2::ISAXAttributes::getValueFromQName ( unsigned short * pwchQName, int cchQName, unsigned short * * ppwchValue, int * pcchValue ) {
+    HRESULT _hr = raw_getValueFromQName(pwchQName, cchQName, ppwchValue, pcchValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXDTDHandler wrapper method implementations
+//
+
+#pragma implementation_key(222)
+inline HRESULT MSXML2::ISAXDTDHandler::notationDecl ( unsigned short * pwchName, int cchName, unsigned short * pwchPublicId, int cchPublicId, unsigned short * pwchSystemId, int cchSystemId ) {
+    HRESULT _hr = raw_notationDecl(pwchName, cchName, pwchPublicId, cchPublicId, pwchSystemId, cchSystemId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(223)
+inline HRESULT MSXML2::ISAXDTDHandler::unparsedEntityDecl ( unsigned short * pwchName, int cchName, unsigned short * pwchPublicId, int cchPublicId, unsigned short * pwchSystemId, int cchSystemId, unsigned short * pwchNotationName, int cchNotationName ) {
+    HRESULT _hr = raw_unparsedEntityDecl(pwchName, cchName, pwchPublicId, cchPublicId, pwchSystemId, cchSystemId, pwchNotationName, cchNotationName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXErrorHandler wrapper method implementations
+//
+
+#pragma implementation_key(224)
+inline HRESULT MSXML2::ISAXErrorHandler::error ( struct ISAXLocator * pLocator, unsigned short * pwchErrorMessage, HRESULT hrErrorCode ) {
+    HRESULT _hr = raw_error(pLocator, pwchErrorMessage, hrErrorCode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(225)
+inline HRESULT MSXML2::ISAXErrorHandler::fatalError ( struct ISAXLocator * pLocator, unsigned short * pwchErrorMessage, HRESULT hrErrorCode ) {
+    HRESULT _hr = raw_fatalError(pLocator, pwchErrorMessage, hrErrorCode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(226)
+inline HRESULT MSXML2::ISAXErrorHandler::ignorableWarning ( struct ISAXLocator * pLocator, unsigned short * pwchErrorMessage, HRESULT hrErrorCode ) {
+    HRESULT _hr = raw_ignorableWarning(pLocator, pwchErrorMessage, hrErrorCode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXXMLFilter wrapper method implementations
+//
+
+#pragma implementation_key(227)
+inline MSXML2::ISAXXMLReaderPtr MSXML2::ISAXXMLFilter::getParent ( ) {
+    struct ISAXXMLReader * _result;
+    HRESULT _hr = raw_getParent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISAXXMLReaderPtr(_result, false);
+}
+
+#pragma implementation_key(228)
+inline HRESULT MSXML2::ISAXXMLFilter::putParent ( struct ISAXXMLReader * pReader ) {
+    HRESULT _hr = raw_putParent(pReader);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXLexicalHandler wrapper method implementations
+//
+
+#pragma implementation_key(229)
+inline HRESULT MSXML2::ISAXLexicalHandler::startDTD ( unsigned short * pwchName, int cchName, unsigned short * pwchPublicId, int cchPublicId, unsigned short * pwchSystemId, int cchSystemId ) {
+    HRESULT _hr = raw_startDTD(pwchName, cchName, pwchPublicId, cchPublicId, pwchSystemId, cchSystemId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(230)
+inline HRESULT MSXML2::ISAXLexicalHandler::endDTD ( ) {
+    HRESULT _hr = raw_endDTD();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(231)
+inline HRESULT MSXML2::ISAXLexicalHandler::startEntity ( unsigned short * pwchName, int cchName ) {
+    HRESULT _hr = raw_startEntity(pwchName, cchName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(232)
+inline HRESULT MSXML2::ISAXLexicalHandler::endEntity ( unsigned short * pwchName, int cchName ) {
+    HRESULT _hr = raw_endEntity(pwchName, cchName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(233)
+inline HRESULT MSXML2::ISAXLexicalHandler::startCDATA ( ) {
+    HRESULT _hr = raw_startCDATA();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(234)
+inline HRESULT MSXML2::ISAXLexicalHandler::endCDATA ( ) {
+    HRESULT _hr = raw_endCDATA();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(235)
+inline HRESULT MSXML2::ISAXLexicalHandler::comment ( unsigned short * pwchChars, int cchChars ) {
+    HRESULT _hr = raw_comment(pwchChars, cchChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISAXDeclHandler wrapper method implementations
+//
+
+#pragma implementation_key(236)
+inline HRESULT MSXML2::ISAXDeclHandler::elementDecl ( unsigned short * pwchName, int cchName, unsigned short * pwchModel, int cchModel ) {
+    HRESULT _hr = raw_elementDecl(pwchName, cchName, pwchModel, cchModel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(237)
+inline HRESULT MSXML2::ISAXDeclHandler::attributeDecl ( unsigned short * pwchElementName, int cchElementName, unsigned short * pwchAttributeName, int cchAttributeName, unsigned short * pwchType, int cchType, unsigned short * pwchValueDefault, int cchValueDefault, unsigned short * pwchValue, int cchValue ) {
+    HRESULT _hr = raw_attributeDecl(pwchElementName, cchElementName, pwchAttributeName, cchAttributeName, pwchType, cchType, pwchValueDefault, cchValueDefault, pwchValue, cchValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(238)
+inline HRESULT MSXML2::ISAXDeclHandler::internalEntityDecl ( unsigned short * pwchName, int cchName, unsigned short * pwchValue, int cchValue ) {
+    HRESULT _hr = raw_internalEntityDecl(pwchName, cchName, pwchValue, cchValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(239)
+inline HRESULT MSXML2::ISAXDeclHandler::externalEntityDecl ( unsigned short * pwchName, int cchName, unsigned short * pwchPublicId, int cchPublicId, unsigned short * pwchSystemId, int cchSystemId ) {
+    HRESULT _hr = raw_externalEntityDecl(pwchName, cchName, pwchPublicId, cchPublicId, pwchSystemId, cchSystemId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVBSAXXMLReader wrapper method implementations
+//
+
+#pragma implementation_key(240)
+inline VARIANT_BOOL MSXML2::IVBSAXXMLReader::getFeature ( _bstr_t strName ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_getFeature(strName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(241)
+inline HRESULT MSXML2::IVBSAXXMLReader::putFeature ( _bstr_t strName, VARIANT_BOOL fValue ) {
+    HRESULT _hr = raw_putFeature(strName, fValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(242)
+inline _variant_t MSXML2::IVBSAXXMLReader::getProperty ( _bstr_t strName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getProperty(strName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(243)
+inline HRESULT MSXML2::IVBSAXXMLReader::putProperty ( _bstr_t strName, const _variant_t & varValue ) {
+    HRESULT _hr = raw_putProperty(strName, varValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(244)
+inline MSXML2::IVBSAXEntityResolverPtr MSXML2::IVBSAXXMLReader::GetentityResolver ( ) {
+    struct IVBSAXEntityResolver * _result;
+    HRESULT _hr = get_entityResolver(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVBSAXEntityResolverPtr(_result, false);
+}
+
+#pragma implementation_key(245)
+inline void MSXML2::IVBSAXXMLReader::PutRefentityResolver ( struct IVBSAXEntityResolver * oResolver ) {
+    HRESULT _hr = putref_entityResolver(oResolver);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(246)
+inline MSXML2::IVBSAXContentHandlerPtr MSXML2::IVBSAXXMLReader::GetcontentHandler ( ) {
+    struct IVBSAXContentHandler * _result;
+    HRESULT _hr = get_contentHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVBSAXContentHandlerPtr(_result, false);
+}
+
+#pragma implementation_key(247)
+inline void MSXML2::IVBSAXXMLReader::PutRefcontentHandler ( struct IVBSAXContentHandler * oHandler ) {
+    HRESULT _hr = putref_contentHandler(oHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(248)
+inline MSXML2::IVBSAXDTDHandlerPtr MSXML2::IVBSAXXMLReader::GetdtdHandler ( ) {
+    struct IVBSAXDTDHandler * _result;
+    HRESULT _hr = get_dtdHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVBSAXDTDHandlerPtr(_result, false);
+}
+
+#pragma implementation_key(249)
+inline void MSXML2::IVBSAXXMLReader::PutRefdtdHandler ( struct IVBSAXDTDHandler * oHandler ) {
+    HRESULT _hr = putref_dtdHandler(oHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(250)
+inline MSXML2::IVBSAXErrorHandlerPtr MSXML2::IVBSAXXMLReader::GeterrorHandler ( ) {
+    struct IVBSAXErrorHandler * _result;
+    HRESULT _hr = get_errorHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVBSAXErrorHandlerPtr(_result, false);
+}
+
+#pragma implementation_key(251)
+inline void MSXML2::IVBSAXXMLReader::PutReferrorHandler ( struct IVBSAXErrorHandler * oHandler ) {
+    HRESULT _hr = putref_errorHandler(oHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(252)
+inline _bstr_t MSXML2::IVBSAXXMLReader::GetbaseURL ( ) {
+    BSTR _result;
+    HRESULT _hr = get_baseURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(253)
+inline void MSXML2::IVBSAXXMLReader::PutbaseURL ( _bstr_t strBaseURL ) {
+    HRESULT _hr = put_baseURL(strBaseURL);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(254)
+inline _bstr_t MSXML2::IVBSAXXMLReader::GetsecureBaseURL ( ) {
+    BSTR _result;
+    HRESULT _hr = get_secureBaseURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(255)
+inline void MSXML2::IVBSAXXMLReader::PutsecureBaseURL ( _bstr_t strSecureBaseURL ) {
+    HRESULT _hr = put_secureBaseURL(strSecureBaseURL);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(256)
+inline HRESULT MSXML2::IVBSAXXMLReader::parse ( const _variant_t & varInput ) {
+    HRESULT _hr = raw_parse(varInput);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(257)
+inline HRESULT MSXML2::IVBSAXXMLReader::parseURL ( _bstr_t strURL ) {
+    HRESULT _hr = raw_parseURL(strURL);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVBSAXEntityResolver wrapper method implementations
+//
+
+#pragma implementation_key(258)
+inline _variant_t MSXML2::IVBSAXEntityResolver::resolveEntity ( BSTR * strPublicId, BSTR * strSystemId ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_resolveEntity(strPublicId, strSystemId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IVBSAXContentHandler wrapper method implementations
+//
+
+#pragma implementation_key(259)
+inline void MSXML2::IVBSAXContentHandler::PutRefdocumentLocator ( struct IVBSAXLocator * _arg1 ) {
+    HRESULT _hr = putref_documentLocator(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(260)
+inline HRESULT MSXML2::IVBSAXContentHandler::startDocument ( ) {
+    HRESULT _hr = raw_startDocument();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(261)
+inline HRESULT MSXML2::IVBSAXContentHandler::endDocument ( ) {
+    HRESULT _hr = raw_endDocument();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(262)
+inline HRESULT MSXML2::IVBSAXContentHandler::startPrefixMapping ( BSTR * strPrefix, BSTR * strURI ) {
+    HRESULT _hr = raw_startPrefixMapping(strPrefix, strURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(263)
+inline HRESULT MSXML2::IVBSAXContentHandler::endPrefixMapping ( BSTR * strPrefix ) {
+    HRESULT _hr = raw_endPrefixMapping(strPrefix);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(264)
+inline HRESULT MSXML2::IVBSAXContentHandler::startElement ( BSTR * strNamespaceURI, BSTR * strLocalName, BSTR * strQName, struct IVBSAXAttributes * oAttributes ) {
+    HRESULT _hr = raw_startElement(strNamespaceURI, strLocalName, strQName, oAttributes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(265)
+inline HRESULT MSXML2::IVBSAXContentHandler::endElement ( BSTR * strNamespaceURI, BSTR * strLocalName, BSTR * strQName ) {
+    HRESULT _hr = raw_endElement(strNamespaceURI, strLocalName, strQName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(266)
+inline HRESULT MSXML2::IVBSAXContentHandler::characters ( BSTR * strChars ) {
+    HRESULT _hr = raw_characters(strChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(267)
+inline HRESULT MSXML2::IVBSAXContentHandler::ignorableWhitespace ( BSTR * strChars ) {
+    HRESULT _hr = raw_ignorableWhitespace(strChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(268)
+inline HRESULT MSXML2::IVBSAXContentHandler::processingInstruction ( BSTR * strTarget, BSTR * strData ) {
+    HRESULT _hr = raw_processingInstruction(strTarget, strData);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(269)
+inline HRESULT MSXML2::IVBSAXContentHandler::skippedEntity ( BSTR * strName ) {
+    HRESULT _hr = raw_skippedEntity(strName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVBSAXLocator wrapper method implementations
+//
+
+#pragma implementation_key(270)
+inline int MSXML2::IVBSAXLocator::GetcolumnNumber ( ) {
+    int _result;
+    HRESULT _hr = get_columnNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(271)
+inline int MSXML2::IVBSAXLocator::GetlineNumber ( ) {
+    int _result;
+    HRESULT _hr = get_lineNumber(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(272)
+inline _bstr_t MSXML2::IVBSAXLocator::GetpublicId ( ) {
+    BSTR _result;
+    HRESULT _hr = get_publicId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(273)
+inline _bstr_t MSXML2::IVBSAXLocator::GetsystemId ( ) {
+    BSTR _result;
+    HRESULT _hr = get_systemId(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IVBSAXAttributes wrapper method implementations
+//
+
+#pragma implementation_key(274)
+inline int MSXML2::IVBSAXAttributes::Getlength ( ) {
+    int _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(275)
+inline _bstr_t MSXML2::IVBSAXAttributes::getURI ( int nIndex ) {
+    BSTR _result;
+    HRESULT _hr = raw_getURI(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(276)
+inline _bstr_t MSXML2::IVBSAXAttributes::getLocalName ( int nIndex ) {
+    BSTR _result;
+    HRESULT _hr = raw_getLocalName(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(277)
+inline _bstr_t MSXML2::IVBSAXAttributes::getQName ( int nIndex ) {
+    BSTR _result;
+    HRESULT _hr = raw_getQName(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(278)
+inline int MSXML2::IVBSAXAttributes::getIndexFromName ( _bstr_t strURI, _bstr_t strLocalName ) {
+    int _result;
+    HRESULT _hr = raw_getIndexFromName(strURI, strLocalName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(279)
+inline int MSXML2::IVBSAXAttributes::getIndexFromQName ( _bstr_t strQName ) {
+    int _result;
+    HRESULT _hr = raw_getIndexFromQName(strQName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(280)
+inline _bstr_t MSXML2::IVBSAXAttributes::getType ( int nIndex ) {
+    BSTR _result;
+    HRESULT _hr = raw_getType(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(281)
+inline _bstr_t MSXML2::IVBSAXAttributes::getTypeFromName ( _bstr_t strURI, _bstr_t strLocalName ) {
+    BSTR _result;
+    HRESULT _hr = raw_getTypeFromName(strURI, strLocalName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(282)
+inline _bstr_t MSXML2::IVBSAXAttributes::getTypeFromQName ( _bstr_t strQName ) {
+    BSTR _result;
+    HRESULT _hr = raw_getTypeFromQName(strQName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(283)
+inline _bstr_t MSXML2::IVBSAXAttributes::getValue ( int nIndex ) {
+    BSTR _result;
+    HRESULT _hr = raw_getValue(nIndex, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(284)
+inline _bstr_t MSXML2::IVBSAXAttributes::getValueFromName ( _bstr_t strURI, _bstr_t strLocalName ) {
+    BSTR _result;
+    HRESULT _hr = raw_getValueFromName(strURI, strLocalName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(285)
+inline _bstr_t MSXML2::IVBSAXAttributes::getValueFromQName ( _bstr_t strQName ) {
+    BSTR _result;
+    HRESULT _hr = raw_getValueFromQName(strQName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IVBSAXDTDHandler wrapper method implementations
+//
+
+#pragma implementation_key(286)
+inline HRESULT MSXML2::IVBSAXDTDHandler::notationDecl ( BSTR * strName, BSTR * strPublicId, BSTR * strSystemId ) {
+    HRESULT _hr = raw_notationDecl(strName, strPublicId, strSystemId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(287)
+inline HRESULT MSXML2::IVBSAXDTDHandler::unparsedEntityDecl ( BSTR * strName, BSTR * strPublicId, BSTR * strSystemId, BSTR * strNotationName ) {
+    HRESULT _hr = raw_unparsedEntityDecl(strName, strPublicId, strSystemId, strNotationName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVBSAXErrorHandler wrapper method implementations
+//
+
+#pragma implementation_key(288)
+inline HRESULT MSXML2::IVBSAXErrorHandler::error ( struct IVBSAXLocator * oLocator, BSTR * strErrorMessage, long nErrorCode ) {
+    HRESULT _hr = raw_error(oLocator, strErrorMessage, nErrorCode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(289)
+inline HRESULT MSXML2::IVBSAXErrorHandler::fatalError ( struct IVBSAXLocator * oLocator, BSTR * strErrorMessage, long nErrorCode ) {
+    HRESULT _hr = raw_fatalError(oLocator, strErrorMessage, nErrorCode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(290)
+inline HRESULT MSXML2::IVBSAXErrorHandler::ignorableWarning ( struct IVBSAXLocator * oLocator, BSTR * strErrorMessage, long nErrorCode ) {
+    HRESULT _hr = raw_ignorableWarning(oLocator, strErrorMessage, nErrorCode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVBSAXXMLFilter wrapper method implementations
+//
+
+#pragma implementation_key(291)
+inline MSXML2::IVBSAXXMLReaderPtr MSXML2::IVBSAXXMLFilter::Getparent ( ) {
+    struct IVBSAXXMLReader * _result;
+    HRESULT _hr = get_parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVBSAXXMLReaderPtr(_result, false);
+}
+
+#pragma implementation_key(292)
+inline void MSXML2::IVBSAXXMLFilter::PutRefparent ( struct IVBSAXXMLReader * oReader ) {
+    HRESULT _hr = putref_parent(oReader);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IVBSAXLexicalHandler wrapper method implementations
+//
+
+#pragma implementation_key(293)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::startDTD ( BSTR * strName, BSTR * strPublicId, BSTR * strSystemId ) {
+    HRESULT _hr = raw_startDTD(strName, strPublicId, strSystemId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(294)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::endDTD ( ) {
+    HRESULT _hr = raw_endDTD();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(295)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::startEntity ( BSTR * strName ) {
+    HRESULT _hr = raw_startEntity(strName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(296)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::endEntity ( BSTR * strName ) {
+    HRESULT _hr = raw_endEntity(strName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(297)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::startCDATA ( ) {
+    HRESULT _hr = raw_startCDATA();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(298)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::endCDATA ( ) {
+    HRESULT _hr = raw_endCDATA();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(299)
+inline HRESULT MSXML2::IVBSAXLexicalHandler::comment ( BSTR * strChars ) {
+    HRESULT _hr = raw_comment(strChars);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IVBSAXDeclHandler wrapper method implementations
+//
+
+#pragma implementation_key(300)
+inline HRESULT MSXML2::IVBSAXDeclHandler::elementDecl ( BSTR * strName, BSTR * strModel ) {
+    HRESULT _hr = raw_elementDecl(strName, strModel);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(301)
+inline HRESULT MSXML2::IVBSAXDeclHandler::attributeDecl ( BSTR * strElementName, BSTR * strAttributeName, BSTR * strType, BSTR * strValueDefault, BSTR * strValue ) {
+    HRESULT _hr = raw_attributeDecl(strElementName, strAttributeName, strType, strValueDefault, strValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(302)
+inline HRESULT MSXML2::IVBSAXDeclHandler::internalEntityDecl ( BSTR * strName, BSTR * strValue ) {
+    HRESULT _hr = raw_internalEntityDecl(strName, strValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(303)
+inline HRESULT MSXML2::IVBSAXDeclHandler::externalEntityDecl ( BSTR * strName, BSTR * strPublicId, BSTR * strSystemId ) {
+    HRESULT _hr = raw_externalEntityDecl(strName, strPublicId, strSystemId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMXWriter wrapper method implementations
+//
+
+#pragma implementation_key(304)
+inline void MSXML2::IMXWriter::Putoutput ( const _variant_t & varDestination ) {
+    HRESULT _hr = put_output(varDestination);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(305)
+inline _variant_t MSXML2::IMXWriter::Getoutput ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_output(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(306)
+inline void MSXML2::IMXWriter::Putencoding ( _bstr_t strEncoding ) {
+    HRESULT _hr = put_encoding(strEncoding);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(307)
+inline _bstr_t MSXML2::IMXWriter::Getencoding ( ) {
+    BSTR _result;
+    HRESULT _hr = get_encoding(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(308)
+inline void MSXML2::IMXWriter::PutbyteOrderMark ( VARIANT_BOOL fWriteByteOrderMark ) {
+    HRESULT _hr = put_byteOrderMark(fWriteByteOrderMark);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(309)
+inline VARIANT_BOOL MSXML2::IMXWriter::GetbyteOrderMark ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_byteOrderMark(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(310)
+inline void MSXML2::IMXWriter::Putindent ( VARIANT_BOOL fIndentMode ) {
+    HRESULT _hr = put_indent(fIndentMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(311)
+inline VARIANT_BOOL MSXML2::IMXWriter::Getindent ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_indent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(312)
+inline void MSXML2::IMXWriter::Putstandalone ( VARIANT_BOOL fValue ) {
+    HRESULT _hr = put_standalone(fValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(313)
+inline VARIANT_BOOL MSXML2::IMXWriter::Getstandalone ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_standalone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(314)
+inline void MSXML2::IMXWriter::PutomitXMLDeclaration ( VARIANT_BOOL fValue ) {
+    HRESULT _hr = put_omitXMLDeclaration(fValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(315)
+inline VARIANT_BOOL MSXML2::IMXWriter::GetomitXMLDeclaration ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_omitXMLDeclaration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(316)
+inline void MSXML2::IMXWriter::Putversion ( _bstr_t strVersion ) {
+    HRESULT _hr = put_version(strVersion);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(317)
+inline _bstr_t MSXML2::IMXWriter::Getversion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(318)
+inline void MSXML2::IMXWriter::PutdisableOutputEscaping ( VARIANT_BOOL fValue ) {
+    HRESULT _hr = put_disableOutputEscaping(fValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(319)
+inline VARIANT_BOOL MSXML2::IMXWriter::GetdisableOutputEscaping ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_disableOutputEscaping(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(320)
+inline HRESULT MSXML2::IMXWriter::flush ( ) {
+    HRESULT _hr = raw_flush();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMXAttributes wrapper method implementations
+//
+
+#pragma implementation_key(321)
+inline HRESULT MSXML2::IMXAttributes::addAttribute ( _bstr_t strURI, _bstr_t strLocalName, _bstr_t strQName, _bstr_t strType, _bstr_t strValue ) {
+    HRESULT _hr = raw_addAttribute(strURI, strLocalName, strQName, strType, strValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(322)
+inline HRESULT MSXML2::IMXAttributes::addAttributeFromIndex ( const _variant_t & varAtts, int nIndex ) {
+    HRESULT _hr = raw_addAttributeFromIndex(varAtts, nIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(323)
+inline HRESULT MSXML2::IMXAttributes::clear ( ) {
+    HRESULT _hr = raw_clear();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(324)
+inline HRESULT MSXML2::IMXAttributes::removeAttribute ( int nIndex ) {
+    HRESULT _hr = raw_removeAttribute(nIndex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(325)
+inline HRESULT MSXML2::IMXAttributes::setAttribute ( int nIndex, _bstr_t strURI, _bstr_t strLocalName, _bstr_t strQName, _bstr_t strType, _bstr_t strValue ) {
+    HRESULT _hr = raw_setAttribute(nIndex, strURI, strLocalName, strQName, strType, strValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(326)
+inline HRESULT MSXML2::IMXAttributes::setAttributes ( const _variant_t & varAtts ) {
+    HRESULT _hr = raw_setAttributes(varAtts);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(327)
+inline HRESULT MSXML2::IMXAttributes::setLocalName ( int nIndex, _bstr_t strLocalName ) {
+    HRESULT _hr = raw_setLocalName(nIndex, strLocalName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(328)
+inline HRESULT MSXML2::IMXAttributes::setQName ( int nIndex, _bstr_t strQName ) {
+    HRESULT _hr = raw_setQName(nIndex, strQName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(329)
+inline HRESULT MSXML2::IMXAttributes::setType ( int nIndex, _bstr_t strType ) {
+    HRESULT _hr = raw_setType(nIndex, strType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(330)
+inline HRESULT MSXML2::IMXAttributes::setURI ( int nIndex, _bstr_t strURI ) {
+    HRESULT _hr = raw_setURI(nIndex, strURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(331)
+inline HRESULT MSXML2::IMXAttributes::setValue ( int nIndex, _bstr_t strValue ) {
+    HRESULT _hr = raw_setValue(nIndex, strValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMXReaderControl wrapper method implementations
+//
+
+#pragma implementation_key(332)
+inline HRESULT MSXML2::IMXReaderControl::abort ( ) {
+    HRESULT _hr = raw_abort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(333)
+inline HRESULT MSXML2::IMXReaderControl::resume ( ) {
+    HRESULT _hr = raw_resume();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(334)
+inline HRESULT MSXML2::IMXReaderControl::suspend ( ) {
+    HRESULT _hr = raw_suspend();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMXSchemaDeclHandler wrapper method implementations
+//
+
+#pragma implementation_key(335)
+inline HRESULT MSXML2::IMXSchemaDeclHandler::schemaElementDecl ( struct ISchemaElement * oSchemaElement ) {
+    HRESULT _hr = raw_schemaElementDecl(oSchemaElement);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ISchemaItem wrapper method implementations
+//
+
+#pragma implementation_key(336)
+inline _bstr_t MSXML2::ISchemaItem::Getname ( ) {
+    BSTR _result;
+    HRESULT _hr = get_name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(337)
+inline _bstr_t MSXML2::ISchemaItem::GetnamespaceURI ( ) {
+    BSTR _result;
+    HRESULT _hr = get_namespaceURI(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(338)
+inline MSXML2::ISchemaPtr MSXML2::ISchemaItem::Getschema ( ) {
+    struct ISchema * _result;
+    HRESULT _hr = get_schema(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaPtr(_result, false);
+}
+
+#pragma implementation_key(339)
+inline _bstr_t MSXML2::ISchemaItem::Getid ( ) {
+    BSTR _result;
+    HRESULT _hr = get_id(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(340)
+inline SOMITEMTYPE MSXML2::ISchemaItem::GetitemType ( ) {
+    SOMITEMTYPE _result;
+    HRESULT _hr = get_itemType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(341)
+inline MSXML2::IVBSAXAttributesPtr MSXML2::ISchemaItem::GetunhandledAttributes ( ) {
+    struct IVBSAXAttributes * _result;
+    HRESULT _hr = get_unhandledAttributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IVBSAXAttributesPtr(_result, false);
+}
+
+#pragma implementation_key(342)
+inline VARIANT_BOOL MSXML2::ISchemaItem::writeAnnotation ( IUnknown * annotationSink ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_writeAnnotation(annotationSink, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISchemaParticle wrapper method implementations
+//
+
+#pragma implementation_key(343)
+inline _variant_t MSXML2::ISchemaParticle::GetminOccurs ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_minOccurs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(344)
+inline _variant_t MSXML2::ISchemaParticle::GetmaxOccurs ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_maxOccurs(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ISchemaElement wrapper method implementations
+//
+
+#pragma implementation_key(345)
+inline MSXML2::ISchemaTypePtr MSXML2::ISchemaElement::Gettype ( ) {
+    struct ISchemaType * _result;
+    HRESULT _hr = get_type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaTypePtr(_result, false);
+}
+
+#pragma implementation_key(346)
+inline MSXML2::ISchemaComplexTypePtr MSXML2::ISchemaElement::Getscope ( ) {
+    struct ISchemaComplexType * _result;
+    HRESULT _hr = get_scope(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaComplexTypePtr(_result, false);
+}
+
+#pragma implementation_key(347)
+inline _bstr_t MSXML2::ISchemaElement::GetdefaultValue ( ) {
+    BSTR _result;
+    HRESULT _hr = get_defaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(348)
+inline _bstr_t MSXML2::ISchemaElement::GetfixedValue ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fixedValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(349)
+inline VARIANT_BOOL MSXML2::ISchemaElement::GetisNillable ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_isNillable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(350)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchemaElement::GetidentityConstraints ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_identityConstraints(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(351)
+inline MSXML2::ISchemaElementPtr MSXML2::ISchemaElement::GetsubstitutionGroup ( ) {
+    struct ISchemaElement * _result;
+    HRESULT _hr = get_substitutionGroup(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaElementPtr(_result, false);
+}
+
+#pragma implementation_key(352)
+inline SCHEMADERIVATIONMETHOD MSXML2::ISchemaElement::GetsubstitutionGroupExclusions ( ) {
+    SCHEMADERIVATIONMETHOD _result;
+    HRESULT _hr = get_substitutionGroupExclusions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(353)
+inline SCHEMADERIVATIONMETHOD MSXML2::ISchemaElement::GetdisallowedSubstitutions ( ) {
+    SCHEMADERIVATIONMETHOD _result;
+    HRESULT _hr = get_disallowedSubstitutions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(354)
+inline VARIANT_BOOL MSXML2::ISchemaElement::GetisAbstract ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_isAbstract(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(355)
+inline VARIANT_BOOL MSXML2::ISchemaElement::GetisReference ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_isReference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISchema wrapper method implementations
+//
+
+#pragma implementation_key(356)
+inline _bstr_t MSXML2::ISchema::GettargetNamespace ( ) {
+    BSTR _result;
+    HRESULT _hr = get_targetNamespace(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(357)
+inline _bstr_t MSXML2::ISchema::Getversion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(358)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchema::Gettypes ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_types(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(359)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchema::Getelements ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_elements(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(360)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchema::Getattributes ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(361)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchema::GetattributeGroups ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_attributeGroups(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(362)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchema::GetmodelGroups ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_modelGroups(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(363)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchema::Getnotations ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_notations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(364)
+inline MSXML2::ISchemaStringCollectionPtr MSXML2::ISchema::GetschemaLocations ( ) {
+    struct ISchemaStringCollection * _result;
+    HRESULT _hr = get_schemaLocations(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaStringCollectionPtr(_result, false);
+}
+
+//
+// interface ISchemaItemCollection wrapper method implementations
+//
+
+#pragma implementation_key(365)
+inline MSXML2::ISchemaItemPtr MSXML2::ISchemaItemCollection::Getitem ( long index ) {
+    struct ISchemaItem * _result;
+    HRESULT _hr = get_item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemPtr(_result, false);
+}
+
+#pragma implementation_key(366)
+inline MSXML2::ISchemaItemPtr MSXML2::ISchemaItemCollection::itemByName ( _bstr_t name ) {
+    struct ISchemaItem * _result;
+    HRESULT _hr = raw_itemByName(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemPtr(_result, false);
+}
+
+#pragma implementation_key(367)
+inline MSXML2::ISchemaItemPtr MSXML2::ISchemaItemCollection::itemByQName ( _bstr_t name, _bstr_t namespaceURI ) {
+    struct ISchemaItem * _result;
+    HRESULT _hr = raw_itemByQName(name, namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemPtr(_result, false);
+}
+
+#pragma implementation_key(368)
+inline long MSXML2::ISchemaItemCollection::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(369)
+inline IUnknownPtr MSXML2::ISchemaItemCollection::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface ISchemaStringCollection wrapper method implementations
+//
+
+#pragma implementation_key(370)
+inline _bstr_t MSXML2::ISchemaStringCollection::Getitem ( long index ) {
+    BSTR _result;
+    HRESULT _hr = get_item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(371)
+inline long MSXML2::ISchemaStringCollection::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(372)
+inline IUnknownPtr MSXML2::ISchemaStringCollection::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface ISchemaType wrapper method implementations
+//
+
+#pragma implementation_key(373)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchemaType::GetbaseTypes ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_baseTypes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(374)
+inline SCHEMADERIVATIONMETHOD MSXML2::ISchemaType::Getfinal ( ) {
+    SCHEMADERIVATIONMETHOD _result;
+    HRESULT _hr = get_final(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(375)
+inline SCHEMATYPEVARIETY MSXML2::ISchemaType::Getvariety ( ) {
+    SCHEMATYPEVARIETY _result;
+    HRESULT _hr = get_variety(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(376)
+inline SCHEMADERIVATIONMETHOD MSXML2::ISchemaType::GetderivedBy ( ) {
+    SCHEMADERIVATIONMETHOD _result;
+    HRESULT _hr = get_derivedBy(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(377)
+inline VARIANT_BOOL MSXML2::ISchemaType::isValid ( _bstr_t data ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_isValid(data, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(378)
+inline _bstr_t MSXML2::ISchemaType::GetminExclusive ( ) {
+    BSTR _result;
+    HRESULT _hr = get_minExclusive(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(379)
+inline _bstr_t MSXML2::ISchemaType::GetminInclusive ( ) {
+    BSTR _result;
+    HRESULT _hr = get_minInclusive(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(380)
+inline _bstr_t MSXML2::ISchemaType::GetmaxExclusive ( ) {
+    BSTR _result;
+    HRESULT _hr = get_maxExclusive(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(381)
+inline _bstr_t MSXML2::ISchemaType::GetmaxInclusive ( ) {
+    BSTR _result;
+    HRESULT _hr = get_maxInclusive(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(382)
+inline _variant_t MSXML2::ISchemaType::GettotalDigits ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_totalDigits(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(383)
+inline _variant_t MSXML2::ISchemaType::GetfractionDigits ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_fractionDigits(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(384)
+inline _variant_t MSXML2::ISchemaType::Getlength ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(385)
+inline _variant_t MSXML2::ISchemaType::GetminLength ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_minLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(386)
+inline _variant_t MSXML2::ISchemaType::GetmaxLength ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_maxLength(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(387)
+inline MSXML2::ISchemaStringCollectionPtr MSXML2::ISchemaType::Getenumeration ( ) {
+    struct ISchemaStringCollection * _result;
+    HRESULT _hr = get_enumeration(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaStringCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(388)
+inline SCHEMAWHITESPACE MSXML2::ISchemaType::Getwhitespace ( ) {
+    SCHEMAWHITESPACE _result;
+    HRESULT _hr = get_whitespace(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(389)
+inline MSXML2::ISchemaStringCollectionPtr MSXML2::ISchemaType::Getpatterns ( ) {
+    struct ISchemaStringCollection * _result;
+    HRESULT _hr = get_patterns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaStringCollectionPtr(_result, false);
+}
+
+//
+// interface ISchemaComplexType wrapper method implementations
+//
+
+#pragma implementation_key(390)
+inline VARIANT_BOOL MSXML2::ISchemaComplexType::GetisAbstract ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_isAbstract(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(391)
+inline MSXML2::ISchemaAnyPtr MSXML2::ISchemaComplexType::GetanyAttribute ( ) {
+    struct ISchemaAny * _result;
+    HRESULT _hr = get_anyAttribute(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaAnyPtr(_result, false);
+}
+
+#pragma implementation_key(392)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchemaComplexType::Getattributes ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(393)
+inline SCHEMACONTENTTYPE MSXML2::ISchemaComplexType::GetcontentType ( ) {
+    SCHEMACONTENTTYPE _result;
+    HRESULT _hr = get_contentType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(394)
+inline MSXML2::ISchemaModelGroupPtr MSXML2::ISchemaComplexType::GetcontentModel ( ) {
+    struct ISchemaModelGroup * _result;
+    HRESULT _hr = get_contentModel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaModelGroupPtr(_result, false);
+}
+
+#pragma implementation_key(395)
+inline SCHEMADERIVATIONMETHOD MSXML2::ISchemaComplexType::GetprohibitedSubstitutions ( ) {
+    SCHEMADERIVATIONMETHOD _result;
+    HRESULT _hr = get_prohibitedSubstitutions(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISchemaAny wrapper method implementations
+//
+
+#pragma implementation_key(396)
+inline MSXML2::ISchemaStringCollectionPtr MSXML2::ISchemaAny::Getnamespaces ( ) {
+    struct ISchemaStringCollection * _result;
+    HRESULT _hr = get_namespaces(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaStringCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(397)
+inline SCHEMAPROCESSCONTENTS MSXML2::ISchemaAny::GetprocessContents ( ) {
+    SCHEMAPROCESSCONTENTS _result;
+    HRESULT _hr = get_processContents(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISchemaModelGroup wrapper method implementations
+//
+
+#pragma implementation_key(398)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchemaModelGroup::Getparticles ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_particles(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+//
+// interface IMXXMLFilter wrapper method implementations
+//
+
+#pragma implementation_key(399)
+inline VARIANT_BOOL MSXML2::IMXXMLFilter::getFeature ( _bstr_t strName ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_getFeature(strName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(400)
+inline HRESULT MSXML2::IMXXMLFilter::putFeature ( _bstr_t strName, VARIANT_BOOL fValue ) {
+    HRESULT _hr = raw_putFeature(strName, fValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(401)
+inline _variant_t MSXML2::IMXXMLFilter::getProperty ( _bstr_t strName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getProperty(strName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(402)
+inline HRESULT MSXML2::IMXXMLFilter::putProperty ( _bstr_t strName, const _variant_t & varValue ) {
+    HRESULT _hr = raw_putProperty(strName, varValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(403)
+inline IUnknownPtr MSXML2::IMXXMLFilter::GetentityResolver ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_entityResolver(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(404)
+inline void MSXML2::IMXXMLFilter::PutRefentityResolver ( IUnknown * oResolver ) {
+    HRESULT _hr = putref_entityResolver(oResolver);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(405)
+inline IUnknownPtr MSXML2::IMXXMLFilter::GetcontentHandler ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_contentHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(406)
+inline void MSXML2::IMXXMLFilter::PutRefcontentHandler ( IUnknown * oHandler ) {
+    HRESULT _hr = putref_contentHandler(oHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(407)
+inline IUnknownPtr MSXML2::IMXXMLFilter::GetdtdHandler ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_dtdHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(408)
+inline void MSXML2::IMXXMLFilter::PutRefdtdHandler ( IUnknown * oHandler ) {
+    HRESULT _hr = putref_dtdHandler(oHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(409)
+inline IUnknownPtr MSXML2::IMXXMLFilter::GeterrorHandler ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get_errorHandler(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(410)
+inline void MSXML2::IMXXMLFilter::PutReferrorHandler ( IUnknown * oHandler ) {
+    HRESULT _hr = putref_errorHandler(oHandler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IXMLDOMSchemaCollection2 wrapper method implementations
+//
+
+#pragma implementation_key(411)
+inline HRESULT MSXML2::IXMLDOMSchemaCollection2::validate ( ) {
+    HRESULT _hr = raw_validate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(412)
+inline void MSXML2::IXMLDOMSchemaCollection2::PutvalidateOnLoad ( VARIANT_BOOL validateOnLoad ) {
+    HRESULT _hr = put_validateOnLoad(validateOnLoad);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(413)
+inline VARIANT_BOOL MSXML2::IXMLDOMSchemaCollection2::GetvalidateOnLoad ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_validateOnLoad(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(414)
+inline MSXML2::ISchemaPtr MSXML2::IXMLDOMSchemaCollection2::getSchema ( _bstr_t namespaceURI ) {
+    struct ISchema * _result;
+    HRESULT _hr = raw_getSchema(namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaPtr(_result, false);
+}
+
+#pragma implementation_key(415)
+inline MSXML2::ISchemaItemPtr MSXML2::IXMLDOMSchemaCollection2::getDeclaration ( struct IXMLDOMNode * node ) {
+    struct ISchemaItem * _result;
+    HRESULT _hr = raw_getDeclaration(node, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemPtr(_result, false);
+}
+
+//
+// interface ISchemaAttribute wrapper method implementations
+//
+
+#pragma implementation_key(416)
+inline MSXML2::ISchemaTypePtr MSXML2::ISchemaAttribute::Gettype ( ) {
+    struct ISchemaType * _result;
+    HRESULT _hr = get_type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaTypePtr(_result, false);
+}
+
+#pragma implementation_key(417)
+inline MSXML2::ISchemaComplexTypePtr MSXML2::ISchemaAttribute::Getscope ( ) {
+    struct ISchemaComplexType * _result;
+    HRESULT _hr = get_scope(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaComplexTypePtr(_result, false);
+}
+
+#pragma implementation_key(418)
+inline _bstr_t MSXML2::ISchemaAttribute::GetdefaultValue ( ) {
+    BSTR _result;
+    HRESULT _hr = get_defaultValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(419)
+inline _bstr_t MSXML2::ISchemaAttribute::GetfixedValue ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fixedValue(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(420)
+inline SCHEMAUSE MSXML2::ISchemaAttribute::Getuse ( ) {
+    SCHEMAUSE _result;
+    HRESULT _hr = get_use(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(421)
+inline VARIANT_BOOL MSXML2::ISchemaAttribute::GetisReference ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_isReference(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ISchemaAttributeGroup wrapper method implementations
+//
+
+#pragma implementation_key(422)
+inline MSXML2::ISchemaAnyPtr MSXML2::ISchemaAttributeGroup::GetanyAttribute ( ) {
+    struct ISchemaAny * _result;
+    HRESULT _hr = get_anyAttribute(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaAnyPtr(_result, false);
+}
+
+#pragma implementation_key(423)
+inline MSXML2::ISchemaItemCollectionPtr MSXML2::ISchemaAttributeGroup::Getattributes ( ) {
+    struct ISchemaItemCollection * _result;
+    HRESULT _hr = get_attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaItemCollectionPtr(_result, false);
+}
+
+//
+// interface ISchemaIdentityConstraint wrapper method implementations
+//
+
+#pragma implementation_key(424)
+inline _bstr_t MSXML2::ISchemaIdentityConstraint::Getselector ( ) {
+    BSTR _result;
+    HRESULT _hr = get_selector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(425)
+inline MSXML2::ISchemaStringCollectionPtr MSXML2::ISchemaIdentityConstraint::Getfields ( ) {
+    struct ISchemaStringCollection * _result;
+    HRESULT _hr = get_fields(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaStringCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(426)
+inline MSXML2::ISchemaIdentityConstraintPtr MSXML2::ISchemaIdentityConstraint::GetreferencedKey ( ) {
+    struct ISchemaIdentityConstraint * _result;
+    HRESULT _hr = get_referencedKey(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ISchemaIdentityConstraintPtr(_result, false);
+}
+
+//
+// interface ISchemaNotation wrapper method implementations
+//
+
+#pragma implementation_key(427)
+inline _bstr_t MSXML2::ISchemaNotation::GetsystemIdentifier ( ) {
+    BSTR _result;
+    HRESULT _hr = get_systemIdentifier(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(428)
+inline _bstr_t MSXML2::ISchemaNotation::GetpublicIdentifier ( ) {
+    BSTR _result;
+    HRESULT _hr = get_publicIdentifier(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IXMLElementCollection wrapper method implementations
+//
+
+#pragma implementation_key(429)
+inline void MSXML2::IXMLElementCollection::Putlength ( long p ) {
+    HRESULT _hr = put_length(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(430)
+inline long MSXML2::IXMLElementCollection::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(431)
+inline IUnknownPtr MSXML2::IXMLElementCollection::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+#pragma implementation_key(432)
+inline IDispatchPtr MSXML2::IXMLElementCollection::item ( const _variant_t & var1, const _variant_t & var2 ) {
+    IDispatch * _result;
+    HRESULT _hr = raw_item(var1, var2, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+//
+// interface IXMLDocument wrapper method implementations
+//
+
+#pragma implementation_key(433)
+inline MSXML2::IXMLElementPtr MSXML2::IXMLDocument::Getroot ( ) {
+    struct IXMLElement * _result;
+    HRESULT _hr = get_root(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElementPtr(_result, false);
+}
+
+#pragma implementation_key(434)
+inline _bstr_t MSXML2::IXMLDocument::GetfileSize ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fileSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(435)
+inline _bstr_t MSXML2::IXMLDocument::GetfileModifiedDate ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fileModifiedDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(436)
+inline _bstr_t MSXML2::IXMLDocument::GetfileUpdatedDate ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fileUpdatedDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(437)
+inline _bstr_t MSXML2::IXMLDocument::Geturl ( ) {
+    BSTR _result;
+    HRESULT _hr = get_url(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(438)
+inline void MSXML2::IXMLDocument::Puturl ( _bstr_t p ) {
+    HRESULT _hr = put_url(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(439)
+inline _bstr_t MSXML2::IXMLDocument::GetmimeType ( ) {
+    BSTR _result;
+    HRESULT _hr = get_mimeType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(440)
+inline long MSXML2::IXMLDocument::GetreadyState ( ) {
+    long _result;
+    HRESULT _hr = get_readyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(441)
+inline _bstr_t MSXML2::IXMLDocument::Getcharset ( ) {
+    BSTR _result;
+    HRESULT _hr = get_charset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(442)
+inline void MSXML2::IXMLDocument::Putcharset ( _bstr_t p ) {
+    HRESULT _hr = put_charset(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(443)
+inline _bstr_t MSXML2::IXMLDocument::Getversion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(444)
+inline _bstr_t MSXML2::IXMLDocument::Getdoctype ( ) {
+    BSTR _result;
+    HRESULT _hr = get_doctype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(445)
+inline _bstr_t MSXML2::IXMLDocument::GetdtdURL ( ) {
+    BSTR _result;
+    HRESULT _hr = get_dtdURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(446)
+inline MSXML2::IXMLElementPtr MSXML2::IXMLDocument::createElement ( const _variant_t & vType, const _variant_t & var1 ) {
+    struct IXMLElement * _result;
+    HRESULT _hr = raw_createElement(vType, var1, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElementPtr(_result, false);
+}
+
+//
+// interface IXMLElement wrapper method implementations
+//
+
+#pragma implementation_key(447)
+inline _bstr_t MSXML2::IXMLElement::GettagName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_tagName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(448)
+inline void MSXML2::IXMLElement::PuttagName ( _bstr_t p ) {
+    HRESULT _hr = put_tagName(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(449)
+inline MSXML2::IXMLElementPtr MSXML2::IXMLElement::Getparent ( ) {
+    struct IXMLElement * _result;
+    HRESULT _hr = get_parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElementPtr(_result, false);
+}
+
+#pragma implementation_key(450)
+inline HRESULT MSXML2::IXMLElement::setAttribute ( _bstr_t strPropertyName, const _variant_t & PropertyValue ) {
+    HRESULT _hr = raw_setAttribute(strPropertyName, PropertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(451)
+inline _variant_t MSXML2::IXMLElement::getAttribute ( _bstr_t strPropertyName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getAttribute(strPropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(452)
+inline HRESULT MSXML2::IXMLElement::removeAttribute ( _bstr_t strPropertyName ) {
+    HRESULT _hr = raw_removeAttribute(strPropertyName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(453)
+inline MSXML2::IXMLElementCollectionPtr MSXML2::IXMLElement::Getchildren ( ) {
+    struct IXMLElementCollection * _result;
+    HRESULT _hr = get_children(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElementCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(454)
+inline long MSXML2::IXMLElement::Gettype ( ) {
+    long _result;
+    HRESULT _hr = get_type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(455)
+inline _bstr_t MSXML2::IXMLElement::Gettext ( ) {
+    BSTR _result;
+    HRESULT _hr = get_text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(456)
+inline void MSXML2::IXMLElement::Puttext ( _bstr_t p ) {
+    HRESULT _hr = put_text(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(457)
+inline HRESULT MSXML2::IXMLElement::addChild ( struct IXMLElement * pChildElem, long lIndex, long lReserved ) {
+    HRESULT _hr = raw_addChild(pChildElem, lIndex, lReserved);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(458)
+inline HRESULT MSXML2::IXMLElement::removeChild ( struct IXMLElement * pChildElem ) {
+    HRESULT _hr = raw_removeChild(pChildElem);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IXMLDocument2 wrapper method implementations
+//
+
+#pragma implementation_key(459)
+inline MSXML2::IXMLElement2Ptr MSXML2::IXMLDocument2::Getroot ( ) {
+    struct IXMLElement2 * _result;
+    HRESULT _hr = get_root(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElement2Ptr(_result, false);
+}
+
+#pragma implementation_key(460)
+inline _bstr_t MSXML2::IXMLDocument2::GetfileSize ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fileSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(461)
+inline _bstr_t MSXML2::IXMLDocument2::GetfileModifiedDate ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fileModifiedDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(462)
+inline _bstr_t MSXML2::IXMLDocument2::GetfileUpdatedDate ( ) {
+    BSTR _result;
+    HRESULT _hr = get_fileUpdatedDate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(463)
+inline _bstr_t MSXML2::IXMLDocument2::Geturl ( ) {
+    BSTR _result;
+    HRESULT _hr = get_url(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(464)
+inline void MSXML2::IXMLDocument2::Puturl ( _bstr_t p ) {
+    HRESULT _hr = put_url(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(465)
+inline _bstr_t MSXML2::IXMLDocument2::GetmimeType ( ) {
+    BSTR _result;
+    HRESULT _hr = get_mimeType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(466)
+inline long MSXML2::IXMLDocument2::GetreadyState ( ) {
+    long _result;
+    HRESULT _hr = get_readyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(467)
+inline _bstr_t MSXML2::IXMLDocument2::Getcharset ( ) {
+    BSTR _result;
+    HRESULT _hr = get_charset(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(468)
+inline void MSXML2::IXMLDocument2::Putcharset ( _bstr_t p ) {
+    HRESULT _hr = put_charset(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(469)
+inline _bstr_t MSXML2::IXMLDocument2::Getversion ( ) {
+    BSTR _result;
+    HRESULT _hr = get_version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(470)
+inline _bstr_t MSXML2::IXMLDocument2::Getdoctype ( ) {
+    BSTR _result;
+    HRESULT _hr = get_doctype(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(471)
+inline _bstr_t MSXML2::IXMLDocument2::GetdtdURL ( ) {
+    BSTR _result;
+    HRESULT _hr = get_dtdURL(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(472)
+inline MSXML2::IXMLElement2Ptr MSXML2::IXMLDocument2::createElement ( const _variant_t & vType, const _variant_t & var1 ) {
+    struct IXMLElement2 * _result;
+    HRESULT _hr = raw_createElement(vType, var1, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElement2Ptr(_result, false);
+}
+
+#pragma implementation_key(473)
+inline VARIANT_BOOL MSXML2::IXMLDocument2::Getasync ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_async(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(474)
+inline void MSXML2::IXMLDocument2::Putasync ( VARIANT_BOOL pf ) {
+    HRESULT _hr = put_async(pf);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IXMLElement2 wrapper method implementations
+//
+
+#pragma implementation_key(475)
+inline _bstr_t MSXML2::IXMLElement2::GettagName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_tagName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(476)
+inline void MSXML2::IXMLElement2::PuttagName ( _bstr_t p ) {
+    HRESULT _hr = put_tagName(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(477)
+inline MSXML2::IXMLElement2Ptr MSXML2::IXMLElement2::Getparent ( ) {
+    struct IXMLElement2 * _result;
+    HRESULT _hr = get_parent(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElement2Ptr(_result, false);
+}
+
+#pragma implementation_key(478)
+inline HRESULT MSXML2::IXMLElement2::setAttribute ( _bstr_t strPropertyName, const _variant_t & PropertyValue ) {
+    HRESULT _hr = raw_setAttribute(strPropertyName, PropertyValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(479)
+inline _variant_t MSXML2::IXMLElement2::getAttribute ( _bstr_t strPropertyName ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getAttribute(strPropertyName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(480)
+inline HRESULT MSXML2::IXMLElement2::removeAttribute ( _bstr_t strPropertyName ) {
+    HRESULT _hr = raw_removeAttribute(strPropertyName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(481)
+inline MSXML2::IXMLElementCollectionPtr MSXML2::IXMLElement2::Getchildren ( ) {
+    struct IXMLElementCollection * _result;
+    HRESULT _hr = get_children(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElementCollectionPtr(_result, false);
+}
+
+#pragma implementation_key(482)
+inline long MSXML2::IXMLElement2::Gettype ( ) {
+    long _result;
+    HRESULT _hr = get_type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(483)
+inline _bstr_t MSXML2::IXMLElement2::Gettext ( ) {
+    BSTR _result;
+    HRESULT _hr = get_text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(484)
+inline void MSXML2::IXMLElement2::Puttext ( _bstr_t p ) {
+    HRESULT _hr = put_text(p);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(485)
+inline HRESULT MSXML2::IXMLElement2::addChild ( struct IXMLElement2 * pChildElem, long lIndex, long lReserved ) {
+    HRESULT _hr = raw_addChild(pChildElem, lIndex, lReserved);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(486)
+inline HRESULT MSXML2::IXMLElement2::removeChild ( struct IXMLElement2 * pChildElem ) {
+    HRESULT _hr = raw_removeChild(pChildElem);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(487)
+inline MSXML2::IXMLElementCollectionPtr MSXML2::IXMLElement2::Getattributes ( ) {
+    struct IXMLElementCollection * _result;
+    HRESULT _hr = get_attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLElementCollectionPtr(_result, false);
+}
+
+//
+// interface IXMLAttribute wrapper method implementations
+//
+
+#pragma implementation_key(488)
+inline _bstr_t MSXML2::IXMLAttribute::Getname ( ) {
+    BSTR _result;
+    HRESULT _hr = get_name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(489)
+inline _bstr_t MSXML2::IXMLAttribute::Getvalue ( ) {
+    BSTR _result;
+    HRESULT _hr = get_value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+//
+// interface IXMLError wrapper method implementations
+//
+
+#pragma implementation_key(490)
+inline HRESULT MSXML2::IXMLError::GetErrorInfo ( struct _xml_error * pErrorReturn ) {
+    HRESULT _hr = raw_GetErrorInfo(pErrorReturn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IXMLDOMSelection wrapper method implementations
+//
+
+#pragma implementation_key(491)
+inline _bstr_t MSXML2::IXMLDOMSelection::Getexpr ( ) {
+    BSTR _result;
+    HRESULT _hr = get_expr(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(492)
+inline void MSXML2::IXMLDOMSelection::Putexpr ( _bstr_t expression ) {
+    HRESULT _hr = put_expr(expression);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(493)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMSelection::Getcontext ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = get_context(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(494)
+inline void MSXML2::IXMLDOMSelection::PutRefcontext ( struct IXMLDOMNode * ppNode ) {
+    HRESULT _hr = putref_context(ppNode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(495)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMSelection::peekNode ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_peekNode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(496)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMSelection::matches ( struct IXMLDOMNode * pNode ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_matches(pNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(497)
+inline MSXML2::IXMLDOMNodePtr MSXML2::IXMLDOMSelection::removeNext ( ) {
+    struct IXMLDOMNode * _result;
+    HRESULT _hr = raw_removeNext(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMNodePtr(_result, false);
+}
+
+#pragma implementation_key(498)
+inline HRESULT MSXML2::IXMLDOMSelection::removeAll ( ) {
+    HRESULT _hr = raw_removeAll();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(499)
+inline MSXML2::IXMLDOMSelectionPtr MSXML2::IXMLDOMSelection::clone ( ) {
+    struct IXMLDOMSelection * _result;
+    HRESULT _hr = raw_clone(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMSelectionPtr(_result, false);
+}
+
+#pragma implementation_key(500)
+inline _variant_t MSXML2::IXMLDOMSelection::getProperty ( _bstr_t name ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getProperty(name, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(501)
+inline HRESULT MSXML2::IXMLDOMSelection::setProperty ( _bstr_t name, const _variant_t & value ) {
+    HRESULT _hr = raw_setProperty(name, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface XMLDOMDocumentEvents wrapper method implementations
+//
+
+#pragma implementation_key(502)
+inline HRESULT MSXML2::XMLDOMDocumentEvents::ondataavailable ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, 0xc6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+#pragma implementation_key(503)
+inline HRESULT MSXML2::XMLDOMDocumentEvents::onreadystatechange ( ) {
+    HRESULT _result;
+    _com_dispatch_method(this, DISPID_READYSTATECHANGE, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
+}
+
+//
+// interface IDSOControl wrapper method implementations
+//
+
+#pragma implementation_key(504)
+inline MSXML2::IXMLDOMDocumentPtr MSXML2::IDSOControl::GetXMLDocument ( ) {
+    struct IXMLDOMDocument * _result;
+    HRESULT _hr = get_XMLDocument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IXMLDOMDocumentPtr(_result, false);
+}
+
+#pragma implementation_key(505)
+inline void MSXML2::IDSOControl::PutXMLDocument ( struct IXMLDOMDocument * ppDoc ) {
+    HRESULT _hr = put_XMLDocument(ppDoc);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(506)
+inline long MSXML2::IDSOControl::GetJavaDSOCompatible ( ) {
+    long _result;
+    HRESULT _hr = get_JavaDSOCompatible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(507)
+inline void MSXML2::IDSOControl::PutJavaDSOCompatible ( long fJavaDSOCompatible ) {
+    HRESULT _hr = put_JavaDSOCompatible(fJavaDSOCompatible);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(508)
+inline long MSXML2::IDSOControl::GetreadyState ( ) {
+    long _result;
+    HRESULT _hr = get_readyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IXMLHTTPRequest wrapper method implementations
+//
+
+#pragma implementation_key(509)
+inline HRESULT MSXML2::IXMLHTTPRequest::open ( _bstr_t bstrMethod, _bstr_t bstrUrl, const _variant_t & varAsync, const _variant_t & bstrUser, const _variant_t & bstrPassword ) {
+    HRESULT _hr = raw_open(bstrMethod, bstrUrl, varAsync, bstrUser, bstrPassword);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(510)
+inline HRESULT MSXML2::IXMLHTTPRequest::setRequestHeader ( _bstr_t bstrHeader, _bstr_t bstrValue ) {
+    HRESULT _hr = raw_setRequestHeader(bstrHeader, bstrValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(511)
+inline _bstr_t MSXML2::IXMLHTTPRequest::getResponseHeader ( _bstr_t bstrHeader ) {
+    BSTR _result;
+    HRESULT _hr = raw_getResponseHeader(bstrHeader, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(512)
+inline _bstr_t MSXML2::IXMLHTTPRequest::getAllResponseHeaders ( ) {
+    BSTR _result;
+    HRESULT _hr = raw_getAllResponseHeaders(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(513)
+inline HRESULT MSXML2::IXMLHTTPRequest::send ( const _variant_t & varBody ) {
+    HRESULT _hr = raw_send(varBody);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(514)
+inline HRESULT MSXML2::IXMLHTTPRequest::abort ( ) {
+    HRESULT _hr = raw_abort();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(515)
+inline long MSXML2::IXMLHTTPRequest::Getstatus ( ) {
+    long _result;
+    HRESULT _hr = get_status(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(516)
+inline _bstr_t MSXML2::IXMLHTTPRequest::GetstatusText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_statusText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(517)
+inline IDispatchPtr MSXML2::IXMLHTTPRequest::GetresponseXML ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_responseXML(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+#pragma implementation_key(518)
+inline _bstr_t MSXML2::IXMLHTTPRequest::GetresponseText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_responseText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(519)
+inline _variant_t MSXML2::IXMLHTTPRequest::GetresponseBody ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_responseBody(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(520)
+inline _variant_t MSXML2::IXMLHTTPRequest::GetresponseStream ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_responseStream(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(521)
+inline long MSXML2::IXMLHTTPRequest::GetreadyState ( ) {
+    long _result;
+    HRESULT _hr = get_readyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(522)
+inline void MSXML2::IXMLHTTPRequest::Putonreadystatechange ( IDispatch * _arg1 ) {
+    HRESULT _hr = put_onreadystatechange(_arg1);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IServerXMLHTTPRequest wrapper method implementations
+//
+
+#pragma implementation_key(523)
+inline HRESULT MSXML2::IServerXMLHTTPRequest::setTimeouts ( long resolveTimeout, long connectTimeout, long sendTimeout, long receiveTimeout ) {
+    HRESULT _hr = raw_setTimeouts(resolveTimeout, connectTimeout, sendTimeout, receiveTimeout);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(524)
+inline VARIANT_BOOL MSXML2::IServerXMLHTTPRequest::waitForResponse ( const _variant_t & timeoutInSeconds ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_waitForResponse(timeoutInSeconds, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(525)
+inline _variant_t MSXML2::IServerXMLHTTPRequest::getOption ( SERVERXMLHTTP_OPTION option ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getOption(option, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(526)
+inline HRESULT MSXML2::IServerXMLHTTPRequest::setOption ( SERVERXMLHTTP_OPTION option, const _variant_t & value ) {
+    HRESULT _hr = raw_setOption(option, value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IServerXMLHTTPRequest2 wrapper method implementations
+//
+
+#pragma implementation_key(527)
+inline HRESULT MSXML2::IServerXMLHTTPRequest2::setProxy ( SXH_PROXY_SETTING proxySetting, const _variant_t & varProxyServer, const _variant_t & varBypassList ) {
+    HRESULT _hr = raw_setProxy(proxySetting, varProxyServer, varBypassList);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(528)
+inline HRESULT MSXML2::IServerXMLHTTPRequest2::setProxyCredentials ( _bstr_t bstrUserName, _bstr_t bstrPassword ) {
+    HRESULT _hr = raw_setProxyCredentials(bstrUserName, bstrPassword);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IMXNamespacePrefixes wrapper method implementations
+//
+
+#pragma implementation_key(529)
+inline _bstr_t MSXML2::IMXNamespacePrefixes::Getitem ( long index ) {
+    BSTR _result;
+    HRESULT _hr = get_item(index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+#pragma implementation_key(530)
+inline long MSXML2::IMXNamespacePrefixes::Getlength ( ) {
+    long _result;
+    HRESULT _hr = get_length(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(531)
+inline IUnknownPtr MSXML2::IMXNamespacePrefixes::Get_newEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__newEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+//
+// interface IVBMXNamespaceManager wrapper method implementations
+//
+
+#pragma implementation_key(532)
+inline void MSXML2::IVBMXNamespaceManager::PutallowOverride ( VARIANT_BOOL fOverride ) {
+    HRESULT _hr = put_allowOverride(fOverride);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+#pragma implementation_key(533)
+inline VARIANT_BOOL MSXML2::IVBMXNamespaceManager::GetallowOverride ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_allowOverride(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(534)
+inline HRESULT MSXML2::IVBMXNamespaceManager::reset ( ) {
+    HRESULT _hr = raw_reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(535)
+inline HRESULT MSXML2::IVBMXNamespaceManager::pushContext ( ) {
+    HRESULT _hr = raw_pushContext();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(536)
+inline HRESULT MSXML2::IVBMXNamespaceManager::pushNodeContext ( struct IXMLDOMNode * contextNode, VARIANT_BOOL fDeep ) {
+    HRESULT _hr = raw_pushNodeContext(contextNode, fDeep);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(537)
+inline HRESULT MSXML2::IVBMXNamespaceManager::popContext ( ) {
+    HRESULT _hr = raw_popContext();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(538)
+inline HRESULT MSXML2::IVBMXNamespaceManager::declarePrefix ( _bstr_t prefix, _bstr_t namespaceURI ) {
+    HRESULT _hr = raw_declarePrefix(prefix, namespaceURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(539)
+inline MSXML2::IMXNamespacePrefixesPtr MSXML2::IVBMXNamespaceManager::getDeclaredPrefixes ( ) {
+    struct IMXNamespacePrefixes * _result;
+    HRESULT _hr = raw_getDeclaredPrefixes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMXNamespacePrefixesPtr(_result, false);
+}
+
+#pragma implementation_key(540)
+inline MSXML2::IMXNamespacePrefixesPtr MSXML2::IVBMXNamespaceManager::getPrefixes ( _bstr_t namespaceURI ) {
+    struct IMXNamespacePrefixes * _result;
+    HRESULT _hr = raw_getPrefixes(namespaceURI, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IMXNamespacePrefixesPtr(_result, false);
+}
+
+#pragma implementation_key(541)
+inline _variant_t MSXML2::IVBMXNamespaceManager::getURI ( _bstr_t prefix ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getURI(prefix, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+#pragma implementation_key(542)
+inline _variant_t MSXML2::IVBMXNamespaceManager::getURIFromNode ( _bstr_t strPrefix, struct IXMLDOMNode * contextNode ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_getURIFromNode(strPrefix, contextNode, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface IMXNamespaceManager wrapper method implementations
+//
+
+#pragma implementation_key(543)
+inline HRESULT MSXML2::IMXNamespaceManager::putAllowOverride ( VARIANT_BOOL fOverride ) {
+    HRESULT _hr = raw_putAllowOverride(fOverride);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(544)
+inline VARIANT_BOOL MSXML2::IMXNamespaceManager::getAllowOverride ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = raw_getAllowOverride(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+#pragma implementation_key(545)
+inline HRESULT MSXML2::IMXNamespaceManager::reset ( ) {
+    HRESULT _hr = raw_reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(546)
+inline HRESULT MSXML2::IMXNamespaceManager::pushContext ( ) {
+    HRESULT _hr = raw_pushContext();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(547)
+inline HRESULT MSXML2::IMXNamespaceManager::pushNodeContext ( struct IXMLDOMNode * contextNode, VARIANT_BOOL fDeep ) {
+    HRESULT _hr = raw_pushNodeContext(contextNode, fDeep);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(548)
+inline HRESULT MSXML2::IMXNamespaceManager::popContext ( ) {
+    HRESULT _hr = raw_popContext();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(549)
+inline HRESULT MSXML2::IMXNamespaceManager::declarePrefix ( LPWSTR prefix, LPWSTR namespaceURI ) {
+    HRESULT _hr = raw_declarePrefix(prefix, namespaceURI);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(550)
+inline HRESULT MSXML2::IMXNamespaceManager::getDeclaredPrefix ( long nIndex, unsigned short * pwchPrefix, int * pcchPrefix ) {
+    HRESULT _hr = raw_getDeclaredPrefix(nIndex, pwchPrefix, pcchPrefix);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(551)
+inline HRESULT MSXML2::IMXNamespaceManager::getPrefix ( LPWSTR pwszNamespaceURI, long nIndex, unsigned short * pwchPrefix, int * pcchPrefix ) {
+    HRESULT _hr = raw_getPrefix(pwszNamespaceURI, nIndex, pwchPrefix, pcchPrefix);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+#pragma implementation_key(552)
+inline HRESULT MSXML2::IMXNamespaceManager::getURI ( LPWSTR pwchPrefix, struct IXMLDOMNode * pContextNode, unsigned short * pwchUri, int * pcchUri ) {
+    HRESULT _hr = raw_getURI(pwchPrefix, pContextNode, pwchUri, pcchUri);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
