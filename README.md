@@ -1,7 +1,7 @@
 整理各种免杀远控源码
 持续更新中～
 
-[                              telegram![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/debug0o)
+[                              telegram![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/rat8o8)
 
 
  
