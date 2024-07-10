@@ -1,5 +1,0 @@
-DllToShellCode d 1 load 0 上线模块.dll payload32.bin
-
-DllToShellCode d 1 load 0 上线模块.dll payload64.bin
-
-DllToShellCode d 0 0 0 qqkey.dll payload64.bin
