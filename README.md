@@ -1,12 +1,12 @@
 整理各种免杀远控源码
 持续更新中～
 
-[                              telegram![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/rat8o8)
+[                            纸飞机![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/rat8o8)
 
 
  
 
-![Winos](银狐Winos/winos.png)
+![Winos](银狐Winos/winos.png)    
 完整修复版非残缺源码，已去除所有暗桩后门。一键编译，优化代码，修复bug
 修复计划任务失效
 修复shellcode进程注入时无法使用
