@@ -7,6 +7,10 @@
  
 
 ![Winos](银狐Winos/winos.png)    
+
+
+![worldgh0st](worldgh0st/worldgh0st.png) 
+
 完整修复版非残缺源码，已去除所有暗桩后门。一键编译，优化代码，修复bug
 修复计划任务失效
 修复shellcode进程注入时无法使用
