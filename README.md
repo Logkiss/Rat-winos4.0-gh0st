@@ -1,7 +1,7 @@
 整理各种免杀远控源码
 持续更新中...........................
 
-[                            联系纸飞机![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/rat8o8)
+[                            联系纸飞机![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/viper88888)
 
 
  
@@ -12,34 +12,8 @@
 ![worldgh0st](worldgh0st/worldgh0st.png) 
 
 完整修复版非残缺源码，已去除所有暗桩后门。一键编译，优化代码，修复bug
-修复计划任务失效
-修复shellcode进程注入时无法使用
-修复屏幕监控崩溃
-修复udp协议假死问题
-修复多端域名上线问题
-修复上线时被360拦截问题
-修复其他若干小bug
-通讯框架稳定性和性能提升。
-进程管理优化。
-多进程上线互斥优化。
-升级通讯加密算法，去除流量特征，加强安全性。
-被控端注册表存储加密升级。
-重写部分逻辑。
 
 
-
-
-                                       
-
-
-
-
-                                       
-
-
-
-
-                                       
 
 
 
