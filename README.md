@@ -1,7 +1,7 @@
 整理各种免杀远控源码
 持续更新中...........................
 
-[                            联系纸飞机![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/viper88888)
+[                            联系纸飞机![logo](https://telegram.org/img/t_logo_sprite.svg)](https://t.me/qiuck8)
 
 
  
